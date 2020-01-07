@@ -1,0 +1,92 @@
+#
+# SIMPLE INTEGRATION REVIEW SCRIPT FOR WEEKEND SUPPORT
+#
+# Russell Bryer 17/3/99
+# Gavin Bravery 24/3/99
+#set -x
+
+log_file=/tmp/dw_rv.log
+
+clear
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+                                                          +"
+echo "+              Data Warehouse Review Log                   +"
+echo "+                                                          +"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo
+echo "             BUILDING LOG FILE $log_file   " 
+echo 
+echo "                      PLEASE WAIT                            "
+
+/home/dw/bin/review_complete > $log_file
+
+clear
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+                                                          +"
+echo "+              Data Warehouse Review Log                   +"
+echo "+                                                          +"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo
+
+# Check for any ORACLE errors
+
+grep 'ORA' $log_file > /dev/null
+grep_status=$?
+if [ $grep_status -eq 0 ] 
+then
+        echo
+        echo "MAJOR ERROR : AN ORACLE ERROR HAS OCCURED PLEASE CALL  SUPPORT"
+        echo
+else
+        echo "oracle ok."
+        echo 
+fi
+
+# Check for Integration Not complete
+
+grep 'NOT COMPLETE' $log_file > /dev/null
+grep_status=$?
+if [ $grep_status -eq 0 ] 
+then
+        echo
+        echo "ERROR : INTEGRATION IS NOT COMPLETE OR AN ERROR HAS OCCURED" 
+        echo "      : CALL SUPPORT  - AS PER ROTA - IF AFTER 12:00      "
+        echo "      : OR IF AFTER 15:00 ON A SATURDAY                     "
+        echo
+else
+        echo "all loaded and integrated ok."
+        echo 
+fi
+
+# Check for Speake complete
+
+grep 'SPEAKE ERROR CHECKING - COMPLETED' $log_file > /dev/null
+grep_status=$?
+if [ $grep_status -eq 0 ] 
+then
+        echo "speake ok."
+        echo
+else
+        echo
+        echo "ERROR : SPEAKE IS EITHER NOT COMPLETE OR AN ERROR HAS OCCURED" 
+        echo "      : CALL SUPPORT  - AS PER ROTA - IF AFTER 12:00       "
+        echo "      : OR IF AFTER 15:00 ON A SATURDAY                      "
+        echo
+fi
+
+# Check for Merlin complete
+
+grep 'MERLIN ERROR CHECKING - COMPLETED' $log_file > /dev/null
+grep_status=$?
+if [ $grep_status -eq 0 ] 
+then
+        echo "merlin ok."
+        echo 
+else
+        echo
+        echo "ERROR : MERLIN IS EITHER NOT COMPLETE OR AN ERROR HAS OCCURED" 
+        echo "      : CALL SUPPORT  - AS PER ROTA - IF AFTER 12:00       "
+        echo "      : OR IF AFTER 15:00 ON A SATURDAY                      "
+        echo
+fi
+read any?"Press Return"

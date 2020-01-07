@@ -1,0 +1,82 @@
+SQL_DWL>
+SQL_DWL>select  'Invoice' ||','||INV_SEQ_NO||','||invoice_num||','||PROPERTY_NUM||','||BATCH_NUM||','||INVOICE_DATE||','||INVOICE_AMT
+  2          ||','||CCY_CODE||','||','||office_code||','||APTOS_EXTRACTED_DATE
+  3          OFFICE_CODE
+  4      from invoice
+  5      where  (invoice_num,property_num) in
+  6      (select invoice_num,property_num from invoice
+  7       MINUS
+  8       select invoice_num,property_num  from test_inv)
+  9  UNION
+ 10   select  'Test_Inv' ||','||INV_SEQ_NO||','||invoice_num||','||PROPERTY_NUM||','||BATCH_NUM||','||INVOICE_DATE||','||INVOICE_AMT||','||
+ 11            CCY_CODE||','||which_resort||','||APTOS_EXTRACTED_DATE
+ 12          OFFICE_CODE
+ 13      from test_inv
+ 14      where  (invoice_num,property_num) in
+ 15      (select invoice_num,property_num from test_inv
+ 16       MINUS
+ 17       select invoice_num,property_num  from invoice)
+ 18  ;
+          CCY_CODE||','||which_resort||','||APTOS_EXTRACTED_DATE
+                         *
+ERROR at line 11:
+ORA-00904: invalid column name 
+
+
+SQL_DWL>
+SQL_DWL>desc test_inv;
+ Name                            Null?    Type
+ ------------------------------- -------- ----
+ INV_SEQ_NO                      NOT NULL NUMBER
+ INVOICE_NUM                     NOT NULL VARCHAR2(20)
+ PROPERTY_NUM                    NOT NULL NUMBER
+ BATCH_NUM                       NOT NULL NUMBER
+ INVOICE_DATE                    NOT NULL DATE
+ INVOICE_AMT                     NOT NULL NUMBER(17,2)
+ DATE_FROM                                DATE
+ DATE_TO                                  DATE
+ ENTRY_USER                               VARCHAR2(18)
+ ENTRY_DATE                               DATE
+ AMENDED_USER                             VARCHAR2(18)
+ AMENDED_DATE_TIME                        DATE
+ AMENDED_PROCESS                          VARCHAR2(18)
+ TYPE_OF_CONTRACT                         CHAR(2)
+ CCY_CODE                                 VARCHAR2(3)
+ EXTRAS_OVERCHARGE_TEXT                   VARCHAR2(40)
+ TOTAL_EXTRAS_AMT                         NUMBER(17,2)
+ TOTAL_EXTRAS_PAYMENT_AMT                 NUMBER(17,2)
+ APTOS_N_CODE                             VARCHAR2(18)
+ OTOP_ACCOM_CODE                          NUMBER(6)
+ SEASON                                   CHAR(3)
+ DEBIT_NOTE_IND                           CHAR(1)
+ APTOS_EXTRACTED_DATE                     DATE
+ EXTRAS_ONLY_IND                          CHAR(1)
+ OFFICE_CODE                              CHAR(3)
+
+SQL_DWL>select count(*) from office_code from test_inv where office_code is null;
+select count(*) from office_code from test_inv where office_code is null
+                                 *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL_DWL>ed
+Wrote file afiedt.buf
+
+  1* select count(*) from test_inv where office_code is null
+SQL_DWL>/
+
+  COUNT(*)                                                                                                                          
+----------                                                                                                                          
+     41871                                                                                                                          
+
+SQL_DWL>update test_inv
+  2  set office_code = 'PMI' where office_code is null;
+
+41871 rows updated.
+
+SQL_DWL>commit;
+
+Commit complete.
+
+SQL_DWL>

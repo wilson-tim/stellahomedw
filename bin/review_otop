@@ -1,0 +1,81 @@
+#!/usr/bin/ksh
+
+# today_d=1996dec04
+today_d=`date +%Y%b%d`
+today_d=`echo $today_d | sed /.*/y/ADFJMNOS/adfjmnos/`
+data_path='/data/tourops/'                        # Path for the FTP'ed OTOP source data
+load_path='/home/dw/DWLIVE/load/otop/'       # Path for the controlling files in the OTOP loading process
+log_path='/home/dw/DWLIVE/logs/otop/'        # Path for SQL*Load Log, Discard and Bad files
+
+log_file_pre=$log_path"otop_"$today_d"_"
+mis_pre=$data_path"mis_pro_"
+season_lst=$load_path"otop_ls_season.lst"            # Holds a list of all seasons to be retreived
+abbrev_lst=$load_path"otop_ls_abbrev.lst"            # Holds a list of all the abbreviations to be produced by Anite
+abbrev_ssn_lst=$load_path"otop_ls_abbrev"            # Holds starting part of file name holding season abbrev list
+table_lst=$load_path"otop_l_"
+warn_lst=$load_path"otop_sl_warning.lst"
+
+blank="################################################################"
+dash="----------------------------------------------------------------"
+
+if [[ -s $warn_lst ]] then
+  echo $blank
+  echo "WARNING - The following table(s):"
+  cat $warn_lst
+  echo contained separators in the data, so they now must have separator processing added.
+  echo $blank
+  echo
+  echo
+fi
+
+cat $season_lst|
+while read season
+do
+  cat $abbrev_ssn_lst"."$season|
+  while read abbrev
+  do
+
+    line="OTOP UPDATE PROCESS LOG for $season $abbrev"
+    echo $blank
+    echo $line 
+    echo $blank
+
+    log_file=$log_file_pre$abbrev.$season
+    if [[ -a $log_file ]] then
+      grep "No MIS_PRO file" $log_file|tail -1         # Print the last line only
+      grep "grep COMPLETE" $log_file
+      grep "dropped and recreated" $log_file
+      grep "not found during" $log_file
+    else
+      echo FAILED: $log_file does not exist
+    fi
+    mis_pro=$mis_pre$abbrev"_"$today_d.$season          # Holds the initial part of the MIS_PRO file name produced by Anite
+    if [[ -a $mis_pro ]] then
+      echo $dash
+      echo Listing of $mis_pro file
+      cat $mis_pro
+      echo $dash
+    else
+      echo FAILED: $mis_pro file does not exist
+    fi
+
+    cat $table_lst$abbrev.lst|
+    while read table_abb
+    do
+      table_log=$log_path"o_"$table_abb"_log"$today_d.$season
+      table_bad=$log_path"o_"$table_abb"_bad"$today_d.$season
+      if [[ -a $table_log ]] then
+        echo SQL LOADER errors and statistics for season $season and table o_$table_abb 
+        grep "SQL\*Loader-" $table_log
+        grep " Row" $table_log
+        if [[ -a $table_bad ]] then
+          # Print only the first 5 lines of the bad file
+#          head -5 $table_bad
+           echo Log errors for data in file ==> $table_bad
+        fi
+      else
+        echo FAILED: $table_log log file does not exist
+      fi
+    done
+  done
+done

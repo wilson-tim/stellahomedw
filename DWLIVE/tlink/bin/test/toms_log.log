@@ -1,0 +1,11 @@
+PATH set to: /oracle/product/10.2.0/db_1/jdk/jre/bin:/oracle/product/10.2.0/db_1/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/oracle/product/10.2.0/db_1/bin
+CLASSPATH set to: /oracle/product/10.2.0/db_1/jdk/jre/lib:/oracle/product/10.2.0/db_1/jlib:/oracle/product/10.2.0/db_1/lib/xsu12.jar:/oracle/product/10.2.0/db_1/lib/xmlparserv2.jar:/oracle/product/10.2.0/db_1/lib/xmlcomp.jar:/oracle/product/10.2.0/db_1/jdbc/lib/classes12.jar:/oracle/product/10.2.0/db_1/jdbc/lib/nls_charset12.jar:/oracle/product/10.2.0/db_1/lib/oraclexsql.jar:/oracle/product/10.2.0/db_1/lib/xsqlserializers.jar:/oracle/product/10.2.0/db_1/rdbms/jlib/xdb.jar
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
+
+Commit complete.
+

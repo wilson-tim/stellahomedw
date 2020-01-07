@@ -1,0 +1,172 @@
+#!/bin/ksh
+
+function check_server
+{
+  if [[ -n ${1:-""} && -n ${2:-""} ]]
+  then
+    sqlplus -s gsbravery/mandi@$2 << EOF
+set pagesize 0
+set feedback off
+set lines 132
+select 'Total Sessions Running: '||count(*)
+from   gv\$session   s
+,      gv\$process   p
+,      gv\$bgprocess bp
+where  ( p.inst_id = s.inst_id and p.addr   =  s.paddr )
+and    ( bp.inst_id (+) = p.inst_id and bp.paddr (+) = p.addr and bp.paddr is null );
+select '$2 Sessions Running: '||count(*) 
+from   v\$session   s
+,      v\$process   p
+,      v\$bgprocess bp
+where  p.addr   =  s.paddr
+and    bp.paddr (+) = p.addr
+and    bp.paddr is null;
+alter session set nls_date_format = 'dd-mm-yyyy hh24:mi:ss';
+select sysdate from dual;
+set timing on
+
+SELECT
+  BOOKING.BOOKING_DATE,
+  AGG_PRODUCT.BROCHURE_PRODUCT_CODE,
+  AGG_PRODUCT.BROCHURE_PRODUCT_DESC,
+  sum(BASE_FINANCIAL_DETAIL.NO_OF_ADULTS + BASE_FINANCIAL_DETAIL.NO_OF_CHILDREN)
+FROM
+  BOOKING,
+  AGG_PRODUCT,
+  BASE_FINANCIAL_DETAIL
+WHERE
+  ( 
+BOOKING.BOOKING_REFERENCE_NO=
+BASE_FINANCIAL_DETAIL.BOOKING_REFERENCE_NO and
+BOOKING.SEASON_TYPE=
+BASE_FINANCIAL_DETAIL.SEASON_TYPE and
+BOOKING.SEASON_YEAR=
+BASE_FINANCIAL_DETAIL.SEASON_YEAR and
+BOOKING.AMENDED_DATE=
+BASE_FINANCIAL_DETAIL.DETAILS_UPDATED_DATE  )
+  AND  ( 
+AGG_PRODUCT.OTOP_PRODUCT_CODE=
+BOOKING.OTOP_PRODUCT_CODE and
+AGG_PRODUCT.OTOP_SEASON_TYPE=
+BOOKING.SEASON_TYPE and
+AGG_PRODUCT.OTOP_SEASON_YEAR=
+BOOKING.SEASON_YEAR  )
+  AND  (
+  ( 
+BOOKING.SEASON_TYPE = 'S' AND
+BOOKING.SEASON_YEAR = '2000'  )
+  AND  BOOKING.BOOKING_DATE  >  trunc(sysdate,'Day') - 1 - (1 * 7)
+  AND  BOOKING.BOOKING_DATE  <=  trunc(sysdate,'Day')-1
+  )
+GROUP BY
+  BOOKING.BOOKING_DATE, 
+  AGG_PRODUCT.BROCHURE_PRODUCT_CODE, 
+  AGG_PRODUCT.BROCHURE_PRODUCT_DESC
+/
+
+set timing off
+select '$2 Sessions Running: '||count(*) 
+from   v\$session   s
+,      v\$process   p
+,      v\$bgprocess bp
+where  p.addr   =  s.paddr
+and    bp.paddr (+) = p.addr
+and    bp.paddr is null;
+select 'Total Sessions Running: '||count(*)
+from   gv\$session   s
+,      gv\$process   p
+,      gv\$bgprocess bp
+where  ( p.inst_id = s.inst_id and p.addr   =  s.paddr )
+and    ( bp.inst_id (+) = p.inst_id and bp.paddr (+) = p.addr and bp.paddr is null );
+EOF
+  fi
+}
+
+function format
+{
+  let "db_cons=0"
+  cat /tmp/$1.out | while read line
+  do
+    name=`echo $line | awk -F: '{print $1}'`
+    if [ "${name}" = "Elapsed" ]
+    then
+      value=`echo $line | awk -F: '{print $2":"$3":"$4}'`
+      time=$value
+    elif [ "${name}" = "Total Sessions Running" ]
+    then
+      value=`echo $line | awk -F: '{print $2}'`
+      let "total_cons=total_cons+$value"
+    elif [ "${name}" = "$2 Sessions Running" ]
+    then
+      value=`echo $line | awk -F: '{print $2}'`
+      let "db_cons=db_cons+$value"
+    fi
+#    echo $line
+  done
+}
+
+function parse
+{
+  cat ~/$1/.dwnodes | sort +2 | while read node db
+  do
+    nodelist=$nodelist' '$node
+    dblist=$dblist' '$db
+  done
+  set -A nodes `echo $nodelist`
+  set -A dbs `echo $dblist`
+}
+
+export GMS_HC_SOCKET=/tmp/serv.hc           
+export GMS_LOG_DIR=/oracle/rdbms/log/gms.log
+export GMS_NODE_LIST=/oracle/dbs/gms.nodes  
+export GMS_QUERY_FILE=/dev/rvsd_gms         
+export ORACLE_HOME=/oracle
+export ORACLE_TERM=vt220
+export PATH=$ORACLE_HOME/bin:$PATH
+
+if [ $# -ne 1 ]
+then
+  echo "Invalid Parameter"
+  echo "-----------------"
+  echo
+  echo "Expecting DWLIVE or DWDEV nothing else!"
+  exit
+fi
+
+parse $1
+let "i=0"
+while [ $i -lt ${#nodes[*]} ]
+do
+  check_server ${nodes[i]} ${dbs[i]} > /tmp/${nodes[i]}.out &
+  let "i=i+1"
+done
+
+wait
+
+let "i=0"
+let "total_cons=0"
+let "no_servers=${#nodes[*]}"
+while [ $i -lt ${#nodes[*]} ]
+do
+  format ${nodes[i]} ${dbs[i]}
+  avg_db_cons=`bc <<EOF
+scale=5
+$db_cons/2
+EOF`
+
+  if [ $i -eq 0 ]
+  then
+    printline=`date +"%d/%m/%Y,%H:%M"`'	avg_cons	'$avg_db_cons'	'$time
+  else
+    printline=$printline'	'$avg_db_cons'	'$time
+  fi
+  let "i=i+1"
+done
+
+average_cons=`bc <<EOF
+scale=5
+$total_cons/($no_servers*2)
+EOF`
+
+#echo `echo $printline | sed 's/avg_cons/'$average_cons'/'`
+echo `echo $printline | sed 's/avg_cons/'$average_cons'/'` | mailx -s "Performance Data" gbravery@3at

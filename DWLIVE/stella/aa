@@ -1,0 +1,197 @@
+Mail [5.2 UCB] [AIX 5.X]  Type ? for help.
+"/var/spool/mail/dw": 1393 messages 69 new 1393 unread
+ U1321 postmaster@first  Fri Aug  1 08:45  69/3124 "Delivery failure (laurawalpo"
+ U1322 daemon            Fri Aug  1 09:00  32/993  "Output from cron job /home/d"
+ U1323 postmaster@first  Fri Aug  1 09:00  72/3133 "Delivery failure (laurawalpo"
+ U1324 postmaster@first  Fri Aug  1 09:00  72/3139 "Delivery failure (melaniehur"
+>N1325 daemon            Fri Aug  1 11:21  34/1293 "Output from cron job  /home/"
+ N1326 postmaster@first  Fri Aug  1 11:21  71/3193 "Delivery failure (melaniehur"
+ N1327 postmaster@first  Fri Aug  1 11:21  77/3345 "Delivery failure (melaniehur"
+ N1328 postmaster@first  Fri Aug  1 11:21  77/3339 "Delivery failure (laurawalpo"
+ N1329 postmaster@first  Fri Aug  1 11:21  71/3187 "Delivery failure (laurawalpo"
+ N1330 daemon            Fri Aug  1 12:51  31/1208 "Output from cron job /home/d"
+ N1331 daemon            Fri Aug  1 14:16  50/2011 "Output from cron job   /home"
+ N1332 daemon            Fri Aug  1 18:30  32/1152 "Output from cron job  /home/"
+ N1333 postmaster@first  Fri Aug  1 18:30  85/3609 "Delivery failure (laurawalpo"
+ N1334 postmaster@first  Fri Aug  1 18:30  85/3615 "Delivery failure (melaniehur"
+ N1335 postmaster@first  Fri Aug  1 19:31  74/3446 "Delivery failure (melaniehur"
+ N1336 postmaster@first  Fri Aug  1 19:31  74/3440 "Delivery failure (laurawalpo"
+ N1337 postmaster@first  Fri Aug  1 19:34  72/3225 "Delivery failure (melaniehur"
+ N1338 postmaster@first  Fri Aug  1 19:34  72/3219 "Delivery failure (laurawalpo"
+ N1339 daemon            Fri Aug  1 22:45  32/1139 "Output from cron job /home/d"
+ N1340 daemon            Sat Aug  2 06:00  35/982  "Output from cron job   /home"
+? Message 1325:
+From daemon Fri Aug  1 11:21:04 2008
+Date: Fri, 1 Aug 2008 11:21:04 +0100
+From: daemon
+To: dw
+Subject: Output from cron job  /home/dw/DWLIVE/stella/load_air_control.ksh 1>/home/dw/DWLIVE/logs/stella/load_air`date +, dw@slo-dwlive, exit status 0
+
+Cron Environment:
+ SHELL = 
+ PATH=/usr/bin:/etc:/usr/sbin:/usr/ucb:/usr/bin/X11:/sbin:/usr/java14/jre/bin:/usr/java14/bin
+ CRONDIR=/var/spool/cron/crontabs
+ ATDIR=/var/spool/cron/atjobs
+ LOGNAME=dw
+ HOME=/home/dw
+
+Your "cron" job executed on slo-dwlive on Fri Aug  1 11:21:00 BST 2008
+ /home/dw/DWLIVE/stella/load_air_control.ksh 1>/home/dw/DWLIVE/logs/stella/load_air`date +
+
+
+produced the following output:
+
+ls: 0653-341 The file [0-9]*.AIR does not exist.
+ls: 0653-341 The file [0-9]*.AIR does not exist.
+ls: 0653-341 The file [0-9]*.AIR does not exist.
+/data/stella_archive/200808/air_2008Aug01.tar: A file or directory in the path name does not exist.
+
+
+*****************************************************************
+	cron: The previous message is the standard output
+	and standard error of one of the cron commands.
+
+? ? Message 1326:
+From MAILER-DAEMON Fri Aug  1 11:21:10 2008
+To: dw@slo-dwlive.firstchoice.co.uk
+Subject: Delivery failure (melaniehurdle@shglonghaul.co.uk)
+From: postmaster@firstchoice.co.uk
+Date: Fri, 1 Aug 2008 11:21:10 +0100
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status; boundary="---------------SMTP-BOUNDARY-00=_7545-3568-1217586070"
+
+-----------------SMTP-BOUNDARY-00=_7545-3568-1217586070
+Content-Type: text/plain
+
+Your message has encountered delivery problems
+to the following recipient(s):
+
+melaniehurdle@shglonghaul.co.uk
+Delivery failed
+553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address dw@slo-dwlive.firstchoice.co.uk does not exist
+
+
+Sent:    MAIL FROM:<dw@slo-dwlive.firstchoice.co.uk> SIZE=1245
+Received:553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address dw@slo-dwlive.firstchoice.co.uk does not exist
+
+
+
+-----------------SMTP-BOUNDARY-00=_7545-3568-1217586070
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cra-2ka25.firstchoice.co.uk
+Received-From-MTA: dns; cra-dom-hub01.firstchoice.co.uk (cra-dom-hub01.firstchoice.co.uk
+    [10.8.252.162])
+Arrival-Date: Fri, 1 Aug 2008 11:21:04 +0100
+
+Final-Recipient: rfc822; melaniehurdle@shglonghaul.co.uk
+Action: failed
+Status: 5.1.8 (Permanent failure - addressing: bad sender's system address)
+Remote-MTA: dns; cluster-e.mailcontrol.com
+Diagnostic-Code: smtp; 553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address
+    dw@slo-dwlive.firstchoice.co.uk does not exist
+
+-----------------SMTP-BOUNDARY-00=_7545-3568-1217586070
+Content-Type: message/rfc822
+
+Received: from cra-dom-hub01.firstchoice.co.uk (cra-dom-hub01.firstchoice.co.uk) by cra-2ka25.firstchoice.co.uk
+ (Clearswift SMTPRS 5.2.9) with ESMTP id <T888a689d690a080312ca8@cra-2ka25.firstchoice.co.uk> for <melaniehurdle@shglonghaul.co.uk>;
+ Fri, 1 Aug 2008 11:21:04 +0100
+Received: from slo-dwlive.firstchoice.co.uk ([10.20.35.10])
+          by cra-dom-hub01.firstchoice.co.uk (Lotus Domino Release 6.5.6FP1)
+          with ESMTP id 2008080111222606-179830 ;
+          Fri, 1 Aug 2008 11:22:26 +0100 
+Received: (from dw@localhost)
+	by slo-dwlive.firstchoice.co.uk (AIX5.3/8.13.4/8.11.0) id m71AL26D2510926
+	for melaniehurdle@shglonghaul.co.uk; Fri, 1 Aug 2008 11:21:02 +0100
+Date: Fri, 1 Aug 2008 11:21:02 +0100
+From: "DW @ Anite" <dw@slo-dwlive.firstchoice.co.uk>
+Message-Id: <200808011021.m71AL26D2510926@slo-dwlive.firstchoice.co.uk>
+To: melaniehurdle@shglonghaul.co.uk
+Subject: Details of STELLA AIR  errors encountered slo-dwlive  on 2008aug01 
+X-MIMETrack: Serialize by Router on CRA-DOM-HUB01/Servers/FCG(Release 6.5.6FP1|April 24, 2007) at
+ 01/08/2008 11:22:27,
+	Serialize complete at 01/08/2008 11:22:27
+
+WARNING :WARNING!!! No files were found to process
+
+Logfile:/data/logs/stella//stelairl_010808_1121.log
+-----------------SMTP-BOUNDARY-00=_7545-3568-1217586070--
+
+
+? Message 1327:
+From MAILER-DAEMON Fri Aug  1 11:21:11 2008
+To: dw@slo-dwlive.firstchoice.co.uk
+Subject: Delivery failure (melaniehurdle@shglonghaul.co.uk)
+From: postmaster@firstchoice.co.uk
+Date: Fri, 1 Aug 2008 11:21:10 +0100
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status; boundary="---------------SMTP-BOUNDARY-00=_7546-3568-1217586070"
+
+-----------------SMTP-BOUNDARY-00=_7546-3568-1217586070
+Content-Type: text/plain
+
+Your message has encountered delivery problems
+to the following recipient(s):
+
+melaniehurdle@shglonghaul.co.uk
+Delivery failed
+553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address dw@slo-dwlive.firstchoice.co.uk does not exist
+
+
+Sent:    MAIL FROM:<dw@slo-dwlive.firstchoice.co.uk> SIZE=1403
+Received:553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address dw@slo-dwlive.firstchoice.co.uk does not exist
+
+
+
+-----------------SMTP-BOUNDARY-00=_7546-3568-1217586070
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cra-2ka25.firstchoice.co.uk
+Received-From-MTA: dns; cra-dom-hub01.firstchoice.co.uk (cra-dom-hub01.firstchoice.co.uk
+    [10.8.252.162])
+Arrival-Date: Fri, 1 Aug 2008 11:21:04 +0100
+
+Final-Recipient: rfc822; melaniehurdle@shglonghaul.co.uk
+Action: failed
+Status: 5.1.8 (Permanent failure - addressing: bad sender's system address)
+Remote-MTA: dns; cluster-e.mailcontrol.com
+Diagnostic-Code: smtp; 553 5.1.8 <dw@slo-dwlive.firstchoice.co.uk>... Domain of sender address
+    dw@slo-dwlive.firstchoice.co.uk does not exist
+
+-----------------SMTP-BOUNDARY-00=_7546-3568-1217586070
+Content-Type: message/rfc822
+
+Received: from cra-dom-hub01.firstchoice.co.uk (cra-dom-hub01.firstchoice.co.uk) by cra-2ka25.firstchoice.co.uk
+ (Clearswift SMTPRS 5.2.9) with ESMTP id <T888a689d790a080312ca8@cra-2ka25.firstchoice.co.uk> for <melaniehurdle@shglonghaul.co.uk>;
+ Fri, 1 Aug 2008 11:21:04 +0100
+Received: from slo-dwlive.firstchoice.co.uk ([10.20.35.10])
+          by cra-dom-hub01.firstchoice.co.uk (Lotus Domino Release 6.5.6FP1)
+          with ESMTP id 2008080111222660-179837 ;
+          Fri, 1 Aug 2008 11:22:26 +0100 
+Received: (from dw@localhost)
+	by slo-dwlive.firstchoice.co.uk (AIX5.3/8.13.4/8.11.0) id m71AL3Pq3248158
+	for melaniehurdle@shglonghaul.co.uk; Fri, 1 Aug 2008 11:21:03 +0100
+Date: Fri, 1 Aug 2008 11:21:03 +0100
+From: "DW @ Anite" <dw@slo-dwlive.firstchoice.co.uk>
+Message-Id: <200808011021.m71AL3Pq3248158@slo-dwlive.firstchoice.co.uk>
+To: melaniehurdle@shglonghaul.co.uk
+Subject: STELLA AIR load slo-dwlive on 2008aug01 
+X-MIMETrack: Serialize by Router on CRA-DOM-HUB01/Servers/FCG(Release 6.5.6FP1|April 24, 2007) at
+ 01/08/2008 11:22:27,
+	Serialize complete at 01/08/2008 11:22:27
+
+Todays run log:
+Logfile:/data/logs/stella//stelairl_010808_1121.log
+INFO :START Fri Aug 01 11:21:02 GMT+01:00 2008
+INFO :Files Read:0
+INFO :Files in success:0
+INFO :Files in recycle:0
+INFO :Files in error:0
+INFO :Num tkts inserted:0
+INFO :COMPLETE Fri Aug 01 11:21:02 GMT+01:00 2008
+-----------------SMTP-BOUNDARY-00=_7546-3568-1217586070--
+
+
+? ? ? ? Saved 3 messages in /home/dw/mbox
+Held 1390 messages in /var/spool/mail/dw

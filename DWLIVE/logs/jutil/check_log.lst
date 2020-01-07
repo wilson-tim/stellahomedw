@@ -1,0 +1,13 @@
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+Error caused due to invalid path spefication
+
+PL/SQL procedure successfully completed.
+
+wc: /home/dw/SQL_Output/log_errors.csv: No such file or directory
+******* Processes created  rows *******
+----------------------------------------------------
+
+/home/dw/DWLIVE/jutil/error_logs.ksh[88]: [: argument expected
+Nothing to report

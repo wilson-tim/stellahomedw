@@ -1,0 +1,78 @@
+CONFIG :Errorpath    => /data/stella/error/
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15183.AIR,PNR:YWJRTM/38HJ tkt:4321513798, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15185.AIR,PNR:ZVTTCW/38HJ tkt:4321542800, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15187.AIR,PNR:Z9Z2X6/38HJ tkt:4321542801, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15188.AIR,PNR:Z9Z2X6/38HJ tkt:4321542802, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15189.AIR,PNR:Z9Z2X6/38HJ tkt:4321542803, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15190.AIR,PNR:2D33V7/38HJ tkt:4321542804, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15191.AIR,PNR:ZK8OZ6/38HJ tkt:4321542806, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15193.AIR,PNR:ZLZNBF/38HJ tkt:4321542808, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15195.AIR,PNR:YMFWWI/38HJ tkt:4321542812, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15196.AIR,PNR:ZHFPL6/38HJ tkt:4321542814, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15197.AIR,PNR:Y9Z2IV/38HJ tkt:4321542816, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15199.AIR,PNR:2QWW2V/38HJ tkt:4321542820, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15200.AIR,PNR:ZMS4GX/38HJ tkt:4321542822, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15204.AIR,PNR:ZG7UFX/38HJ tkt:4321542832, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15205.AIR,PNR:ZM5JIW/38HJ tkt:4321542836, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15206.AIR,PNR:2YKWUE/38HJ tkt:4321542838, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15207.AIR,PNR:YQAKDB/38HJ tkt:4321542840, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15208.AIR,PNR:YH7NOM/38HJ tkt:4321542842, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15210.AIR,PNR:Y3C3WL/38HJ tkt:4321542844, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15211.AIR,PNR:ZFK49X/38HJ tkt:4318364087, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15213.AIR,PNR:Y9VSFT/38HJ tkt:4321542846, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15214.AIR,PNR:YEUHAK/38HJ tkt:4321542848, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15228.AIR,PNR:ZVTT9H/38HJ tkt:4318372506, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15229.AIR,PNR:ZVTT9H/38HJ tkt:4318372508, failed:Error, Group Code is Blank in Air File, moved to error area
+FINE :Output of Execute statement :Error, Group Code is Blank in Air File
+SEVERE :F:spec15247.AIR,PNR:2WL8OZ/38HJ tkt:4321542885, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15176.AIR,PNR:2ELHSR/38HJ tkt:4318364072, bkg:124001/GBP317.00 is not numeric error
+SEVERE :F:spec15181.AIR,PNR:ZSGDZP/38HJ tkt:4318364078, bkg:124001/GBP317.00 is not numeric error
+SEVERE :F:spec15183.AIR,PNR:YWJRTM/38HJ tkt:4321513798, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15185.AIR,PNR:ZVTTCW/38HJ tkt:4321542800, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15187.AIR,PNR:Z9Z2X6/38HJ tkt:4321542801, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15188.AIR,PNR:Z9Z2X6/38HJ tkt:4321542802, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15189.AIR,PNR:Z9Z2X6/38HJ tkt:4321542803, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15190.AIR,PNR:2D33V7/38HJ tkt:4321542804, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15191.AIR,PNR:ZK8OZ6/38HJ tkt:4321542806, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15193.AIR,PNR:ZLZNBF/38HJ tkt:4321542808, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15195.AIR,PNR:YMFWWI/38HJ tkt:4321542812, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15196.AIR,PNR:ZHFPL6/38HJ tkt:4321542814, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15197.AIR,PNR:Y9Z2IV/38HJ tkt:4321542816, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15199.AIR,PNR:2QWW2V/38HJ tkt:4321542820, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15200.AIR,PNR:ZMS4GX/38HJ tkt:4321542822, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15204.AIR,PNR:ZG7UFX/38HJ tkt:4321542832, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15205.AIR,PNR:ZM5JIW/38HJ tkt:4321542836, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15206.AIR,PNR:2YKWUE/38HJ tkt:4321542838, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15207.AIR,PNR:YQAKDB/38HJ tkt:4321542840, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15208.AIR,PNR:YH7NOM/38HJ tkt:4321542842, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15210.AIR,PNR:Y3C3WL/38HJ tkt:4321542844, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15211.AIR,PNR:ZFK49X/38HJ tkt:4318364087, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15213.AIR,PNR:Y9VSFT/38HJ tkt:4321542846, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15214.AIR,PNR:YEUHAK/38HJ tkt:4321542848, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15228.AIR,PNR:ZVTT9H/38HJ tkt:4318372506, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15229.AIR,PNR:ZVTT9H/38HJ tkt:4318372508, failed:Error, Group Code is Blank in Air File, moved to error area
+SEVERE :F:spec15247.AIR,PNR:2WL8OZ/38HJ tkt:4321542885, failed:Error, Group Code is Blank in Air File, moved to error area

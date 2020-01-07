@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gconf>
+        <entry name="num_check_failures" mtime="1324657060" type="int" value="0">
+        </entry>
+        <entry name="last_update_check" mtime="1324657060" type="int" value="1324657060">
+        </entry>
+</gconf>

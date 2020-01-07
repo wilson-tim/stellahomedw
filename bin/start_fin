@@ -1,0 +1,35 @@
+#!/usr/bin/ksh
+#set -x
+
+# **********************************************************************
+# *                            START FIN                               *
+# **********************************************************************
+# * Parameters                                                         *
+# *                                                                    *
+# * 1 - Season   - This is the season in a three character format      *
+# *                i.e. w06 - case is irrelevant                       *
+# **********************************************************************
+
+. /home/dw/bin/set_oracle_variables.ksh
+
+# *******************************************************************
+# *                    DECLARE VARIABLES                            *
+# *******************************************************************
+
+fin_path=/home/dw/DWLIVE/fin_calc
+season=$1
+dw_pass=`cat /home/dw/DWLIVE/passwords/dw.txt`
+
+typeset -l today_lower
+typeset -u season_upper
+
+today=`date +%Y%b%d`
+today_lower=${today}
+season_upper=${season}
+
+# *******************************************************************
+# *                      PROGRAM START                              *
+# *******************************************************************
+
+nohup sqlplus -s dw/${dw_pass} @${fin_path}/fcalc_link ${today_lower} ${season_upper} X 1> /dev/null 2>&1 &
+

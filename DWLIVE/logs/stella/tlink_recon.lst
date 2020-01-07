@@ -1,0 +1,58 @@
+yeast
+2014/02/28---09:00:01 --------------------------------------------------------------------------
+2014/02/28---09:00:01 >>>>>> Travel Link reconciliation to Stella Report
+2014/02/28---09:00:01 --------------------------------------------------------------------------
+2014/02/28---09:00:01 Setting variables
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+2014/02/28---09:00:01 Run the stored proc that runs the report
+2014/02/28---09:00:04 display logfile contents:
+
+SQL*Plus: Release 11.2.0.1.0 Production on Fri Feb 28 09:00:02 2014
+
+Copyright (c) 1982, 2009, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+
+--- DEBUG ON ---
+fildir:/home/dw/SQL_Output stltlink
+10004utlfile.invalid path:ORA-29280: invalid directory path
+DEBUG
+1: STLTLR   started:14-feb-28 09:00:02
+DEBUG
+1: Params:Params, branch:  pnr: seas: airl: days:0
+DEBUG
+1: Tax tol:4 seat tol:2
+DEBUG
+1: Rows processed		    :0
+DEBUG
+1: Rows no pnr match		    :0
+DEBUG
+1: Rows tax outside tolerances	    :0
+DEBUG
+1: Rows seat cost outside tolerances:0
+DEBUG
+1: Rows part-reconciled 	    :0
+DEBUG
+1: Rows fully matched 100%	    :0
+DEBUG
+1: STLTLR   ended:14-feb-28 09:00:04
+STLTLR	 ended:14-feb-28 09:00:04
+Result of Travelink reconc.:
+No of rows :0
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+2014/02/28---09:00:04 Test for errors
+Logfile: /home/dw/DWLIVE/stella/run_tlink_reconcilication.lst
+2014/02/28---09:00:04 Need error email?
+error found
+2014/02/28---09:00:04 email summary
+Logfile: /home/dw/DWLIVE/stella/run_tlink_reconcilication.lst
+2014/02/28---09:00:04 Need summ email?
+summ found
+2014/02/28---09:00:04 END OF PROGRAM

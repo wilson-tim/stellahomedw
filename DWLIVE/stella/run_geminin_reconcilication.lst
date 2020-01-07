@@ -1,0 +1,1697 @@
+
+SQL*Plus: Release 8.1.7.0.0 - Production on Tue May 6 12:25:00 2003
+
+(c) Copyright 2000 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle8i Enterprise Edition Release 8.1.7.0.0 - Production
+With the Partitioning option
+JServer Release 8.1.7.0.0 - Production
+
+DOC>used to execute stored proc pl/sql
+DOC>*/
+Buffer overflow; buffer cleared...
+All previous output lost...
+*** New debug message ***
+1: Stella bkg (W2002/536884) has no scheduled match in data warehouse
+8646
+*** New debug message ***
+1: 6820pnr:45204 R6MF22 bkg:93908W02 br:DDEM
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126613 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126612 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126611 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126610 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: -->stella pnr costs, seat:1420 tx:139.2tol st:4tol tx:4
+*** New debug message ***
+1: Stella bkg (W2002/93908) has no scheduled match in data warehouse
+8655
+*** New debug message ***
+1: 6821pnr:51121 R6MXXE bkg:546340W02 br:UYNI
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:32.4
+*** New debug message ***
+1: tkt:9383057675 seat:223 tx:58.9 airl:37
+*** New debug message ***
+1: -->stella pnr costs, seat:223 tx:58.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/546340) has no scheduled match in data warehouse
+8663
+*** New debug message ***
+1: 6822pnr:48000 R6NR7U bkg:521625W02 br:UWUH
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:0
+*** New debug message ***
+1: tkt:9382677168 seat:106 tx:0 airl:16
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:0
+*** New debug message ***
+1: tkt:9382677167 seat:106 tx:0 airl:16
+*** New debug message ***
+1: -->stella pnr costs, seat:212 tx:0tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/521625) has no scheduled match in data warehouse
+8671
+*** New debug message ***
+1: 6823pnr:47429 R6PSCK bkg:521533W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:36.5
+*** New debug message ***
+1: tkt:9382749930 seat:637.98 tx:64.9 airl:83
+*** New debug message ***
+1: -->stella pnr costs, seat:637.98 tx:64.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521533) has no scheduled match in data warehouse
+8678
+*** New debug message ***
+1: 6824pnr:38831 R6Q19M bkg:536892W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:13.6
+*** New debug message ***
+1: tkt:9150493930 seat:240 tx:42 airl:232
+*** New debug message ***
+1: -->stella pnr costs, seat:240 tx:42tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/536892) has no scheduled match in data warehouse
+8686
+*** New debug message ***
+1: 6825pnr:52641 R6Q1TS bkg:549469S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:15.3 remtx:12.1
+*** New debug message ***
+1: tkt:6214121559 seat:77.19 tx:32.4 airl:809
+*** New debug message ***
+1: -->stella pnr costs, seat:77.19 tx:32.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/549469) has no scheduled match in data warehouse
+8694
+*** New debug message ***
+1: 6826pnr:48532 R6QPRM bkg:526424W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.4
+*** New debug message ***
+1: tkt:9382870446 seat:136 tx:58.8 airl:16
+*** New debug message ***
+1: -->stella pnr costs, seat:136 tx:58.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/526424) has no scheduled match in data warehouse
+8701
+*** New debug message ***
+1: 6827pnr:37477 R6QQ9Y bkg:28131W03 br:UGUH
+*** New debug message ***
+1: in gbtx:5 ubtx:11.4 remtx:12.7
+*** New debug message ***
+1: tkt:9378780845 seat:127 tx:29.1 airl:125
+*** New debug message ***
+1: in gbtx:5 ubtx:11.4 remtx:12.7
+*** New debug message ***
+1: tkt:9378780844 seat:127 tx:29.1 airl:125
+*** New debug message ***
+1: in gbtx:5 ubtx:11.4 remtx:12.7
+*** New debug message ***
+1: tkt:9378780843 seat:127 tx:29.1 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:381 tx:87.3tol st:3tol tx:3
+*** New debug message ***
+1: Stella bkg (W2003/28131) has no scheduled match in data warehouse
+8710
+*** New debug message ***
+1: 6828pnr:49984 R6QSS2 bkg:536890W02 br:UGUH
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:21.4
+*** New debug message ***
+1: tkt:9382871122 seat:33 tx:34.8 airl:74
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:21.4
+*** New debug message ***
+1: tkt:9382871121 seat:33 tx:34.8 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:66 tx:69.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/536890) has no scheduled match in data warehouse
+8718
+*** New debug message ***
+1: 6829pnr:54250 R6QWPM bkg:565926W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:24.6
+*** New debug message ***
+1: tkt:6214287471 seat:116.48 tx:38 airl:235
+*** New debug message ***
+1: -->stella pnr costs, seat:116.48 tx:38tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/565926) has no scheduled match in data warehouse
+8726
+*** New debug message ***
+1: 6830pnr:49929 R6R9TG bkg:526388W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:17
+*** New debug message ***
+1: tkt:9382871076 seat:315 tx:45.4 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:17
+*** New debug message ***
+1: tkt:9382871075 seat:315 tx:45.4 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:630 tx:90.8tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/526388) has no scheduled match in data warehouse
+8734
+*** New debug message ***
+1: 6831pnr:38962 R6RH4S bkg:537065W02 br:UGUK
+*** New debug message ***
+1: in gbtx:5 ubtx:11.1 remtx:50.4
+*** New debug message ***
+1: tkt:9150494407 seat:175 tx:66.5 airl:57
+*** New debug message ***
+1: -->stella pnr costs, seat:175 tx:66.5tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/537065) has no scheduled match in data warehouse
+8741
+*** New debug message ***
+1: 6832pnr:43289 R6RN26 bkg:146395W02 br:DDEM
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:8
+*** New debug message ***
+1: tkt:9382892651 seat:405 tx:36.4 airl:217
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:8
+*** New debug message ***
+1: tkt:9382892650 seat:405 tx:36.4 airl:217
+*** New debug message ***
+1: -->stella pnr costs, seat:810 tx:72.8tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/146395) has no scheduled match in data warehouse
+8750
+*** New debug message ***
+1: 6833pnr:47430 R6SPHG bkg:521539W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:20
+*** New debug message ***
+1: tkt:9382749931 seat:460.8 tx:48.4 airl:14
+*** New debug message ***
+1: -->stella pnr costs, seat:460.8 tx:48.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521539) has no scheduled match in data warehouse
+8757
+*** New debug message ***
+1: 6834pnr:45208 R6T17E bkg:118481W02 br:DDEM
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126617 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126616 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126615 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:6.4
+*** New debug message ***
+1: tkt:9383126614 seat:355 tx:34.8 airl:603
+*** New debug message ***
+1: -->stella pnr costs, seat:1420 tx:139.2tol st:4tol tx:4
+*** New debug message ***
+1: Stella bkg (W2002/118481) has no scheduled match in data warehouse
+8766
+*** New debug message ***
+1: 6835pnr:49739 R6T6VG bkg:536902W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:15.2
+*** New debug message ***
+1: tkt:9382874054 seat:147.73 tx:28.6 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:147.73 tx:28.6tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/536902) has no scheduled match in data warehouse
+8774
+*** New debug message ***
+1: 6836pnr:51037 R6TC4A bkg:533376S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:11.2 remtx:31.6
+*** New debug message ***
+1: tkt:9383039782 seat:136.71 tx:47.8 airl:724
+*** New debug message ***
+1: -->stella pnr costs, seat:136.71 tx:47.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/533376) has no scheduled match in data warehouse
+8782
+*** New debug message ***
+1: 6837pnr:39857 R6TN4A bkg:545920W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:12.4
+*** New debug message ***
+1: tkt:9150531779 seat:435 tx:40.8 airl:72
+*** New debug message ***
+1: -->stella pnr costs, seat:435 tx:40.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/545920) has no scheduled match in data warehouse
+8789
+*** New debug message ***
+1: 6838pnr:52647 R6V1MU bkg:549550S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:13.9
+*** New debug message ***
+1: tkt:6214121567 seat:73.47 tx:27.3 airl:64
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:13.9
+*** New debug message ***
+1: tkt:6214121566 seat:73.47 tx:27.3 airl:64
+*** New debug message ***
+1: -->stella pnr costs, seat:146.94 tx:54.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/549550) has no scheduled match in data warehouse
+8798
+*** New debug message ***
+1: 6839pnr:48427 R6V2FE bkg:346848W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.6
+*** New debug message ***
+1: tkt:9382870370 seat:165 tx:59 airl:932
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.6
+*** New debug message ***
+1: tkt:9382870369 seat:165 tx:59 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:330 tx:118tol st:2tol tx:2
+*** New debug message ***
+1: -->dwhse accrual:seat:330 tax:127 pnr:R6V2FE
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (S2003/549550) has no scheduled match in data warehouse
+8971
+*** New debug message ***
+1: 6840pnr:61319 R6VG5U bkg:668787S03 br:UWUK
+*** New debug message ***
+1: in gbtx:5 ubtx:6.8 remtx:8.3
+*** New debug message ***
+1: tkt:9150664193 seat:67.2 tx:20.1 airl:47
+*** New debug message ***
+1: in gbtx:5 ubtx:6.8 remtx:8.3
+*** New debug message ***
+1: tkt:9150664192 seat:97.92 tx:20.1 airl:47
+*** New debug message ***
+1: -->stella pnr costs, seat:165.12 tx:40.2tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/668787) has no scheduled match in data warehouse
+8985
+*** New debug message ***
+1: 6841pnr:47433 R6VN26 bkg:521552W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:13.8
+*** New debug message ***
+1: tkt:9382749935 seat:74.47 tx:27.2 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:74.47 tx:27.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521552) has no scheduled match in data warehouse
+8996
+*** New debug message ***
+1: 6842pnr:39921 R6VSF0 bkg:20938W03 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:36.8
+*** New debug message ***
+1: tkt:9150531584 seat:198 tx:63.3 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:36.8
+*** New debug message ***
+1: tkt:9150531583 seat:295 tx:63.3 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:36.8
+*** New debug message ***
+1: tkt:9150531582 seat:295 tx:63.3 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:36.8
+*** New debug message ***
+1: tkt:9150531581 seat:295 tx:63.3 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:1083 tx:253.2tol st:4tol tx:4
+*** New debug message ***
+1: -->dwhse accrual:seat:1180 tax:248.4 pnr:R6VSF0
+*** New debug message ***
+1: seatamt outside tols
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/521552) has no scheduled match in data warehouse
+9049
+*** New debug message ***
+1: 6843pnr:52642 R6WFLS bkg:549524S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:15.3 remtx:12.1
+*** New debug message ***
+1: tkt:6214121561 seat:77.19 tx:32.4 airl:809
+*** New debug message ***
+1: in gbtx:5 ubtx:15.3 remtx:12.1
+*** New debug message ***
+1: tkt:6214121560 seat:77.19 tx:32.4 airl:809
+*** New debug message ***
+1: -->stella pnr costs, seat:154.38 tx:64.8tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/549524) has no scheduled match in data warehouse
+9062
+*** New debug message ***
+1: 6844pnr:51035 R6WZ4C bkg:533391S03 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.1
+*** New debug message ***
+1: tkt:9383039781 seat:330.24 tx:63.5 airl:37
+*** New debug message ***
+1: -->stella pnr costs, seat:330.24 tx:63.5tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/533391) has no scheduled match in data warehouse
+9073
+*** New debug message ***
+1: 6845pnr:51084 R70JP6 bkg:545934W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.1
+*** New debug message ***
+1: tkt:9382928449 seat:147 tx:63.5 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:147 tx:63.5tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/545934) has no scheduled match in data warehouse
+9082
+*** New debug message ***
+1: 6846pnr:48380 R70KX4 bkg:526407W02 br:UHUK
+*** New debug message ***
+1: in gbtx:10 ubtx:12.1 remtx:5
+*** New debug message ***
+1: tkt:9382873343 seat:60.08 tx:27.1 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:60.08 tx:27.1tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/526407) has no scheduled match in data warehouse
+9091
+*** New debug message ***
+1: 6847pnr:51633 R70T6I bkg:539337W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.4
+*** New debug message ***
+1: tkt:9383058017 seat:117 tx:62.8 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.4
+*** New debug message ***
+1: tkt:9383058016 seat:174 tx:62.8 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.4
+*** New debug message ***
+1: tkt:9383058015 seat:174 tx:62.8 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.4
+*** New debug message ***
+1: tkt:9383058014 seat:174 tx:62.8 airl:16
+*** New debug message ***
+1: -->stella pnr costs, seat:639 tx:251.2tol st:4tol tx:4
+*** New debug message ***
+1: Stella bkg (W2002/539337) has no scheduled match in data warehouse
+9102
+*** New debug message ***
+1: 6848pnr:51719 R70TG8 bkg:537825S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040093 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040092 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040091 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040090 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040089 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040088 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20.5
+*** New debug message ***
+1: tkt:9383040087 seat:34.56 tx:33.9 airl:236
+*** New debug message ***
+1: -->stella pnr costs, seat:241.92 tx:237.3tol st:7tol tx:7
+*** New debug message ***
+1: Stella bkg (S2003/537825) has no scheduled match in data warehouse
+9114
+*** New debug message ***
+1: 6849pnr:39844 R70XCO bkg:533603S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.4
+*** New debug message ***
+1: tkt:9150531553 seat:150 tx:63.8 airl:98
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.4
+*** New debug message ***
+1: tkt:9150531552 seat:150 tx:63.8 airl:98
+*** New debug message ***
+1: -->stella pnr costs, seat:300 tx:127.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/533603) has no scheduled match in data warehouse
+9123
+*** New debug message ***
+1: 6850pnr:61882 R717VG bkg:52819W03 br:UWUK
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:6214906082 seat:125 tx:64.4 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:6214906081 seat:125 tx:64.4 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:250 tx:128.8tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2003/52819) has no scheduled match in data warehouse
+9131
+*** New debug message ***
+1: 6851pnr:61710 R72MQ0 bkg:668789S03 br:UGUV
+*** New debug message ***
+1: in gbtx:5 ubtx:6.8 remtx:10.5
+*** New debug message ***
+1: tkt:6214707184 seat:90 tx:22.3 airl:125
+*** New debug message ***
+1: in gbtx:5 ubtx:6.8 remtx:10.5
+*** New debug message ***
+1: tkt:6214707183 seat:90 tx:22.3 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:180 tx:44.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/668789) has no scheduled match in data warehouse
+9140
+*** New debug message ***
+1: 6852pnr:54206 R730JU bkg:565958W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.5
+*** New debug message ***
+1: tkt:6214287455 seat:163.2 tx:58.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.5
+*** New debug message ***
+1: tkt:6214287454 seat:163.2 tx:58.9 airl:1
+*** New debug message ***
+1: -->stella pnr costs, seat:326.4 tx:117.8tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/565958) has no scheduled match in data warehouse
+9148
+*** New debug message ***
+1: 6853pnr:48027 R73W72 bkg:521550W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:35
+*** New debug message ***
+1: tkt:9382677184 seat:240 tx:61.5 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:240 tx:61.5tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521550) has no scheduled match in data warehouse
+9156
+*** New debug message ***
+1: 6854pnr:51135 R75KS8 bkg:546212W02 br:UYNI
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:2.5
+*** New debug message ***
+1: tkt:9383057685 seat:236 tx:30.9 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:236 tx:30.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/546212) has no scheduled match in data warehouse
+9164
+*** New debug message ***
+1: 6855pnr:52612 R75PBM bkg:549539S03 br:UHUK
+*** New debug message ***
+1: in gbtx:10 ubtx:10.7 remtx:5
+*** New debug message ***
+1: tkt:6214121529 seat:67.27 tx:25.7 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:67.27 tx:25.7tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/549539) has no scheduled match in data warehouse
+9172
+*** New debug message ***
+1: 6856pnr:41378 R76JKS bkg:557444W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:81.5
+*** New debug message ***
+1: tkt:9150533387 seat:930 tx:109.9 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:930 tx:109.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557444) has no scheduled match in data warehouse
+9179
+*** New debug message ***
+1: 6857pnr:36535 R76SSY bkg:557686W02 br:UYNI
+*** New debug message ***
+1: in gbtx:5 ubtx:11.1 remtx:9.6
+*** New debug message ***
+1: tkt:6214142449 seat:196 tx:25.7 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:196 tx:25.7tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557686) has no scheduled match in data warehouse
+9187
+*** New debug message ***
+1: 6858pnr:58295 R77PRC bkg:565959W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:12.4 remtx:0
+*** New debug message ***
+1: tkt:6214287466 seat:51.84 tx:17.4 airl:267
+*** New debug message ***
+1: -->stella pnr costs, seat:51.84 tx:17.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/565959) has no scheduled match in data warehouse
+9195
+*** New debug message ***
+1: 6859pnr:49796 R77Q1I bkg:522195S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:16.5 remtx:21.3
+*** New debug message ***
+1: tkt:9382874065 seat:43.71 tx:42.8 airl:74
+*** New debug message ***
+1: in gbtx:5 ubtx:16.5 remtx:21.3
+*** New debug message ***
+1: tkt:9382874064 seat:43.71 tx:42.8 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:87.42 tx:85.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/522195) has no scheduled match in data warehouse
+9203
+*** New debug message ***
+1: 6860pnr:61811 R780FU bkg:668855S03 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:9.3 remtx:8.7
+*** New debug message ***
+1: tkt:6214832432 seat:113.61 tx:23 airl:125
+*** New debug message ***
+1: in gbtx:5 ubtx:9.3 remtx:8.7
+*** New debug message ***
+1: tkt:6214832431 seat:113.61 tx:23 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:227.22 tx:46tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/668855) has no scheduled match in data warehouse
+9212
+*** New debug message ***
+1: 6861pnr:38525 R7988Y bkg:521560W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:45.1
+*** New debug message ***
+1: tkt:9150493662 seat:270 tx:73.5 airl:220
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:45.1
+*** New debug message ***
+1: tkt:9150493661 seat:270 tx:73.5 airl:220
+*** New debug message ***
+1: -->stella pnr costs, seat:540 tx:147tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/521560) has no scheduled match in data warehouse
+9220
+*** New debug message ***
+1: 6862pnr:40553 R7CVV2 bkg:549698W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:4.9
+*** New debug message ***
+1: tkt:9150532643 seat:272 tx:33.3 airl:220
+*** New debug message ***
+1: -->stella pnr costs, seat:272 tx:33.3tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/549698) has no scheduled match in data warehouse
+9228
+*** New debug message ***
+1: 6863pnr:37030 R7CWBE bkg:521558W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:11.1 remtx:27.8
+*** New debug message ***
+1: tkt:3680247406 seat:190 tx:58.9 airl:220
+*** New debug message ***
+1: -->stella pnr costs, seat:190 tx:58.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521558) has no scheduled match in data warehouse
+9236
+*** New debug message ***
+1: 6864pnr:39076 R7DD3Y bkg:89287W02 br:UYNH
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:26.2
+*** New debug message ***
+1: tkt:9150494346 seat:438 tx:52.7 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:26.2
+*** New debug message ***
+1: tkt:9150494345 seat:438 tx:52.7 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:26.2
+*** New debug message ***
+1: tkt:9150494344 seat:438 tx:52.7 airl:37
+*** New debug message ***
+1: -->stella pnr costs, seat:1314 tx:158.1tol st:3tol tx:3
+*** New debug message ***
+1: -->dwhse accrual:seat:1314 tax:195 pnr:R7DD3Y
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/521558) has no scheduled match in data warehouse
+9252
+*** New debug message ***
+1: 6865pnr:58618 R7H7F0 bkg:557437W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:31.9
+*** New debug message ***
+1: tkt:9150532367 seat:29 tx:60.3 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:31.9
+*** New debug message ***
+1: tkt:9150532366 seat:290 tx:60.3 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:319 tx:120.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/557437) has no scheduled match in data warehouse
+9262
+*** New debug message ***
+1: 6866pnr:42062 R7HSLQ bkg:180332S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659101 seat:500 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659100 seat:500 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659099 seat:300 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659098 seat:300 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659097 seat:500 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659096 seat:500 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659095 seat:500 tx:63 airl:16
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:34.6
+*** New debug message ***
+1: tkt:9150659094 seat:500 tx:63 airl:16
+*** New debug message ***
+1: -->stella pnr costs, seat:3600 tx:504tol st:8tol tx:8
+*** New debug message ***
+1: -->dwhse accrual:seat:2600 tax:397.4 pnr:2R5S54
+*** New debug message ***
+1: Dwhse booking pnr (2R5S54) different to that in stella (R7HSLQ)
+9517
+*** New debug message ***
+1: 6867pnr:39687 R7JZSG bkg:428994S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:19.7
+*** New debug message ***
+1: tkt:9150531635 seat:360 tx:48.1 airl:201
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:19.7
+*** New debug message ***
+1: tkt:9150531624 seat:360 tx:48.1 airl:201
+*** New debug message ***
+1: -->stella pnr costs, seat:720 tx:96.2tol st:2tol tx:2
+*** New debug message ***
+1: -->dwhse accrual:seat:275 tax:45.5 pnr:N9JM3O
+*** New debug message ***
+1: Dwhse booking pnr (N9JM3O) different to that in stella (R7JZSG)
+9540
+*** New debug message ***
+1: 6868pnr:47973 R7K06I bkg:506309S03 br:LUEM
+*** New debug message ***
+1: in gbtx:5 ubtx:11.4 remtx:28.7
+*** New debug message ***
+1: tkt:9382677152 seat:170 tx:45.1 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:170 tx:45.1tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/506309) has no scheduled match in data warehouse
+9550
+*** New debug message ***
+1: 6869pnr:54229 R7KVPW bkg:565983W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:15.3
+*** New debug message ***
+1: tkt:6214287460 seat:99.6 tx:28.7 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:99.6 tx:28.7tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/565983) has no scheduled match in data warehouse
+9558
+*** New debug message ***
+1: 6870pnr:41699 R7L598 bkg:298823S03 br:UGUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:30.5
+*** New debug message ***
+1: tkt:9150658814 seat:335 tx:58.9 airl:5
+*** New debug message ***
+1: -->stella pnr costs, seat:335 tx:58.9tol st:1tol tx:1
+*** New debug message ***
+1: -->dwhse accrual:seat:320 tax:68 pnr:R7L598
+*** New debug message ***
+1: seatamt outside tols
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/565983) has no scheduled match in data warehouse
+9586
+*** New debug message ***
+1: 6871pnr:49722 R7NMR2 bkg:536946W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:20
+*** New debug message ***
+1: tkt:9382874044 seat:33.48 tx:33.4 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:33.48 tx:33.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/536946) has no scheduled match in data warehouse
+9595
+*** New debug message ***
+1: 6872pnr:38349 R7Q6C0 bkg:521781W02 br:UGUK
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:10
+*** New debug message ***
+1: tkt:3680248556 seat:75 tx:10 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:42.1
+*** New debug message ***
+1: tkt:9378780893 seat:360 tx:70.5 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:42.1
+*** New debug message ***
+1: tkt:9378780892 seat:360 tx:70.5 airl:74
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:10
+*** New debug message ***
+1: tkt:9382870776 seat:75 tx:10 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:42.1
+*** New debug message ***
+1: tkt:9382870770 seat:360 tx:70.5 airl:74
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:42.1
+*** New debug message ***
+1: tkt:9382870769 seat:360 tx:70.5 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:1590 tx:302tol st:6tol tx:6
+*** New debug message ***
+1: Stella bkg (W2002/521781) has no scheduled match in data warehouse
+9607
+*** New debug message ***
+1: 6873pnr:51023 R7Q7V8 bkg:545961W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:9.5 remtx:20.5
+*** New debug message ***
+1: tkt:9383039776 seat:127.31 tx:35 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:127.31 tx:35tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/545961) has no scheduled match in data warehouse
+9614
+*** New debug message ***
+1: 6874pnr:38167 R7QNK8 bkg:386533W02 br:UGUK
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:30.4
+*** New debug message ***
+1: tkt:3680248449 seat:94 tx:56.9 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:30.4
+*** New debug message ***
+1: tkt:3680248447 seat:94 tx:56.9 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:30.4
+*** New debug message ***
+1: tkt:3680248445 seat:94 tx:56.9 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:33.9
+*** New debug message ***
+1: tkt:3680248443 seat:187 tx:60.4 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:33.9
+*** New debug message ***
+1: tkt:3680248441 seat:187 tx:60.4 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:33.9
+*** New debug message ***
+1: tkt:3680248439 seat:187 tx:60.4 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:33.9
+*** New debug message ***
+1: tkt:3680248437 seat:187 tx:60.4 airl:37
+*** New debug message ***
+1: -->stella pnr costs, seat:1030 tx:412.3tol st:7tol tx:7
+*** New debug message ***
+1: -->dwhse accrual:seat:1030 tax:427.7 pnr:R7QNK8
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/545961) has no scheduled match in data warehouse
+9634
+*** New debug message ***
+1: 6875pnr:38000 R7QXQ0 bkg:36S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:20.4
+*** New debug message ***
+1: tkt:3680248291 seat:415 tx:48.8 airl:618
+*** New debug message ***
+1: -->stella pnr costs, seat:415 tx:48.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/36) has no scheduled match in data warehouse
+9643
+*** New debug message ***
+1: 6876pnr:51031 R7RDKQ bkg:545952W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:40
+*** New debug message ***
+1: tkt:9383039779 seat:80.64 tx:53.4 airl:220
+*** New debug message ***
+1: -->stella pnr costs, seat:80.64 tx:53.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/545952) has no scheduled match in data warehouse
+9652
+*** New debug message ***
+1: 6877pnr:50035 R7RHSW bkg:522223S03 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.9
+*** New debug message ***
+1: tkt:9382928326 seat:700 tx:64.3 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:700 tx:64.3tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/522223) has no scheduled match in data warehouse
+9659
+*** New debug message ***
+1: 6878pnr:61559 R7T53S bkg:592969S03 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:36.1
+*** New debug message ***
+1: tkt:6214749794 seat:340 tx:65.4 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:340 tx:65.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/592969) has no scheduled match in data warehouse
+9667
+*** New debug message ***
+1: 6879pnr:61316 R7V6JY bkg:668923S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:9150664189 seat:345 tx:64.4 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:345 tx:64.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/668923) has no scheduled match in data warehouse
+9675
+*** New debug message ***
+1: 6880pnr:60103 R7VGJ4 bkg:584939W02 br:UWUH
+*** New debug message ***
+1: in gbtx:5 ubtx:6.8 remtx:13.2
+*** New debug message ***
+1: tkt:6214566973 seat:89 tx:25 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:89 tx:25tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/584939) has no scheduled match in data warehouse
+9683
+*** New debug message ***
+1: 6881pnr:52032 R7VW7W bkg:549723W02 br:UHUS
+*** New debug message ***
+1: in gbtx:10 ubtx:12.1 remtx:5
+*** New debug message ***
+1: tkt:9383058181 seat:115.5 tx:27.1 airl:125
+*** New debug message ***
+1: in gbtx:10 ubtx:12.1 remtx:5
+*** New debug message ***
+1: tkt:9383058180 seat:115.5 tx:27.1 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:231 tx:54.2tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/549723) has no scheduled match in data warehouse
+9691
+*** New debug message ***
+1: 6882pnr:37021 R7WX18 bkg:521797W02 br:UWUH
+*** New debug message ***
+1: in gbtx:5 ubtx:15.8 remtx:16.4
+*** New debug message ***
+1: tkt:3680189794 seat:68 tx:37.2 airl:57
+*** New debug message ***
+1: -->stella pnr costs, seat:68 tx:37.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521797) has no scheduled match in data warehouse
+9698
+*** New debug message ***
+1: 6883pnr:52613 R7XK04 bkg:557462W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:5.1 remtx:12.9
+*** New debug message ***
+1: tkt:6214121531 seat:144 tx:23 airl:53
+*** New debug message ***
+1: -->stella pnr costs, seat:144 tx:23tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557462) has no scheduled match in data warehouse
+9706
+*** New debug message ***
+1: 6884pnr:61395 R7XL84 bkg:52810W03 br:UWUK
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:33.2
+*** New debug message ***
+1: tkt:9150664315 seat:11 tx:33.2 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:9150664314 seat:74 tx:64.4 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:9150664313 seat:110 tx:64.4 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:35.1
+*** New debug message ***
+1: tkt:9150664312 seat:110 tx:64.4 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:305 tx:226.4tol st:4tol tx:4
+*** New debug message ***
+1: Stella bkg (W2003/52810) has no scheduled match in data warehouse
+9715
+*** New debug message ***
+1: 6885pnr:51863 R7Z9GM bkg:549712W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:33.3
+*** New debug message ***
+1: tkt:9383058089 seat:507 tx:61.7 airl:125
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:33.3
+*** New debug message ***
+1: tkt:9383058088 seat:507 tx:61.7 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:1014 tx:123.4tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/549712) has no scheduled match in data warehouse
+9723
+*** New debug message ***
+1: 6886pnr:41862 R804RS bkg:522783S03 br:UGUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:22.4
+*** New debug message ***
+1: tkt:9150658942 seat:124 tx:35.8 airl:257
+*** New debug message ***
+1: -->stella pnr costs, seat:124 tx:35.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/522783) has no scheduled match in data warehouse
+9731
+*** New debug message ***
+1: 6887pnr:52626 R80BM2 bkg:549599S03 br:UHUK
+*** New debug message ***
+1: in gbtx:10 ubtx:20.8 remtx:5
+*** New debug message ***
+1: tkt:6214121544 seat:13.48 tx:35.8 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:13.48 tx:35.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/549599) has no scheduled match in data warehouse
+9739
+*** New debug message ***
+1: 6888pnr:53084 R80GVI bkg:557580W02 br:UWUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:36.4
+*** New debug message ***
+1: tkt:6214142468 seat:415 tx:64.8 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:415 tx:64.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557580) has no scheduled match in data warehouse
+9747
+*** New debug message ***
+1: 6889pnr:38737 R80KHQ bkg:536953W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:9.8
+*** New debug message ***
+1: tkt:9150493852 seat:310 tx:38.2 airl:232
+*** New debug message ***
+1: -->stella pnr costs, seat:310 tx:38.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/536953) has no scheduled match in data warehouse
+9754
+*** New debug message ***
+1: 6890pnr:37055 R80NKG bkg:521604W02 br:UGUV
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:30.8
+*** New debug message ***
+1: tkt:3680247432 seat:165 tx:44.2 airl:220
+*** New debug message ***
+1: -->stella pnr costs, seat:165 tx:44.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521604) has no scheduled match in data warehouse
+9762
+*** New debug message ***
+1: 6891pnr:39966 R80RDA bkg:546512W02 br:UWUH
+*** New debug message ***
+1: in gbtx:5 ubtx:15.8 remtx:19.4
+*** New debug message ***
+1: tkt:9150531871 seat:68 tx:40.2 airl:57
+*** New debug message ***
+1: -->stella pnr costs, seat:68 tx:40.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/546512) has no scheduled match in data warehouse
+9770
+*** New debug message ***
+1: 6892pnr:51737 R80WNW bkg:549718W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:6.5 remtx:17.6
+*** New debug message ***
+1: tkt:9383040103 seat:147.79 tx:29.1 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:147.79 tx:29.1tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/549718) has no scheduled match in data warehouse
+9777
+*** New debug message ***
+1: 6893pnr:49931 R81HQI bkg:536960W02 br:UGUH
+*** New debug message ***
+1: in gbtx:5 ubtx:7.9 remtx:14.6
+*** New debug message ***
+1: tkt:9382871077 seat:93 tx:27.5 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:93 tx:27.5tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/536960) has no scheduled match in data warehouse
+9785
+*** New debug message ***
+1: 6894pnr:54249 R82L9E bkg:566016W02 br:UHUK
+*** New debug message ***
+1: in gbtx:10 ubtx:13.4 remtx:5
+*** New debug message ***
+1: tkt:6214287470 seat:28.8 tx:28.4 airl:236
+*** New debug message ***
+1: -->stella pnr costs, seat:28.8 tx:28.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/566016) has no scheduled match in data warehouse
+9793
+*** New debug message ***
+1: 6895pnr:50352 R82LGY bkg:541257W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:7.9 remtx:20
+*** New debug message ***
+1: tkt:9383039378 seat:42.78 tx:32.9 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:42.78 tx:32.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/541257) has no scheduled match in data warehouse
+9800
+*** New debug message ***
+1: 6896pnr:54275 R82ZLE bkg:566024W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:36.4
+*** New debug message ***
+1: tkt:6214287497 seat:153.45 tx:64.8 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:153.45 tx:64.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/566024) has no scheduled match in data warehouse
+9808
+*** New debug message ***
+1: 6897pnr:54247 R8429Y bkg:566005W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:15.8 remtx:19
+*** New debug message ***
+1: tkt:6214287469 seat:60.48 tx:39.8 airl:57
+*** New debug message ***
+1: in gbtx:5 ubtx:15.8 remtx:19
+*** New debug message ***
+1: tkt:6214287468 seat:60.48 tx:39.8 airl:57
+*** New debug message ***
+1: -->stella pnr costs, seat:120.96 tx:79.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/566005) has no scheduled match in data warehouse
+9816
+*** New debug message ***
+1: 6898pnr:37019 R848NS bkg:521605W02 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:34.2
+*** New debug message ***
+1: tkt:3680189793 seat:225 tx:60.7 airl:6
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:34.2
+*** New debug message ***
+1: tkt:3680189792 seat:225 tx:60.7 airl:6
+*** New debug message ***
+1: -->stella pnr costs, seat:450 tx:121.4tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/521605) has no scheduled match in data warehouse
+9824
+*** New debug message ***
+1: 6899pnr:51018 R84ZS6 bkg:545958W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:6.9
+*** New debug message ***
+1: tkt:9383039771 seat:72 tx:20.3 airl:55
+*** New debug message ***
+1: -->stella pnr costs, seat:72 tx:20.3tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/545958) has no scheduled match in data warehouse
+9831
+*** New debug message ***
+1: 6900pnr:38890 R85RXM bkg:522241S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:21
+*** New debug message ***
+1: tkt:9150494268 seat:305 tx:49.4 airl:512
+*** New debug message ***
+1: -->stella pnr costs, seat:305 tx:49.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/522241) has no scheduled match in data warehouse
+9839
+*** New debug message ***
+1: 6901pnr:40624 R86KGW bkg:549750W02 br:UGUH
+*** New debug message ***
+1: in gbtx:40 ubtx:8.4 remtx:4.6
+*** New debug message ***
+1: tkt:9150532716 seat:524 tx:53 airl:695
+*** New debug message ***
+1: in gbtx:40 ubtx:8.4 remtx:4.6
+*** New debug message ***
+1: tkt:9150532715 seat:524 tx:53 airl:695
+*** New debug message ***
+1: -->stella pnr costs, seat:1048 tx:106tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/549750) has no scheduled match in data warehouse
+9847
+*** New debug message ***
+1: 6902pnr:40412 R86ZDS bkg:549728W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:41.4
+*** New debug message ***
+1: tkt:9150532497 seat:215 tx:69.8 airl:182
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:41.4
+*** New debug message ***
+1: tkt:9150532496 seat:215 tx:69.8 airl:182
+*** New debug message ***
+1: -->stella pnr costs, seat:430 tx:139.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/549728) has no scheduled match in data warehouse
+9856
+*** New debug message ***
+1: 6903pnr:52620 R8712E bkg:557478W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:19
+*** New debug message ***
+1: tkt:6214121538 seat:325.44 tx:47.4 airl:55
+*** New debug message ***
+1: -->stella pnr costs, seat:325.44 tx:47.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557478) has no scheduled match in data warehouse
+9864
+*** New debug message ***
+1: 6904pnr:52947 R87C1C bkg:386453W02 br:UGUK
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:27
+*** New debug message ***
+1: tkt:6214142420 seat:197 tx:53.5 airl:37
+*** New debug message ***
+1: in gbtx:20 ubtx:6.5 remtx:27
+*** New debug message ***
+1: tkt:6214142419 seat:197 tx:53.5 airl:37
+*** New debug message ***
+1: -->stella pnr costs, seat:394 tx:107tol st:2tol tx:2
+*** New debug message ***
+1: -->dwhse accrual:seat:394 tax:115.2 pnr:R87C1C
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/557478) has no scheduled match in data warehouse
+9885
+*** New debug message ***
+1: 6905pnr:36422 R88GKE bkg:30904W03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:12.4
+*** New debug message ***
+1: tkt:9383057840 seat:700 tx:40.8 airl:618
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:12.4
+*** New debug message ***
+1: tkt:9383057839 seat:700 tx:40.8 airl:618
+*** New debug message ***
+1: -->stella pnr costs, seat:1400 tx:81.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2003/30904) has no scheduled match in data warehouse
+9896
+*** New debug message ***
+1: 6906pnr:52420 R89GL8 bkg:533449S03 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:21.8
+*** New debug message ***
+1: tkt:9382928609 seat:710 tx:50.2 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:710 tx:50.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/533449) has no scheduled match in data warehouse
+9905
+*** New debug message ***
+1: 6907pnr:51733 R8C0DG bkg:537903S03 br:UHUK
+*** New debug message ***
+1: in gbtx:10 ubtx:17.4 remtx:5
+*** New debug message ***
+1: tkt:9383040096 seat:32.64 tx:32.4 airl:236
+*** New debug message ***
+1: -->stella pnr costs, seat:32.64 tx:32.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/537903) has no scheduled match in data warehouse
+9915
+*** New debug message ***
+1: 6908pnr:50363 R8C456 bkg:541276W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:7.9 remtx:20
+*** New debug message ***
+1: tkt:9383039387 seat:42.78 tx:32.9 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:42.78 tx:32.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/541276) has no scheduled match in data warehouse
+9923
+*** New debug message ***
+1: 6909pnr:54241 R8C98G bkg:566015W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:13.6 remtx:12.9
+*** New debug message ***
+1: tkt:6214287465 seat:156.48 tx:31.5 airl:53
+*** New debug message ***
+1: in gbtx:5 ubtx:13.6 remtx:12.9
+*** New debug message ***
+1: tkt:6214287464 seat:156.48 tx:31.5 airl:53
+*** New debug message ***
+1: -->stella pnr costs, seat:312.96 tx:63tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/566015) has no scheduled match in data warehouse
+9931
+*** New debug message ***
+1: 6910pnr:47970 R8CF8S bkg:521630W02 br:UGUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:79.7
+*** New debug message ***
+1: tkt:9379103129 seat:930 tx:108.1 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:930 tx:108.1tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521630) has no scheduled match in data warehouse
+9939
+*** New debug message ***
+1: 6911pnr:59676 R8DJJO bkg:340004S03 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:9.2 remtx:30.2
+*** New debug message ***
+1: tkt:6214749098 seat:313 tx:59.4 airl:5
+*** New debug message ***
+1: in gbtx:20 ubtx:9.2 remtx:30.2
+*** New debug message ***
+1: tkt:6214749097 seat:313 tx:59.4 airl:5
+*** New debug message ***
+1: -->stella pnr costs, seat:626 tx:118.8tol st:2tol tx:2
+*** New debug message ***
+1: -->dwhse accrual:seat:626 tax:128 pnr:R8DJJO
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/521630) has no scheduled match in data warehouse
+9948
+*** New debug message ***
+1: 6912pnr:37725 R8GDVI bkg:522570W02 br:UGUH
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:32
+*** New debug message ***
+1: tkt:3680248013 seat:215 tx:45.4 airl:50
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:32
+*** New debug message ***
+1: tkt:3680248012 seat:215 tx:45.4 airl:50
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:32
+*** New debug message ***
+1: tkt:3680248011 seat:215 tx:45.4 airl:50
+*** New debug message ***
+1: -->stella pnr costs, seat:645 tx:136.2tol st:3tol tx:3
+*** New debug message ***
+1: Stella bkg (W2002/522570) has no scheduled match in data warehouse
+9957
+*** New debug message ***
+1: 6913pnr:52667 R8GFCK bkg:549983S03 br:UHUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:12.5
+*** New debug message ***
+1: tkt:6214121590 seat:478.95 tx:40.9 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:478.95 tx:40.9tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/549983) has no scheduled match in data warehouse
+9965
+*** New debug message ***
+1: 6914pnr:52415 R8GK7C bkg:533460S03 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:33
+*** New debug message ***
+1: tkt:9382928604 seat:585 tx:61.4 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:585 tx:61.4tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/533460) has no scheduled match in data warehouse
+9972
+*** New debug message ***
+1: 6915pnr:40066 R8GKLC bkg:534580S03 br:UGUK
+*** New debug message ***
+1: in gbtx:5 ubtx:11.1 remtx:34.1
+*** New debug message ***
+1: tkt:9150531976 seat:77 tx:50.2 airl:117
+*** New debug message ***
+1: in gbtx:5 ubtx:11.1 remtx:34.1
+*** New debug message ***
+1: tkt:9150531975 seat:77 tx:50.2 airl:117
+*** New debug message ***
+1: -->stella pnr costs, seat:154 tx:100.4tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (S2003/534580) has no scheduled match in data warehouse
+9980
+*** New debug message ***
+1: 6916pnr:45233 R8GV7S bkg:199645W02 br:DDEM
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:19.2
+*** New debug message ***
+1: tkt:9383126640 seat:455 tx:47.6 airl:603
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:19.2
+*** New debug message ***
+1: tkt:9383126639 seat:455 tx:47.6 airl:603
+*** New debug message ***
+1: -->stella pnr costs, seat:910 tx:95.2tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/199645) has no scheduled match in data warehouse
+9989
+*** New debug message ***
+1: 6917pnr:53269 R8H4JA bkg:203332W02 br:UYPI
+*** New debug message ***
+1: in gbtx:5 ubtx:0 remtx:3.6
+*** New debug message ***
+1: tkt:6214121821 seat:191.04 tx:8.6 airl:974
+*** New debug message ***
+1: in gbtx:5 ubtx:0 remtx:3.6
+*** New debug message ***
+1: tkt:6214121820 seat:191.04 tx:8.6 airl:974
+*** New debug message ***
+1: in gbtx:5 ubtx:0 remtx:3.6
+*** New debug message ***
+1: tkt:6214121819 seat:239.04 tx:8.6 airl:974
+*** New debug message ***
+1: in gbtx:5 ubtx:0 remtx:3.6
+*** New debug message ***
+1: tkt:6214121818 seat:239.04 tx:8.6 airl:974
+*** New debug message ***
+1: -->stella pnr costs, seat:860.16 tx:34.4tol st:4tol tx:4
+*** New debug message ***
+1: -->dwhse accrual:seat:812.82 tax:45.6 pnr:R8H4JA
+*** New debug message ***
+1: seatamt outside tols
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/199645) has no scheduled match in data warehouse
+18
+*** New debug message ***
+1: 6918pnr:50364 R8HN2M bkg:541282W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:21.6 remtx:5
+*** New debug message ***
+1: tkt:9383039388 seat:80.76 tx:31.6 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:80.76 tx:31.6tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/541282) has no scheduled match in data warehouse
+30
+*** New debug message ***
+1: 6919pnr:38001 R8HPVS bkg:158045S03 br:UWUH
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:6.4
+*** New debug message ***
+1: tkt:3680248293 seat:405 tx:6.4 airl:618
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:6.4
+*** New debug message ***
+1: tkt:3680248292 seat:405 tx:6.4 airl:618
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:0
+*** New debug message ***
+1: tkt:9150658527 seat:0 tx:0 airl:618
+*** New debug message ***
+1: -->stella pnr costs, seat:810 tx:12.8tol st:3tol tx:3
+*** New debug message ***
+1: -->dwhse accrual:seat:330 tax:55 pnr:R8HPVS
+*** New debug message ***
+1: seatamt outside tols
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/541282) has no scheduled match in data warehouse
+64
+*** New debug message ***
+1: 6920pnr:49842 R8HT3S bkg:536993W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:6.5 remtx:3.6
+*** New debug message ***
+1: tkt:9382874095 seat:65.1 tx:15.1 airl:996
+*** New debug message ***
+1: in gbtx:5 ubtx:6.5 remtx:3.6
+*** New debug message ***
+1: tkt:9382874094 seat:65.1 tx:15.1 airl:996
+*** New debug message ***
+1: -->stella pnr costs, seat:130.2 tx:30.2tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/536993) has no scheduled match in data warehouse
+77
+*** New debug message ***
+1: 6921pnr:37031 R8J344 bkg:521640W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:45.4
+*** New debug message ***
+1: tkt:3680247409 seat:620 tx:73.8 airl:217
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:45.4
+*** New debug message ***
+1: tkt:3680247407 seat:620 tx:73.8 airl:217
+*** New debug message ***
+1: -->stella pnr costs, seat:1240 tx:147.6tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/521640) has no scheduled match in data warehouse
+86
+*** New debug message ***
+1: 6922pnr:59773 R8J5CU bkg:632352S03 br:UWUK
+*** New debug message ***
+1: in gbtx:20 ubtx:9.3 remtx:37.5
+*** New debug message ***
+1: tkt:9150663028 seat:472 tx:66.8 airl:81
+*** New debug message ***
+1: -->stella pnr costs, seat:472 tx:66.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/632352) has no scheduled match in data warehouse
+95
+*** New debug message ***
+1: 6923pnr:51284 R8JBGY bkg:546003W02 br:UYNI
+*** New debug message ***
+1: in gbtx:20 ubtx:18.5 remtx:48.8
+*** New debug message ***
+1: tkt:9383057796 seat:532 tx:87.3 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:532 tx:87.3tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/546003) has no scheduled match in data warehouse
+102
+*** New debug message ***
+1: 6924pnr:51579 R8JTQU bkg:545986W02 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.1
+*** New debug message ***
+1: tkt:9383057968 seat:150 tx:63.5 airl:932
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:35.1
+*** New debug message ***
+1: tkt:9383058021 seat:150 tx:63.5 airl:932
+*** New debug message ***
+1: -->stella pnr costs, seat:300 tx:127tol st:2tol tx:2
+*** New debug message ***
+1: Stella bkg (W2002/545986) has no scheduled match in data warehouse
+110
+*** New debug message ***
+1: 6925pnr:52650 R8KC5E bkg:557484W02 br:UHUK
+*** New debug message ***
+1: in gbtx:5 ubtx:8.4 remtx:8.6
+*** New debug message ***
+1: tkt:9382928640 seat:86.54 tx:22 airl:125
+*** New debug message ***
+1: -->stella pnr costs, seat:86.54 tx:22tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557484) has no scheduled match in data warehouse
+118
+*** New debug message ***
+1: 6926pnr:37117 R8KP2C bkg:506746S03 br:UGUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:36.4
+*** New debug message ***
+1: tkt:3680189444 seat:135 tx:64.8 airl:98
+*** New debug message ***
+1: -->stella pnr costs, seat:135 tx:64.8tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/506746) has no scheduled match in data warehouse
+126
+*** New debug message ***
+1: 6927pnr:61324 R8LD8E bkg:668993S03 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:11.1 remtx:31.1
+*** New debug message ***
+1: tkt:9150664265 seat:350 tx:62.2 airl:6
+*** New debug message ***
+1: -->stella pnr costs, seat:350 tx:62.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (S2003/668993) has no scheduled match in data warehouse
+133
+*** New debug message ***
+1: 6928pnr:36211 R8LP9I bkg:515015W02 br:UHUS
+*** New debug message ***
+1: in gbtx:5 ubtx:0 remtx:4.6
+*** New debug message ***
+1: tkt:9382676957 seat:85 tx:9.6 airl:74
+*** New debug message ***
+1: -->stella pnr costs, seat:85 tx:9.6tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/515015) has no scheduled match in data warehouse
+141
+*** New debug message ***
+1: 6929pnr:39511 R8MK6E bkg:408371S03 br:UWUH
+*** New debug message ***
+1: in gbtx:0 ubtx:0 remtx:8.7
+*** New debug message ***
+1: tkt:9150531288 seat:8 tx:8.7 airl:75
+*** New debug message ***
+1: -->stella pnr costs, seat:8 tx:8.7tol st:1tol tx:1
+*** New debug message ***
+1: -->dwhse accrual:seat:370 tax:108 pnr:R8MK6E
+*** New debug message ***
+1: seatamt outside tols
+*** New debug message ***
+1: tax outside tols
+*** New debug message ***
+1: Stella bkg (W2002/515015) has no scheduled match in data warehouse
+162
+*** New debug message ***
+1: 6930pnr:36539 R8MLZU bkg:557489W02 br:UWUH
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:47.8
+*** New debug message ***
+1: tkt:6214142456 seat:293 tx:76.2 airl:16
+*** New debug message ***
+1: -->stella pnr costs, seat:293 tx:76.2tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/557489) has no scheduled match in data warehouse
+172
+*** New debug message ***
+1: 6931pnr:61321 R8MN0I bkg:668988S03 br:UGUV
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664401 seat:318 tx:76.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664400 seat:318 tx:76.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664197 seat:296 tx:76.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664196 seat:296 tx:76.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664195 seat:296 tx:76.9 airl:1
+*** New debug message ***
+1: in gbtx:20 ubtx:20.8 remtx:36.1
+*** New debug message ***
+1: tkt:9150664194 seat:296 tx:76.9 airl:1
+*** New debug message ***
+1: -->stella pnr costs, seat:1820 tx:461.4tol st:6tol tx:6
+*** New debug message ***
+1: Stella bkg (S2003/668988) has no scheduled match in data warehouse
+185
+*** New debug message ***
+1: 6932pnr:47444 R8NFGE bkg:521649W02 br:UHUK
+*** New debug message ***
+1: in gbtx:20 ubtx:8.4 remtx:42.3
+*** New debug message ***
+1: tkt:9382749946 seat:343.68 tx:70.7 airl:57
+*** New debug message ***
+1: -->stella pnr costs, seat:343.68 tx:70.7tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/521649) has no scheduled match in data warehouse
+193
+*** New debug message ***
+1: 6933pnr:48444 R8P6NM bkg:526457W02 br:UGUK
+*** New debug message ***
+1: in gbtx:20 ubtx:7.9 remtx:35.2
+*** New debug message ***
+1: tkt:9382870387 seat:293 tx:63.1 airl:5
+*** New debug message ***
+1: -->stella pnr costs, seat:293 tx:63.1tol st:1tol tx:1
+*** New debug message ***
+1: Stella bkg (W2002/526457) has no scheduled match in data warehouse
+201
+*** New debug message ***
+1: Rows processed		    :6933
+*** New debug message ***
+1: Rows no bkg match		    :6315
+*** New debug message ***
+1: Rows tax outside tolerances	    :505
+*** New debug message ***
+1: Rows seat cost outside tolerances:253
+*** New debug message ***
+1: Rows part-reconciled 	    :9
+*** New debug message ***
+1: Rows fully matched 100%	    :0
+*** New debug message ***
+1: STLDWHSR ended:03-may-06 12:37:33
+STLDWHSR ended:03-may-06 12:37:33
+Result of gemini reconc.:
+No of rows :6933
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle8i Enterprise Edition Release 8.1.7.0.0 - Production
+With the Partitioning option
+JServer Release 8.1.7.0.0 - Production

@@ -1,0 +1,68 @@
+#!/usr/bin/awk -f 
+#This is contextual_grep
+#Call with:-
+#--=<\_/R\_>X<_/S\_/>=--
+#contextual_grep [-v before=before_lines] [-v after=after_lines] 
+#[-v context=before_and_after_lines] "search pattern" search_file(s)
+#--=<\_/R\_>X<_/S\_/>=--
+#Note: This will grep regardless of case. 
+#If you want an exact match on case, use case_sensitive_contextual_grep.
+
+#Example:-
+#contextual_grep -v context=3 "8" testfile.lis. This gives output as below:-
+#This is line 5
+#This is line 6
+#This is line 7
+#This is line 8
+#This is line 9
+#This is line 10
+#This is line 11
+
+
+function PrintBeforeContext ( lindex, lfrom, lto) {
+   lfrom = before_index - before;
+   if (lfrom < 0) lfrom = 0 ;
+   lto = before_index - 1 ;
+   for ( lindex = lfrom ; lindex <= lto ; lindex++ ) {
+       print before_context[lindex % before] ;
+   }
+   before_index = 0 ;
+} 
+BEGIN {
+smsocmd = "tput smso"
+ smsocmd | getline smso
+ close(smsocmd)
+ rmsocmd = "tput rmso"
+ rmsocmd | getline rmso
+ close(rmsocmd)
+context = context + 0;
+   before = before + 0 ;
+   after = after + 0 ;
+   if (context > 0) {
+       before = context;
+       after = context;
+   }
+   before_index = 0 ;
+   before_context[0] = "";
+   after_index = 0 ;
+   pattern = ARGV[1];
+   ARGV[1] = "";
+   if (ARGC <= 2) ARGV[ARGC++] = "-";
+} 
+$0 ~ pattern { PrintBeforeContext() ;
+   print smso,$0,rmso  ;
+   after_index = after ;
+   next ;
+} 
+after_index > 0 {
+   print $0 ;
+   if (after_index == 1) {
+       print "--------<=<--------<R>X<S>-------->=>-------";
+   }
+   after_index-- ;
+   next ;
+} 
+before > 0 {
+before_context[before_index % before] = $0 ;
+   before_index++ ;
+} 

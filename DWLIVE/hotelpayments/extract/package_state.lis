@@ -1,0 +1,20 @@
+
+OBJECT_TYPE     STATUS  OBJECT_NAME                                                                                                 
+--------------- ------- ----------------------------------------                                                                    
+FUNCTION        INVALID FN_FCPAC                                                                                                    
+                        FN_FCPCS                                                                                                    
+PACKAGE BODY    INVALID BGT_DW_EXTRACT                                                                                              
+                        FC_CONFD                                                                                                    
+                        FIN_CALC                                                                                                    
+                        FIN_CALC_TEST                                                                                               
+PROCEDURE       INVALID PROC_APCST                                                                                                  
+                        PROC_BPRCS                                                                                                  
+                        PROC_INSCS                                                                                                  
+                        PROC_SOCFD                                                                                                  
+                        SN$_SP_O_RES_1259                                                                                           
+                        SN$_SP_O_RES_5382                                                                                           
+                        SN$_SP_O_RES_6753                                                                                           
+
+13 rows selected.
+
+SQL_DWL>exit

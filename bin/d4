@@ -1,0 +1,4 @@
+#!/usr/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+cd /home/dw/warehouse_checking;
+echo "@excessive_durations.sql $1"|sqlplus -s dw/dbp

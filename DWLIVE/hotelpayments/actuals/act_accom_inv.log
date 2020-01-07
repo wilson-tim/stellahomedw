@@ -1,0 +1,67 @@
+
+SQL*Loader: Release 9.2.0.4.0 - Production on Tue Feb 15 10:19:02 2005
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Control File:   act_accom_inv.ctl
+Data File:      /data/hotelpayments/import/act_accom_inv.a
+  Bad File:     act_accom_inv.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table IACS.TEMP_BOOKING_ACCOM_INVOICE, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+BOOKING_SEQ_NUM                     FIRST     *   ,  O(") CHARACTER            
+BOOKING_ACCOM_SEQ_NUM                NEXT     *   ,  O(") CHARACTER            
+BOOKING_ACCOM_INVOICE_SEQ_NUM        NEXT     *   ,  O(") CHARACTER            
+INVOICE_MATCHED_NUM                  NEXT     *   ,  O(") CHARACTER            
+INVOICE_MATCHED_ON_DATE              NEXT    17   ,  O(") DATE RRRRMMDD HH24:MI:SS
+INVOICE_MATCHED_BY_USER              NEXT     *   ,  O(") CHARACTER            
+INVOICE_AMT                          NEXT     *   ,  O(") CHARACTER            
+PAYMENT_AMT                          NEXT     *   ,  O(") CHARACTER            
+REASON_CODE                          NEXT     *   ,  O(") CHARACTER            
+MATCHED_BATCH_NUM                    NEXT     *   ,  O(") CHARACTER            
+LANGUAGE_CODE                        NEXT     *   ,  O(") CHARACTER            
+EXTRAS_OVERCHARGE_TEXT               NEXT     *   ,  O(") CHARACTER            
+RELEASED_FROM_HELD_IND               NEXT     *   ,  O(") CHARACTER            
+APTOS_EXTRACTED_DATE                 NEXT    17   ,  O(") DATE RRRRMMDD HH24:MI:SS
+DEBIT_NOTE_FREE_TEXT                 NEXT     *   ,  O(") CHARACTER            
+DEBIT_NOTE_IND                       NEXT     *   ,  O(") CHARACTER            
+INVOICE_MATCHED_PROPERTY_NUM         NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table IACS.TEMP_BOOKING_ACCOM_INVOICE, column INVOICE_MATCHED_PROPERTY_NUM.
+ORA-01722: invalid number
+
+
+Table IACS.TEMP_BOOKING_ACCOM_INVOICE:
+  0 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 250240 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             1
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Tue Feb 15 10:19:02 2005
+Run ended on Tue Feb 15 10:19:02 2005
+
+Elapsed time was:     00:00:00.14
+CPU time was:         00:00:00.00

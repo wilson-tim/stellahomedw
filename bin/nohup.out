@@ -1,0 +1,91 @@
+>>>>> Data Warehouse Retail  Integration Started  Tue Jan 28 09:42:05 GMT 2003
+>>>>> Data Warehouse Retail Integration Ended    Tue Jan 28 09:54:59 GMT 2003
+-------------------------------------------------------------------------------------------------
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,steve.blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: 
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,steve@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: 
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,steve@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: 
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,steve@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: 
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,steve@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: 
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,stephen@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: message
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: /home/dw/address.txt
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,stephen@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: message
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: /home/dw/address.txt
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: localhost
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,stephen@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: test
+Value for argument 5: email
+Value for argument 6: /home/dw/testemail.txt
+Value for argument 7: /home/dw/address.txt
+Value for argument 8: false
+usage: java sendMail <mailhost> <list separator> <to list> <from> <subject> <mail message(filename)> <attached files list> true|false
+Value for argument 0: localhost
+Value for argument 1: ,
+Value for argument 2: steve.blasdale@coasolutions.com,stephen@blasdale.com
+Value for argument 3: svr-orac01.tuispecialist.com.dw@svr-orac01.tuispecialist.com
+Value for argument 4: SubjectOfAMailMessage
+Value for argument 5: /home/dw/testemail.txt
+Value for argument 6: /home/dw/address.txt
+Value for argument 7: false

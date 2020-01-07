@@ -1,0 +1,3 @@
+#!/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+echo "@/home/dw/bin/fields2.sql $1"|sqlplus -s dw/dbp

@@ -1,0 +1,308 @@
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /usr/lib/sun/current/jre/jre/bin:/usr/lib/sun/current/jre/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /usr/lib/sun/current/jre/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+lager65
+2014/02/26---09:26:54 : Parameters passed: .\n
+2014/02/26---09:26:54 --------------------------------------------------------------------------
+2014/02/26---09:26:54 >>>>>> Stella AIR Load load_air.ksh
+2014/02/26---09:26:54 --------------------------------------------------------------------------
+2014/02/26---09:26:54 Setting variables
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /usr/lib/sun/current/jre/jre/bin:/usr/lib/sun/current/jre/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /usr/lib/sun/current/jre/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+2014/02/26---09:26:54 Checking input params
+start at step  00
+2014/02/26---09:26:54 FTPing files from source server
+2014/02/26---09:26:54 Step 10\n
+not written yet
+2014/02/26---09:26:54 Deleting error files which was created by prior run
+2014/02/26---09:26:54 Step 20\n
+2014/02/26---09:26:54 files are already in airfiles folder , now trying to change ownership/rights on files
+/data/stella/airfiles/60017.AIR /data/stella/airfiles/60018.AIR /data/stella/airfiles/60019.AIR /data/stella/airfiles/60020.AIR /data/stella/airfiles/60021.AIR /data/stella/airfiles/60022.AIR /data/stella/airfiles/60023.AIR /data/stella/airfiles/60024.AIR /data/stella/airfiles/60025.AIR /data/stella/airfiles/60026.AIR /data/stella/airfiles/60027.AIR /data/stella/airfiles/60028.AIR /data/stella/airfiles/60029.AIR /data/stella/airfiles/60030.AIR /data/stella/airfiles/60031.AIR xargs chmod 777
+2014/02/26---09:26:54 Step 30\n
+2014/02/26---09:26:54 Moving recycle files (/data/stella/airrecycle) into current data directory (/data/stella/airfiles) so they can be processed again
+ls: [0-9]*.AIR: No such file or directory
+mv: missing destination file operand after `/data/stella/airfiles'
+Try `mv --help' for more information.
+2014/02/26---09:26:54 Step 35\n
+2014/02/26---09:26:54 Checking for dup files
+Checking file 60017.AIR
+ls: /data/stella/backup/60017.AIR: No such file or directory
+Checking file 60018.AIR
+ls: /data/stella/backup/60018.AIR: No such file or directory
+Checking file 60019.AIR
+ls: /data/stella/backup/60019.AIR: No such file or directory
+Checking file 60020.AIR
+ls: /data/stella/backup/60020.AIR: No such file or directory
+Checking file 60021.AIR
+ls: /data/stella/backup/60021.AIR: No such file or directory
+Checking file 60022.AIR
+ls: /data/stella/backup/60022.AIR: No such file or directory
+Checking file 60023.AIR
+ls: /data/stella/backup/60023.AIR: No such file or directory
+Checking file 60024.AIR
+ls: /data/stella/backup/60024.AIR: No such file or directory
+Checking file 60025.AIR
+ls: /data/stella/backup/60025.AIR: No such file or directory
+Checking file 60026.AIR
+ls: /data/stella/backup/60026.AIR: No such file or directory
+Checking file 60027.AIR
+ls: /data/stella/backup/60027.AIR: No such file or directory
+Checking file 60028.AIR
+ls: /data/stella/backup/60028.AIR: No such file or directory
+Checking file 60029.AIR
+ls: /data/stella/backup/60029.AIR: No such file or directory
+Checking file 60030.AIR
+ls: /data/stella/backup/60030.AIR: No such file or directory
+Checking file 60031.AIR
+ls: /data/stella/backup/60031.AIR: No such file or directory
+2014/02/26---09:26:54 No files already exist - continuing with process
+2014/02/26---09:26:54 Step 40\n
+2014/02/26---09:26:54 List of contents of data file directory before actual processing starts
+60017.AIR
+60018.AIR
+60019.AIR
+60020.AIR
+60021.AIR
+60022.AIR
+60023.AIR
+60024.AIR
+60025.AIR
+60026.AIR
+60027.AIR
+60028.AIR
+60029.AIR
+60030.AIR
+60031.AIR
+2014/02/26---09:26:54 Run the stored proc that runs the java program to load the AIR files into database
+2014/02/26---09:27:02 Show output from java program:
+declare
+*
+ERROR at line 1:
+ORA-29541: class STELLA.uk/co/firstchoice/stella/StellaAIRLoad could not be resolved
+ORA-06512: at "STELLA.P_STELLA_GET_DATA", line 37
+ORA-06512: at line 10
+
+
+2014/02/26---09:27:02 Completed load of data
+2014/02/26---09:27:02 Logfile used for run was
+
+2014/02/26---09:27:02 Step 50\n
+2014/02/26---09:27:02 Step 60\n
+bsp@tuispecialist.com
+bsp@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:27:02 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=113
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<bsp@tuispecialist.com>
+>>> DATA
+250 2.1.5 <bsp@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9R26s015601 Message accepted for delivery
+bsp@tuispecialist.com... Sent (s1Q9R26s015601 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+sam.walsh@tuispecialist.com
+sam.walsh@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:27:22 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=119
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<sam.walsh@tuispecialist.com>
+>>> DATA
+250 2.1.5 <sam.walsh@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9RMD4015630 Message accepted for delivery
+sam.walsh@tuispecialist.com... Sent (s1Q9RMD4015630 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+emma.long@tuispecialist.com
+emma.long@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:27:42 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=119
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<emma.long@tuispecialist.com>
+>>> DATA
+250 2.1.5 <emma.long@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9RgM3015647 Message accepted for delivery
+emma.long@tuispecialist.com... Sent (s1Q9RgM3015647 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+laura.walpole@tuispecialist.com
+laura.walpole@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:28:02 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=123
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<laura.walpole@tuispecialist.com>
+>>> DATA
+250 2.1.5 <laura.walpole@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9S2ad015659 Message accepted for delivery
+laura.walpole@tuispecialist.com... Sent (s1Q9S2ad015659 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+Denise.Underdown@tuispecialist.com
+Denise.Underdown@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:28:22 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<Denise.Underdown@tuispecialist.com>
+>>> DATA
+250 2.1.5 <Denise.Underdown@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9SM7U015674 Message accepted for delivery
+Denise.Underdown@tuispecialist.com... Sent (s1Q9SM7U015674 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+wug-infra-alerts@tuispecialist.com
+wug-infra-alerts@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:28:42 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<wug-infra-alerts@tuispecialist.com>
+>>> DATA
+250 2.1.5 <wug-infra-alerts@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9SggZ015805 Message accepted for delivery
+wug-infra-alerts@tuispecialist.com... Sent (s1Q9SggZ015805 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+jyoti.renganathan@tuispecialist.com
+jyoti.renganathan@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:29:02 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=127
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<jyoti.renganathan@tuispecialist.com>
+>>> DATA
+250 2.1.5 <jyoti.renganathan@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9T2nR015825 Message accepted for delivery
+jyoti.renganathan@tuispecialist.com... Sent (s1Q9T2nR015825 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+wug-infra-alerts@tuispecialist.com
+wug-infra-alerts@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Wed, 26 Feb 2014 09:29:22 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<wug-infra-alerts@tuispecialist.com>
+>>> DATA
+250 2.1.5 <wug-infra-alerts@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1Q9TMAK015834 Message accepted for delivery
+wug-infra-alerts@tuispecialist.com... Sent (s1Q9TMAK015834 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+2014/02/26---09:29:42 Step 70\n
+about to delete old files
+2014/02/26---09:29:42 Step 80\n
+about to remove files from /data/stella/backup more than 7 days old
+
+about to archive todays air files
+gonna tar/compress old air files from archive area
+about to tar up individual files
+ls: /data/stella_archive/[0-9]*.AIR: No such file or directory
+tar: /data/stella_archive/tarlist.txt: Invalid tape length
+Try `tar --help' or `tar --usage' for more information.
+about to compress the file /data/stella_archive/201402/air_2014Feb26.tar
+/home/dw/DWL/stella/load_air.ksh[312]: compress: not found [No such file or directory]
+about to remove individual files
+rm: cannot remove `/data/stella_archive/[0-9]*.AIR': No such file or directory
+step finished tar/compress
+2014/02/26---09:29:43 END OF PROGRAM

@@ -1,0 +1,39 @@
+
+SQL*Plus: Release 8.0.4.0.0 - Production on Wed Mar 22 15:26:53 2000
+
+(c) Copyright 1997 Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle8 Enterprise Edition Release 8.0.4.0.0 - Production
+With the Partitioning, Objects and Parallel Server options
+PL/SQL Release 8.0.4.0.0 - Production
+
+starting loading season:W1999
+finished loading season:W1999
+End of booking load at:2000-mar-22 20:03:06
+Inserted booking records:21680 out of 213659 main cursor selected bookings
+No. bookings failed because no otop sale rec:0
+No. bookings zeroised because no accom_financial_detail:86122
+No. new booking_accom rows:30137
+No. updated booking rows:191979
+No. updated booking_accom rows (at least) :180276
+No. missing accruals set to zero:11749
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
+
+0 rows deleted.
+
+DOC> i.e. where customer changed hotel that was originally booked
+DOC>But cannot delete them because they are in the resort/office local databases.
+DOC>*/
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle8 Enterprise Edition Release 8.0.4.0.0 - Production
+With the Partitioning, Objects and Parallel Server options
+PL/SQL Release 8.0.4.0.0 - Production

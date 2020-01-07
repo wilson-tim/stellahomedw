@@ -1,0 +1,2 @@
+cd /home/dw/retail_checking
+sqlplus -s dw/dbp @show_retail_status

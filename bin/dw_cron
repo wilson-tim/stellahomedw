@@ -1,0 +1,4 @@
+#!/bin/ksh
+#The above is essential, and should be on all scripts.
+
+cat  /var/spool/cron/crontabs/dw

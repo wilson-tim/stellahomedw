@@ -1,0 +1,9 @@
+if [[ $1 = "" ]] then
+   echo "**** NO STRING SPECIFIED ON COMMAND LINE, exiting ****"
+   exit
+fi
+pwd | read current_path
+
+echo "Current path is: " $current_path 
+find . -exec grep -li "$1" {} \;|grep -v old 
+#- insert into 

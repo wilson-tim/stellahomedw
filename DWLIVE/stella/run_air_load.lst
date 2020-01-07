@@ -1,0 +1,8 @@
+declare
+*
+ERROR at line 1:
+ORA-29541: class STELLA.uk/co/firstchoice/stella/StellaAIRLoad could not be resolved
+ORA-06512: at "STELLA.P_STELLA_GET_DATA", line 37
+ORA-06512: at line 10
+
+

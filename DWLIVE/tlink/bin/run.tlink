@@ -1,0 +1,3 @@
+
+nohup ksh /home/dw/DWLIVE/tlink/bin/tlink_shell.ksh 1> /home/dw/DWLIVE/logs/tlink/tlink_shell.log 2>&1 &
+

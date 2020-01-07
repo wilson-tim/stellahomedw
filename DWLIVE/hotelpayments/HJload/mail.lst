@@ -1,0 +1,170 @@
+Batch Program run on machine:
+dwlive
+IACS Hayes&Jarvis Load started
+Sun Nov 27 14:00:00 GMT 2005
+Fetching reference and booking data file from H&J server 
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 27 Nov 2005 14:00:02 GMT
+Connection: close
+Content-type: text/xml
+Expires: -1;
+
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 27 Nov 2005 14:00:03 GMT
+Connection: close
+Content-type: text/xml
+Expires: -1;
+
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 27 Nov 2005 14:00:05 GMT
+Connection: close
+Content-type: text/xml
+Expires: -1;
+
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 27 Nov 2005 14:00:15 GMT
+Connection: close
+Content-type: text/xml
+Expires: -1;
+
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Sun, 27 Nov 2005 14:00:27 GMT
+Connection: close
+Content-type: text/xml
+Expires: -1;
+
+
+Sun Nov 27 14:00:29 GMT 2005
+Loading Reference data into temporary tables 
+Checking for invalid Reference data xml files
+java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:179)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:334)
+	at oracle.jdbc.ttc7.TTC7Protocol.handleIOException(TTC7Protocol.java:3649)
+	at oracle.jdbc.ttc7.TTC7Protocol.logon(TTC7Protocol.java:353)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:368)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:549)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:349)
+	at java.sql.DriverManager.getConnection(DriverManager.java:538)
+	at java.sql.DriverManager.getConnection(DriverManager.java:188)
+	at OracleXML.getConnection(OracleXML.java:1236)
+	at OracleXML.Put_XML(OracleXML.java:443)
+	at OracleXML.ExecutePutXML(OracleXML.java:397)
+	at OracleXML.main(OracleXML.java:184)
+
+*** ERROR - MISSING ROWS from location.xml ***
+java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:179)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:334)
+	at oracle.jdbc.ttc7.TTC7Protocol.handleIOException(TTC7Protocol.java:3649)
+	at oracle.jdbc.ttc7.TTC7Protocol.logon(TTC7Protocol.java:353)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:368)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:549)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:349)
+	at java.sql.DriverManager.getConnection(DriverManager.java:538)
+	at java.sql.DriverManager.getConnection(DriverManager.java:188)
+	at OracleXML.getConnection(OracleXML.java:1236)
+	at OracleXML.Put_XML(OracleXML.java:443)
+	at OracleXML.ExecutePutXML(OracleXML.java:397)
+	at OracleXML.main(OracleXML.java:184)
+
+*** ERROR - MISSING ROWS from property.xml ***
+java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:179)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:334)
+	at oracle.jdbc.ttc7.TTC7Protocol.handleIOException(TTC7Protocol.java:3649)
+	at oracle.jdbc.ttc7.TTC7Protocol.logon(TTC7Protocol.java:353)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:368)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:549)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:349)
+	at java.sql.DriverManager.getConnection(DriverManager.java:538)
+	at java.sql.DriverManager.getConnection(DriverManager.java:188)
+	at OracleXML.getConnection(OracleXML.java:1236)
+	at OracleXML.Put_XML(OracleXML.java:443)
+	at OracleXML.ExecutePutXML(OracleXML.java:397)
+	at OracleXML.main(OracleXML.java:184)
+
+*** ERROR - MISSING ROWS from propertycode.xml ***
+Sun Nov 27 14:00:33 GMT 2005
+Loading HandJ booking and bookingaccom data into temporary tables 
+Checking for invalid Booking data xml files
+java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:179)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:334)
+	at oracle.jdbc.ttc7.TTC7Protocol.handleIOException(TTC7Protocol.java:3649)
+	at oracle.jdbc.ttc7.TTC7Protocol.logon(TTC7Protocol.java:353)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:368)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:549)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:349)
+	at java.sql.DriverManager.getConnection(DriverManager.java:538)
+	at java.sql.DriverManager.getConnection(DriverManager.java:188)
+	at OracleXML.getConnection(OracleXML.java:1236)
+	at OracleXML.Put_XML(OracleXML.java:443)
+	at OracleXML.ExecutePutXML(OracleXML.java:397)
+	at OracleXML.main(OracleXML.java:184)
+
+*** ERROR - MISSING ROWS from booking.xml ***
+java.sql.SQLException: Io exception: The Network Adapter could not establish the connection
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:179)
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:334)
+	at oracle.jdbc.ttc7.TTC7Protocol.handleIOException(TTC7Protocol.java:3649)
+	at oracle.jdbc.ttc7.TTC7Protocol.logon(TTC7Protocol.java:353)
+	at oracle.jdbc.driver.OracleConnection.<init>(OracleConnection.java:368)
+	at oracle.jdbc.driver.OracleDriver.getConnectionInstance(OracleDriver.java:549)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:349)
+	at java.sql.DriverManager.getConnection(DriverManager.java:538)
+	at java.sql.DriverManager.getConnection(DriverManager.java:188)
+	at OracleXML.getConnection(OracleXML.java:1236)
+	at OracleXML.Put_XML(OracleXML.java:443)
+	at OracleXML.ExecutePutXML(OracleXML.java:397)
+	at OracleXML.main(OracleXML.java:184)
+
+*** ERROR - MISSING ROWS from bookingaccom.xml ***
+Sun Nov 27 14:00:53 GMT 2005
+Loading H&J reference and Booking  data into actual tables
+
+SQL*Plus: Release 9.2.0.6.0 - Production on Sun Nov 27 14:00:53 2005
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+
+Connected to:
+Oracle9i Enterprise Edition Release 9.2.0.6.0 - 64bit Production
+With the Partitioning option
+JServer Release 9.2.0.6.0 - Production
+
+NO. OF LOCATIONS SUCCESSFULLY LOADED: 0
+NO. OF PROPERTIES SUCCESSFULLY LOADED: 0
+NO. OF OTOP PROPERTIES SUCCESSFULLY LOADED: 0
+NO. OF BOOKINGS SUCCESSFULLY LOADED : 0
+NO. OF BOOKING ACCOMS SUCCESSFULLY LOADED : 0
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle9i Enterprise Edition Release 9.2.0.6.0 - 64bit Production
+With the Partitioning option
+JServer Release 9.2.0.6.0 - Production
+Sun Nov 27 14:00:56 GMT 2005
+XML load finished now backing up the files
+Sun Nov 27 14:00:56 GMT 2005
+  adding: booking.xml (deflated 95%)
+  adding: bookingaccom.xml (deflated 94%)
+  adding: location.xml (deflated 91%)
+  adding: property.xml (deflated 90%)
+  adding: propertycode.xml (deflated 95%)
+Sun Nov 27 14:00:57 GMT 2005
+FINISHED Hayes&Jarvis Load!

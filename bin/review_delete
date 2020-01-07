@@ -1,0 +1,19 @@
+# Script to review delete logs for transport andaccomodation delete scripts
+# This script looks as the last days run.
+
+log_file_1=/home/dw/DWLIVE/logs/deleter.log
+log_file_2=/home/dw/DWLIVE/logs/delete_accom.log
+
+echo "============================================================================================"
+echo " Transport Delete Routine "
+echo "============================================================================================"
+grep -i ERROR $log_file_1|grep -v "No errors"
+grep -i SUCCESSFUL $log_file_1|grep -v "procedure successfully completed"
+echo "============================================================================================"
+echo "============================================================================================"
+echo " Accom Delete Routine "
+echo "============================================================================================"
+grep -i ERROR $log_file_2|grep -v "No errors"
+grep -i SUCCESSFUL $log_file_2|grep -v "procedure successfully completed"
+echo "============================================================================================"
+

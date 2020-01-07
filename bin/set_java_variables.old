@@ -1,0 +1,26 @@
+#!/usr/bin/ksh
+# set -x
+######################################################################################################
+#
+# set_java_variables.ksh   Script to be call from any process that requires the java variables
+#                            to be set
+#
+# CALLS                       NONE
+#
+# PARAMETERS                  NONE
+#
+# ----------------------------------------------------------------------------------------------------
+# CHANGE
+# ------
+#
+# Date     Who                 Description
+# -------- ------------------- ---------------------------------------------------------------------------------------
+# 20/02/03 A.James             Initial creation.
+#
+######################################################################################################
+#
+# Set variables
+#
+#
+export CLASSPATH=$CLASSPATH:$HOME/java/classes:$HOME/java/src:$HOME/java/classes/javamail-1.2/mail.jar:$HOME/java/classes/jaf-1.0.2/activation.jar
+#

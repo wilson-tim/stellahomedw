@@ -1,0 +1,33 @@
+#!/usr/bin/ksh
+# set -x
+######################################################################################################
+#
+# SET_ORACLE_VARIABLES.KSH   Script to be call from any process that requires the oracle variables
+#                            to be set
+#
+# CALLS                       NONE
+#
+# PARAMETERS                  NONE
+#
+# ----------------------------------------------------------------------------------------------------
+# CHANGE
+# ------
+#
+# Date     Who Description
+# -------- --- ---------------------------------------------------------------------------------------
+# 25/07/00 DJH Initial creation.
+#
+######################################################################################################
+#
+# Set variables
+#
+dbase=DWL
+#
+export PATH=/usr/bin:/etc:/usr/sbin:/usr/ucb:$HOME/bin:/usr/bin/X11:/sbin:.
+export ORACLE_HOME=/oracle/product/9.2.0
+export ORACLE_TERM=vt220
+export ORACLE_SID=$dbase
+export ORACLE_DOC=$ORACLE_HOME/odoc
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export PATH=$ORACLE_HOME/bin:$PATH
+#

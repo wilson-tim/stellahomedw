@@ -1,0 +1,61 @@
+
+
+PATH=/usr/bin:/etc:/usr/sbin:/usr/ucb:$HOME/bin:/usr/bin/X11:/sbin:.
+
+export PATH
+
+if [ -s "$MAIL" ]           # This is at Shell startup.  In normal
+then echo "$MAILMSG"        # operation, the Shell checks
+fi                          # periodically.
+
+set -o vi
+#umask 003
+
+export LOGNAME MAIL MAILMSG TERM
+export PS1='$PWD $'
+export ORACLE_HOME=/oracle/product/8.1.7
+export ORACLE_TERM=vt220
+export ORACLE_SID=DWL
+export ORACLE_DOC=/oracle/odoc
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export CLASSPATH=/oracle/jre/1.1.8:$ORACLE_HOME/jlib:$ORACLE_HOME/rdbms/jlib/xsu12.jar:$ORACLE_HOME/lib/xmlparserv2.jar:$ORACLE_HOME/lib/xmlcomp.jar:$ORACLE_HOME/lib/xmlplsql.jar
+## export GMS_QUERY_FILE=/dev/rvsd_gms
+## export GMS_NODE_LIST=/oracle/dbs/gms.nodes
+## export GMS_HC_SOCKET=/tmp/serv.hc
+## export GMS_LOG_DIR=/oracle/rdbms/log/gms.log
+export EDITOR=vi
+AD_IMPORT=/home/dw/adavies/IMPORT
+PATH=$ORACLE_HOME/bin:$PATH
+alias z='export SQLPATH=/home/dw/rob'
+alias sqlp="sqlplus lashton/lashton"
+alias "jobs=ps -ef | grep $USER | grep -v kproc"
+alias "cdf=cd /home/dw/DWLIVE/fin_calc"
+alias "redo=sqlplus -s dw/dbp @/home/dw/DWLIVE/scripts/redo/redo_now"
+alias "redo_times=sqlplus -s dw/dbp @/home/dw/DWLIVE/scripts/redo/redo_times"
+alias wgo='$HOME/bin/whats_going_on.ksh'
+alias wf='$HOME/bin/when_running_stuffs_parent_finished.ksh'
+alias bowhoru="bowhoru DWLIVE"
+stty cols 132
+ulimit -c 16384
+uptime
+
+echo "Check out the new bowhoru command if you want to know who is REALLY logged in!"
+PS1="`hostname` `whoami` THIS IS LIVE!!!!!!!!!!!!!!!!!!$ "
+
+alias cdh="cd /home/dw/DWLIVE/hotelpayments"
+alias cdhl="cd /home/dw/DWLIVE/logs/hotelpayments"
+alias cde="cd /data/hotelpayments/export"
+alias cdi="cd /data/hotelpayments/import"
+alias cdha="cd /home/dw/DWLIVE/hotelpayments/actuals"
+alias fin="cd /home/dw/DWLIVE/fin_calc"
+alias rob="cd /home/dw/rob"
+alias s="sqlplus dw/dbp"
+alias check="cd /home/dw/warehouse_checking"
+alias diag="cd /home/dw/rob/system_diagnostics"
+alias ag="cd /home/dw/DWLIVE/agg"
+alias d="ls -1aF|grep /"
+alias fo="ls -1trF|grep -v /"
+alias c="clear"
+alias x="exit"
+alias y=". p"
+alias seasons="cat /home/dw/DWLIVE/load/otop/otop_ls_season.lst"

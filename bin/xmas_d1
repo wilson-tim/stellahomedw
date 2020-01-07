@@ -1,0 +1,4 @@
+#!/usr/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+cd /home/dw/warehouse_checking;
+echo "@show_dmis_status_xmas.sql"|sqlplus -s dw/dbp

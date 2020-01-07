@@ -1,0 +1,2 @@
+cd /home/dw/DWLIVE/integration
+sqlplus -s dw/dbp @int_status2

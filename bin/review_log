@@ -1,0 +1,255 @@
+#!/usr/bin/ksh
+
+# today_d=1996dec04
+today_d=`date +%Y%b%d`
+today_d=`echo $today_d | sed /.*/y/ADFJMNOS/adfjmnos/`
+data_path='/data'                        # Path for the FTP'ed OTOP source data
+home_path='/home/dw/DWLIVE'
+dwconfig_file=$home_path'/.dwcfg'
+
+load_path=$home_path'/load/otop'              # Path for the controlling files in the loading process
+log_path=$home_path'/logs'                    # Path for SQL*Load Log, Discard and Bad files
+o_log_path=$log_path'/otop'                   # OTOP logs
+m_log_path=$log_path'/merlin'                 # MERLIN logs
+s_log_path=$log_path'/speake'                 # SPEAKE logs
+c_log_path=$log_path'/correlation'            # CORROLATION logs
+
+log_file_pre=$log_path"/otop_"$today_d"_"
+o_log_file_pre=$o_log_path"/otop_"$today_d"_"
+s_log_file_pre=$s_log_path"/speake_dw_"$today_d".log"
+m_log_file_pre=$m_log_path"/merlin_"$today_d"_"
+mis_pre=$home_path"/mis_pro_"
+season_lst=$load_path"/otop_ls_season.lst"            # Holds a list of all seasons to be retreived
+abbrev_lst=$load_path"/otop_ls_abbrev.lst"            # Holds a list of all the abbreviations to be produced by Anite
+abbrev_ssn_lst=$load_path"/otop_ls_abbrev"            # Holds starting part of file name holding season abbrev list
+table_lst=$load_path"/otop_l_"
+warn_lst=$load_path"/otop_sl_warning.lst"
+
+blank="################################################################################################"
+dash="-------------------------------------------------------------------------------------------------"
+
+if [[ -s $warn_lst ]] then
+  echo $blank
+  echo "WARNING - The following table(s):"
+  cat $warn_lst
+  echo contained separators in the data, so they now must have separator processing added.
+  echo $blank
+  echo
+fi
+
+## Check SPEAKE logfiles 
+
+line="SPEAKE UPDATE PROCESS LOG"
+
+echo $dash
+echo $line
+echo $dash
+
+complete_ok=0
+log_file=$s_log_file_pre
+if [[ -a $log_file ]] then
+     grep -q "THE CHECK FILE EXISTS" $log_file
+     grep_status=$?
+     if [[ $grep_status -ne 0 ]] then
+       echo "ERROR: >>>>> SPEAKE PROCESSING ERROR - CHECK FILE does NOT exist"
+       complete_ok=1
+     fi
+else
+     echo FAILED: $log_file for SPEAKE does not exist
+fi
+for abbrev in 'apt' 'cur' 'flt' 'flr' 'lcl' 'pro' 'res' 'rmw'
+  do
+    table_log=$s_log_path"/s_"$abbrev".log"
+    table_bad=$s_log_path"/s_"$abbrev".bad"
+    ##
+    ## Show any logs for which a bad file exists
+    ##
+    if [[ -a $table_log ]] then
+      if [[ -a $table_bad ]] then
+        echo SQL LOADER errors and statistics for table s_$abbrev
+        grep "SQL\*Loader-" $table_log 
+        grep " errors" $table_log
+        echo "Error File "$table_bad" listed below:"
+        echo $dash
+        cat $table_bad
+        complete_ok=1
+      else
+        grep -q ORA $table_log
+         grep_status=$?
+         if [[ $grep_status -eq 0 ]] then
+           echo "ERROR: >>>>> SPEAKE Processing Error - Check log file for "$abbrev
+           echo
+           complete_ok=1
+         fi
+      fi
+    else
+      echo FAILED: $table_log log file does not exist
+      complete_ok=1
+    fi
+  done
+if [[ $complete_ok -eq 1 ]] then
+      echo "WARNING: >>> SPEAKE ERROR CHECKING - COMPLETED WITH ERRORS"
+      echo 
+      else
+      echo "SPEAKE ERROR CHECKING - COMPLETED"
+      echo 
+fi
+
+## Check Merlin logfiles
+
+line="MERLIN UPDATE PROCESS LOG"
+
+echo $dash
+echo $line
+echo $dash
+
+complete_ok=0
+for abbrev in 'acn' 'atp' 'atg' 'bba' 'clo' 'cnt' 'cur' 'bed' 'ocy' \
+              'occ' 'ofr' 'oft' 'psc' 'ptp' 'pss' 'pal' 'rat' 'roo' \
+              'ral' 'rrd' 'rtp' 'rto' 'tur' 'vtp' 'rtg' 'sup' 'stp' \
+              'con' 'cex' 'rgn' 'lcn' 'res' 'rsg' 'cyg'
+  do
+    table_log=$m_log_path"/m_"$abbrev".log"
+    table_bad=$m_log_path"/m_"$abbrev".bad"
+    ##
+    ## Show any logs for which a bad file exists
+    ##
+    if [[ -a $table_log ]] then
+      if [[ -a $table_bad ]] then
+        echo SQL LOADER errors and statistics for table s_$abbrev
+        grep "SQL\*Loader-" $table_log
+        grep " errors" $table_log
+        echo "Error File "$table_bad" listed below:"
+        echo $dash
+        cat $table_bad
+        complete_ok=1
+      else
+        grep -q ORA $table_log
+         grep_status=$?
+         if [[ $grep_status -eq 0 ]] then
+           echo "ERROR: >>>>> MERLIN Processing Error - Check log file for "$abbrev
+           echo
+           complete_ok=1
+         fi
+      fi
+    else
+      echo FAILED: $table_log log file does not exist
+      complete_ok=1
+    fi
+  done
+if [[ $complete_ok -eq 1 ]] then
+      echo "WARNING: >>> MERLIN ERROR CHECKING - COMPLETED WITH ERRORS"
+      echo 
+      else
+      echo "MERLIN ERROR CHECKING - COMPLETED"
+      echo 
+fi
+
+cat $season_lst|
+while read season
+do
+  cat $abbrev_ssn_lst"."$season|
+  while read abbrev
+  do
+  complete_ok=0
+   if [[ $abbrev != spk && $abbrev != mer && $abbrev != int && $abbrev != shr && $abbrev != cor ]] then
+      line="OTOP UPDATE PROCESS LOG FOR $season $abbrev"
+      echo $dash
+      echo $line 
+      echo $dash
+
+      mis_pro=$mis_pre$abbrev"_"$today_d.$season          # Holds the initial part of the MIS_PRO file name produced by Anite
+      log_file=$o_log_file_pre$abbrev.$season
+      if [[ -a $log_file ]] then
+        if [[ -a $mis_pro ]] then
+          grep -q COMPLETE $mis_pro
+          grep_status=$?
+          if [[ $grep_status -ne 0 ]] then
+             echo "ERROR: >>>>> ANITE EXTRACTE HAS NOT COMPLETED"
+             echo
+             complete_ok=1
+          else
+#           grep "No MIS_PRO file" $log_file|tail -1         # Print the last line only
+#           grep "grep COMPLETE" $log_file
+#           grep "dropped and recreated" $log_file
+            grep "not found during" $log_file
+            echo
+          fi
+        fi
+      else
+          echo "FAILED: >>>>> "$log_file" does not exist"
+          echo 
+          complete_ok=1
+      fi
+      if [[ -a $mis_pro ]] then
+        grep -q MIGRATE $mis_pro
+        grep_status=$?
+        if [[ $grep_status -ne 0 ]] then
+          grep -q TRANSFER $mis_pro
+          grep_status=$?
+          if [[ $grep_status -ne 0 ]] then
+            echo "ERROR: >>>>> OTOP Processng For Group "$abbrev" NOT COMPLETE - Review FTP/ANITE Logs"
+            echo
+            complete_ok=1
+          else
+            echo "ERROR: >>>>> OTOP Processng For Group "$abbrev" NOT COMPLETE - Review INTEGRTION Log"
+            echo "ERROR: >>>>> Run Script (review_int) To Check Integration Processes Running / To Run "
+            echo
+            complete_ok=1
+          fi
+        else
+            echo "COMPLETED"`grep MIGRATE  $mis_pro | sed "s/MIGRATE/INTEGRATION AT/"`
+            echo
+        fi
+      else
+        echo FAILED: $mis_pro file does not exist
+      fi
+  
+      cat $table_lst$abbrev.lst|
+      while read table_abb
+      do
+        table_log=$o_log_path"/o_"$table_abb"_log"$today_d.$season
+        table_bad=$o_log_path"/o_"$table_abb"_bad"$today_d.$season
+        echo $abbrev | sed /.*/y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/ | read abbrev_uc
+        echo $season | sed /.*/y/sw/SW/ | read season_uc
+        dest_name=$season_uc$abbrev_uc
+        grep $dest_name $dwconfig_file | read log_name datab_inst phys_nam
+        #echo $phys_nam
+        ##
+        ## Show any logs for which a bad file exists
+        ##
+        if [[ -a $table_log ]] then
+          if [[ -a $table_bad ]] then
+            echo "ERROR: >>>>> SQL LOADER errors and statistics for season "$season" and table o_"$table_abb 
+            var1=`grep " errors" $table_log`
+            echo "ERROR: >>>>>"$var1
+            echo "ERROR: >>>>> Review SQL/LOADER Log "$table_log" For Error Messages"
+            echo "             Raise Error With HELPdesk For Record(s) In BAD File ==> "$table_bad
+            echo
+            complete_ok=1
+#            cat $table_bad
+          else
+            grep -q ORA $table_log
+             grep_status=$?
+             if [[ $grep_status -eq 0 ]] then
+               echo "ERROR: >>>>> OTOP Processing Error - Check log file for "$abbrev
+               echo "ERROR: >>>>> Review SQL/LOADER Log "$table_log" For Error Messages"
+               echo
+               complete_ok=1
+             fi
+          fi
+        else
+          echo "WARNING: >>> "$table_log" log file does not exist - Check INTEGRATION Process"
+        fi
+      done
+      if [[ $complete_ok -eq 1 ]] then
+      echo "WARNING: >>> OTOP SEASON "$season" GROUP "$abbrev" - ERROR CHECKING COMPLETED WITH ERRORS"
+      echo 
+      else
+      echo "OTOP SEASON "$season" GROUP "$abbrev" - ERROR CHECKING COMPLETED"
+      echo 
+      fi
+     fi
+  done
+done
+echo $dash

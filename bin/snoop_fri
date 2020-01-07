@@ -1,0 +1,36 @@
+#!/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+#
+#This is snoop.ksh
+#
+echo "Seasons being integrated should include w00, s01, w01, s02, w02, s03, w03"
+echo ".  .  .  and tonight the seasons are:-"
+cat /home/dw/DWLIVE/load/otop/otop_ls_season.lst
+echo "__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__"
+echo
+echo "For current seasons (s02, w02, s03, w03) groups to be integrated should include:-"
+echo "mer,spk, cor, mkt, gen, acc, trs, shr, gsh, int:  with one of them including shd"
+echo "For older seasons we just integrate spk, cor, gen"
+echo "------------------------------------"
+echo ".  .  .  and tonight the groups per season are:-"
+cat /home/dw/DWLIVE/load/otop/otop_ls_season.lst|while read season
+do
+echo
+echo "__/\__/\__/\__${season}__/\__/\__/\__"
+cat "/home/dw/DWLIVE/load/otop/otop_ls_abbrev_wend.${season}"
+done
+echo
+echo "The relevant line(s) from crontab are:-"
+crontab -l|grep "dw_control"
+echo
+echo
+echo "There should be nothing between the following zigzag lines."
+echo "If there is - integration is currently running and will need investigation and stopping."
+echo "__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__"
+ps -ef|grep dw_control|grep -v grep
+echo "__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__"
+
+
+
+
+

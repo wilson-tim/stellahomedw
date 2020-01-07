@@ -1,0 +1,6 @@
+SELECT to_lob(t.text)
+FROM all_views t
+WHERE t.view_name = 'V_B2S_COMMON_ALLOC'
+-- upper(to_char(t.text)) LIKE '%V_B2S_COMMON_ALLOC%'
+ORDER BY t.owner,t.view_name
+/

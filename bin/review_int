@@ -1,0 +1,27 @@
+#!/usr/bin/ksh
+#
+dbnode_id=`hostname`
+grep $dbnode_id /home/dw/DWLIVE/.dwnodes | read phys_name dbase_id
+#
+export PATH=/usr/bin:/etc:/usr/sbin:/usr/ucb:$HOME/bin:/usr/bin/X11:/sbin:.
+export ORACLE_HOME=/oracle
+export ORACLE_TERM=vt220
+export ORACLE_SID=$dbase_id
+export ORACLE_DOC=/oracle/odoc
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export PATH=$ORACLE_HOME/bin:$PATH
+# 
+today_d=`date +%Y%b%d`
+dash="-------------------------------------------------------------------------------------------------"
+#
+echo $dash
+echo "INTEGRATION Processes Currently Running"
+echo $dash 
+sqlplus -s dw/dbp @/home/dw/DWLIVE/integration/running
+#
+echo $dash 
+echo "INTEGRATION Processes Running / Still To Run"
+echo $dash 
+sqlplus -s dw/dbp @/home/dw/DWLIVE/integration/to_run 
+#
+echo $dash 

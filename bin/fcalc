@@ -1,0 +1,46 @@
+#!/usr/bin/ksh
+#set -x
+
+# **********************************************************************
+# *                    FIN CALC RUNNING CHECKER                        *
+# **********************************************************************
+
+. /home/dw/bin/set_oracle_variables.ksh
+
+# **********************************************************************
+# *                      DECLARE VARIABLES                             *
+# **********************************************************************
+
+tempfile_location='/home/dw/DWLIVE/logs/fin_calc/'
+tempfile1="${tempfile_location}tempfile1.txt"
+tempfile2="${tempfile_location}tempfile2.txt"
+tempfile3="${tempfile_location}tempfile3.txt"
+
+# *******************************************************************
+# *                      PROGRAM START                              *
+# *******************************************************************
+
+(( fcalcs = 0 ))
+ps -ef|grep "sqlplus"|grep -v "grep" > ${tempfile1}
+
+cat ${tempfile1}|while read dummy1 proc_id dummy2 dummy3 proc_time dummy4 dummy5 dummy6
+do
+  proctree ${proc_id} > ${tempfile2}  
+  grep "fcalc_link" ${tempfile2} > ${tempfile3}
+  
+  if [[ -s ${tempfile3} ]] then
+    cat ${tempfile3}|while read dummy1 dummy2 dummy3 dummy4 dummy5 season dummy6
+    do
+     (( fcalcs = fcalcs+1 )) 
+      echo "Fin Calcs for ${season} has process id ${proc_id} and started at ${proc_time}"
+      echo ""
+    done
+  fi
+done
+if [[ fcalcs -eq 0 ]] then
+  echo "No fin calcs are running"
+fi
+ 
+rm -f ${tempfile1}
+rm -f ${tempfile2}
+rm -f ${tempfile3}

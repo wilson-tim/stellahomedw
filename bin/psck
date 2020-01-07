@@ -1,0 +1,19 @@
+echo " "
+echo "TOP TEN CPU Users"
+echo "================="
+echo " "
+echo "   PID    TTY STAT  TIME PGIN  SIZE   RSS   LIM  TSIZ   TRS %CPU %MEM COMMAND"
+ps avgw | sort -n +10 | tail
+#
+ps avgw > temp1.txt
+sleep 5
+ps avgw > temp2.txt
+echo " "
+#
+echo "Processes that have change in the last 5 secs"
+echo "---------------------------------------------"
+echo " "
+echo "   PID    TTY STAT  TIME PGIN  SIZE   RSS   LIM  TSIZ   TRS %CPU %MEM COMMAND"
+diff temp1.txt temp2.txt | grep A 
+rm temp1.txt temp2.txt
+echo " "

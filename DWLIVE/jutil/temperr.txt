@@ -1,0 +1,4 @@
+Error caused due to invalid path spefication                                    
+
+PL/SQL procedure successfully completed.
+

@@ -1,0 +1,57 @@
+
+SQL*Loader: Release 8.1.6.1.0 - Production on Wed Aug 30 11:02:30 2000
+
+(c) Copyright 1999 Oracle Corporation.  All rights reserved.
+
+Control File:   act_extra.ctl
+Data File:      /data/hotelpayments/import/act_extra.a
+  Bad File:     act_extra.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 65536 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table IACS.TEMP_BOOKING_ACCOM_EXTRAS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+BOOKING_SEQ_NUM                     FIRST     *   ,  O(") CHARACTER            
+BOOKING_ACCOM_SEQ_NUM                NEXT     *   ,  O(") CHARACTER            
+TYPE                                 NEXT     *   ,  O(") CHARACTER            
+EXPENSE_CODE                         NEXT     *   ,  O(") CHARACTER            
+EXTRA_AMT                            NEXT     *   ,  O(") CHARACTER            
+BOOKING_ACCOM_INVOICE_SEQ_NUM        NEXT     *   ,  O(") CHARACTER            
+EXTRA_PAYMENT_AMT                    NEXT     *   ,  O(") CHARACTER            
+TEXT                                 NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Discarded - all columns null.
+Record 2: Discarded - all columns null.
+
+Table IACS.TEMP_BOOKING_ACCOM_EXTRAS:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  2 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  63984 bytes(31 rows)
+Space allocated for memory besides bind array:        0 bytes
+
+Total logical records skipped:          0
+Total logical records read:             2
+Total logical records rejected:         0
+Total logical records discarded:        2
+
+Run began on Wed Aug 30 11:02:30 2000
+Run ended on Wed Aug 30 11:02:30 2000
+
+Elapsed time was:     00:00:00.11
+CPU time was:         00:00:00.03    

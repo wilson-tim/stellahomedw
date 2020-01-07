@@ -1,0 +1,40 @@
+#
+# Script to check for processing error in the INTEGRATION process
+#
+log_file=/home/dw/DWLIVE/logs/int_dw`date +%y%m%d`.log1
+tail -3 /home/dw/DWLIVE/logs/dw_control.log
+#
+echo
+echo "INTEGRATION PROCESSING LOG FOR "`date +%d%m%y` 
+echo "================================================================================================="
+echo
+#
+head -72 $log_file
+var1=`grep ORA $log_file`
+grep ORA $log_file
+grep_status=$?
+if [[ $grep_status -eq 0 ]] then
+       echo
+       echo "ERROR: >>>>> INTEGRATION ERROR - An ORACLE Error has Occured"
+       echo "ERROR: >>>>> "$var1
+       echo
+fi
+#
+/home/dw/bin/review_log 
+#
+grep -q 'Data Warehouse Update Processng: Ended' /home/dw/DWLIVE/logs/int_dw`date +%y%m%d`.log1
+grep_status=$?
+if [[ $grep_status -ne 0 ]] then
+     echo
+     echo "WARNING: >>>>>>>>>> INTEGRATION PROCESSING HAS NOT COMPLETED - Check Log For System Errors  <<<<<<<<<<<<<<<"
+     echo "WARNING: >>>>>>>>>> INTEGRATION PROCESSING HAS NOT COMPLETED - Check Log For System Errors  <<<<<<<<<<<<<<<"
+     echo "WARNING: >>>>>>>>>> INTEGRATION PROCESSING HAS NOT COMPLETED - Check Log For System Errors  <<<<<<<<<<<<<<<"
+     echo
+     review_int
+     echo
+     echo "WARNING: >>>>>>>>>> INTEGRATION PROCESSING HAS NOT COMPLETED - Check Log For System Errors  <<<<<<<<<<<<<<<"
+     echo
+     echo "-------------------------------------------------------------------------------------------------"
+else 
+     tail -3 /home/dw/DWLIVE/logs/int_dw`date +%y%m%d`.log1
+fi

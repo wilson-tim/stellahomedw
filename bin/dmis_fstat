@@ -1,0 +1,4 @@
+#!/usr/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+cd /home/dw/rob;
+echo "@dmis_fstat.sql"|sqlplus -s dw/dbp

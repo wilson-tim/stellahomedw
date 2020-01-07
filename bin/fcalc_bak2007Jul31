@@ -1,0 +1,17 @@
+#!/bin/ksh
+if [[ -z "`ps -ef|grep fcalc_link|grep -v grep`" ]] then
+echo
+echo No fin_calcs are running
+echo
+else
+echo
+ps -ef|grep "fcalc_link"|grep -v "grep"|sort -k5|grep -v "sort">fcalc.lis
+tr -s "  " " "<fcalc.lis>fcalc_1.lis
+cut -f3,6,14 -d" " <fcalc_1.lis>fcalc_2.lis
+cat fcalc_2.lis|while read x y z
+do
+echo fin_calc for season ${z} was started at ${y} and is still running process ${x}
+echo
+done
+#rm fcalc*.lis
+fi

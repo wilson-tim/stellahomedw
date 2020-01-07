@@ -1,0 +1,92 @@
+#!/usr/bin/ksh
+# Script to display counts of various type of session that run in the DW environment
+# Used to monitor perfoamcne and gain understanding of what is running
+# Russell Bryer Aug 2004
+
+# Build a working file, cut the first 6 lines out as they are header info
+
+rm /tmp/sesslist.tmp
+# note the greps remove the headers and excude any blanks lines caused by wrapping
+#sessions | sed 's/\\/+/' | tail -n +6 | grep -v "^\|" | grep -v "^+" | grep -v "^\ \ " | sort | uniq > /tmp/sesslist.tmp
+sessions | sed 's/\\/+/' | tail -n +6 | grep -v "^\|" | grep -v "^+" | grep -v "^\ \ \ \ " > /tmp/sesslist.tmp
+
+# Count various sessions types
+
+# Cyrus opens multiple sessions per client, count both clients and total sessions
+export cyrus_list=`cat /tmp/sesslist.tmp | grep YIELD`
+export cyrus_count=`cat /tmp/sesslist.tmp | grep YIELD | cut -f3 | sort +1 | uniq | wc -l`
+export cyrus_sess=`cat /tmp/sesslist.tmp | grep YIELD | wc -l`
+
+# Accusend connections
+export acsend_list=`cat /tmp/sesslist.tmp | grep IDSAdmin`
+export acsend_count=`cat /tmp/sesslist.tmp | grep IDSAdmin | wc -l`
+
+# System applications
+export apps_list=`cat /tmp/sesslist.tmp | grep SYSTEM`
+export apps_count=`cat /tmp/sesslist.tmp | grep SYSTEM | wc -l`
+
+# Broadcast Agent sessions
+export bca_list=`cat /tmp/sesslist.tmp | grep BCA`
+export bca_count=`cat /tmp/sesslist.tmp | grep BCA | wc -l`
+
+# Business Objects sessions
+export bo_list=`cat /tmp/sesslist.tmp | grep -y BUS | grep -v BCA | grep -v IDSAdmin`
+export bo_count=`cat /tmp/sesslist.tmp | grep -y BUS | grep -v BCA | grep -v IDSAdmin | wc -l`
+
+# All other sessions note accounted for by the above
+export others_list=`cat /tmp/sesslist.tmp | grep -v SYSTEM | grep -v BCA | grep -v IDSAdmin | grep -v YIELD | grep -v -y BUS | sort -f +8 `
+export others_count=`cat /tmp/sesslist.tmp | grep -v SYSTEM | grep -v BCA | grep -v IDSAdmin | grep -v YIELD | grep -v -y BUS | wc -l`
+let "others_count=others_count-1"
+
+let "total_count = $cyrus_count + $acsend_count + $apps_count + $bca_count + $bo_count + $others_count"
+let "total_sess  = $cyrus_sess + $acsend_count + $apps_count + $bca_count + $bo_count + $others_count"
+
+# Output results
+
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Other sessions "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "$others_list"
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Business Objects sessions "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "$bo_list"
+echo " "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Acusend sessions "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "$acsend_list"
+echo " "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Broadcast Agent sessions "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "$bca_list"
+echo " "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Application sessions "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "$apps_list"
+echo " "
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| Break down of Sessions"
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "CYRUS Workstation..... $cyrus_count"
+echo "Applications.......... $apps_count"
+echo "Acusend............... $acsend_count"
+echo "Broadcast Agent....... $bca_count"
+echo "Business Objects...... $bo_count"
+echo "Others (not in total).        $others_count"
+echo "                       ____________"
+echo "Total client count            $total_count"
+echo "Total session count           $total_sess"
+
+processcount=`ps -ef | grep LOCAL | grep "$ORACLE_SID " | grep -v grep | grep -v $$ | wc -l`
+processcount=`echo $processcount | cut -c 0-3`
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+echo "| There are a total of $processcount people logged on to the $ORACLE_SID database."
+echo "+----------------------------------------------------------------------------------------------------------------------------"
+
+# End
+ 
+
+ 

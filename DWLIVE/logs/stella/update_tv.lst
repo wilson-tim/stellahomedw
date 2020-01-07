@@ -1,0 +1,41 @@
+yeast
+2014/02/28---09:00:01 --------------------------------------------------------------------------
+2014/02/28---09:00:01 >>>>>> Stella upate TV bookings
+2014/02/28---09:00:01 --------------------------------------------------------------------------
+2014/02/28---09:00:01 Setting variables
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+2014/02/28---09:00:01 Run the stored proc that runs the report
+2014/02/28---09:00:07 display logfile contents:
+
+SQL*Plus: Release 11.2.0.1.0 Production on Fri Feb 28 09:00:02 2014
+
+Copyright (c) 1982, 2009, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+
+start:14-feb-28 09:00:02
+reas from:TV reas toDN
+Count of fixed:0
+end:14-feb-28 09:00:07
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+2014/02/28---09:00:07 Test for errors
+Logfile: /home/dw/DWLIVE/stella/run_update_tv_reason_codes.lst
+2014/02/28---09:00:07 Need error email?
+2014/02/28---09:00:08 output summary
+Logfile: /home/dw/DWLIVE/stella/run_update_tv_reason_codes.lst
+2014/02/28---09:00:08 Need summ email?
+summ found
+bsp@tuispecialist.com
+sam.walsh@tuispecialist.com
+emma.long@tuispecialist.com
+laura.walpole@tuispecialist.com
+Denise.Underdown@tuispecialist.com
+wug-infra-alerts@tuispecialist.com
+2014/02/28---09:00:08 END OF PROGRAM

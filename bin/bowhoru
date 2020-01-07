@@ -1,0 +1,79 @@
+#!/usr/bin/ksh
+# set -x
+. /home/dw/bin/set_oracle_variables.ksh
+function whoru
+{
+  if [ -n ${1:-""} ]
+  then
+  sqlplus -s dw/dbp << EOF
+    set pagesize 0
+    set feedback off
+    set linesize 132
+    col sid      for 999
+    col username for a12
+    col osuser   for a15
+    col spid     for 99999
+    col logon_time for a12
+    col machine  for a22 wrap
+    col running  for a50 wrap
+    select s.sid
+    ,      s.username
+    ,      s.osuser
+    ,      s.machine
+    ,      p.spid
+    ,      to_char( logon_time, 'Mon dd@hh24:mi') logon_time
+    ,      rtrim (s.module)||decode( nvl(length( rtrim(s.module)),0),0,'',' ')|| s.program running
+    from   v\$session  s
+    ,      v\$process  p
+    where ( p.addr = s.paddr )
+    and     p.spid in $1)
+    order by p.spid;
+EOF
+  fi
+}
+
+function processline
+{
+  echo "| "$1 $2
+  echo "+----------------------------------------------------------------------------------------------------------------------------------+"
+  for variable1 in `rsh $1 "ps -ef | grep LOCAL=NO | grep -v grep" | awk '{print $2}'`
+  do
+    let "processcount=processcount+1"
+    if [ -z ${inclause:-""} ]
+    then
+      inclause="("
+    else
+      inclause=$inclause","
+    fi
+    inclause=$inclause"$variable1"
+  done
+  whoru ${inclause:-""} $2
+  unset inclause
+  echo "+----------------------------------------------------------------------------------------------------------------------------------+"
+}
+
+function parse
+{
+  cat ~/$1/.dwnodes | sort +2 | while read node db 
+  do
+    nodelist=$nodelist' '$node
+    dblist=$dblist' '$db
+  done
+  set -A nodes `echo $nodelist`
+  set -A dbs `echo $dblist`
+}
+. /home/dw/bin/set_oracle_variables.ksh
+echo "+----------------------------------------------------------------------------------------------------------------------------------+"
+echo "| Current External Users                                                                                                           |"
+echo "+----------------------------------------------------------------------------------------------------------------------------------+"
+parse $1
+let "i=0" "processcount=0"
+while [ $i -lt ${#nodes[*]} ]
+do
+  processline ${nodes[i]} ${dbs[i]}
+  let "i=i+1"
+done
+echo "|"
+echo "| There are a total of $processcount people logged on to the Data Warehouse"
+echo "|"
+echo "+----------------------------------------------------------------------------------------------------------------------------------+"

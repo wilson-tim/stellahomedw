@@ -1,0 +1,11 @@
+#!/bin/ksh
+echo "--=<\_/R\_>X<_/S\_/>=--"
+df -k |grep "Filesystem"
+echo "-----------------------------------------------------------------------"
+df -k |grep "tourops"
+df -k |grep "apps"
+df -k |grep "var"
+df -k |grep "tmp"
+df -k |grep "archive"|grep -v "database"
+echo "--=<\_/R\_>X<_/S\_/>=--"
+

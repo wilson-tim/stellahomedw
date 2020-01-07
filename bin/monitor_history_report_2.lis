@@ -1,0 +1,165 @@
+SQL> --__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+SQL> col week_start format a11 trunc heading 'Week|Starting|Monday'
+SQL> col tot format b9999999 heading 'Tot'
+SQL> col mon like tot heading 'Mon'
+SQL> col tue like tot heading 'Tue'
+SQL> col wed like tot heading 'Wed'
+SQL> col thu like tot heading 'Thu'
+SQL> col fri like tot heading 'Fri'
+SQL> col sat like tot heading 'Sat'
+SQL> col sun like tot heading 'Sun'
+SQL> col dummy format a3 trunc heading ' '
+SQL> col season_year format a7 trunc heading 'Season|Year'
+SQL> col season_type format a7 trunc heading 'Season|type'
+SQL> 
+SQL> --_/\_/\_/\_________Rob_S________/\__
+SQL> col today new_value xtoday noprint format a1 trunc
+SQL> select to_char(sysdate,'DY: DD-MON-YYYY') today from dual;
+
+                                                                                                                                                                                                                            
+                                                                                                                                                                                                                            
+
+SQL> 
+SQL> ttitle left '[Page Number: ' format 999999 sql.pno  ']     <<'xtoday'>>    -
+> [Filename:  monitor_history_report_2.sql]' skip 1-
+> '<<< History Report 2: Comparison of dmis durations: in minutes:  Rob Solomon >>>' skip 2
+SQL> --_/\_/\_/\_________Rob_S________/\__
+SQL> -- wk_strt,season_year,season_type,day,duration
+SQL> 
+SQL> break on season_year on season_type skip 1
+SQL> select ' ' dummy,
+  2  mon.season_year season_year,mon.season_type season_type,
+  3  mon.wk_strt week_start,
+  4  mon.duration mon,
+  5  tue.duration tue,
+  6  wed.duration wed,
+  7  thu.duration thu,
+  8  fri.duration fri,
+  9  sat.duration sat,
+ 10  sun.duration sun
+ 11  --
+ 12  from rgs_monday mon,rgs_tuesday tue,rgs_wednesday wed,
+ 13  rgs_thursday thu,rgs_friday fri,rgs_saturday sat,rgs_sunday sun
+ 14  where 1=1
+ 15  and mon.wk_strt=tue.wk_strt(+)
+ 16  and mon.season_year=tue.season_year(+)
+ 17  and mon.season_type=tue.season_type(+)
+ 18  --
+ 19  and mon.wk_strt=wed.wk_strt(+)
+ 20  and mon.season_year=wed.season_year(+)
+ 21  and mon.season_type=wed.season_type(+)
+ 22  --
+ 23  and mon.wk_strt=thu.wk_strt(+)
+ 24  and mon.season_year=thu.season_year(+)
+ 25  and mon.season_type=thu.season_type(+)
+ 26  --
+ 27  and mon.wk_strt=fri.wk_strt(+)
+ 28  and mon.season_year=fri.season_year(+)
+ 29  and mon.season_type=fri.season_type(+)
+ 30  --
+ 31  and mon.wk_strt=sat.wk_strt(+)
+ 32  and mon.season_year=sat.season_year(+)
+ 33  and mon.season_type=sat.season_type(+)
+ 34  --
+ 35  and mon.wk_strt=sun.wk_strt(+)
+ 36  and mon.season_year=sun.season_year(+)
+ 37  and mon.season_type=sun.season_type(+)
+ 38  --
+ 39  order by mon.season_year,mon.season_type,mon.wk_strt;
+
+[Page Number:       1]     <<FRI: 11-FEB-2005>>     [Filename:  monitor_history_report_2.sql]                                                                                                                               
+<<< History Report 2: Comparison of dmis durations: in minutes:  Rob Solomon >>>                                                                                                                                            
+                                                                                                                                                                                                                            
+                    Week                                                                                                                                                                                                    
+    Season  Season  Starting                                                                                                                                                                                                
+    Year    type    Monday           Mon      Tue      Wed      Thu      Fri      Sat      Sun                                                                                                                              
+--- ------- ------- ----------- -------- -------- -------- -------- -------- -------- --------                                                                                                                              
+    2004    S       09-AUG-04        494      404      450      186      217       78                                                                                                                                       
+                    16-AUG-04        812      432      305      266       79       38       59                                                                                                                              
+                    23-AUG-04        267       38       51       67       74       46       64                                                                                                                              
+                    30-AUG-04         35      204      318      330      136      154       55                                                                                                                              
+                    06-SEP-04        276      167       88       88       84       47       94                                                                                                                              
+                    13-SEP-04        202      133       82       63       75       34       92                                                                                                                              
+                    20-SEP-04        175       84       51       71      117       38       60                                                                                                                              
+                    27-SEP-04         79       61       62       97      249      123       68                                                                                                                              
+                    04-OCT-04        171       52       54       95       39       15        6                                                                                                                              
+                    11-OCT-04         57       36       42       28       20        9        7                                                                                                                              
+                    18-OCT-04         27       22       18        9       11        6        4                                                                                                                              
+                    25-OCT-04         15       12        9       10        5        3        2                                                                                                                              
+                    01-NOV-04         10        4        5        5        3        2        2                                                                                                                              
+                    08-NOV-04          2        3        5        3       40        2        2                                                                                                                              
+                    15-NOV-04          4       21       67                                                                                                                                                                  
+                                                                                                                                                                                                                            
+            W       09-AUG-04         92       63       36       24       23       12                                                                                                                                       
+                    16-AUG-04        156       52       30       40       14        8       10                                                                                                                              
+                    23-AUG-04         49       15       18       13       15        9       11                                                                                                                              
+                    30-AUG-04          7       43       63       21       39        9       12                                                                                                                              
+                    06-SEP-04         54       33       24       24       16       10       20                                                                                                                              
+                    13-SEP-04         51       39       20       17       38        9       23                                                                                                                              
+                    20-SEP-04         49       25       18       26       15       12       20                                                                                                                              
+                    27-SEP-04         28       17       18       22       48       12       21                                                                                                                              
+                    04-OCT-04         61       24       24       16       17        5        2                                                                                                                              
+                    11-OCT-04         37       16       22       19       20       14       13                                                                                                                              
+                    18-OCT-04         33       30       30       10       16       17       12                                                                                                                              
+                    25-OCT-04         47       41       43       36       29       22       14                                                                                                                              
+                    01-NOV-04        122       45       34       39       36       18        9                                                                                                                              
+                    08-NOV-04         35       40       39       27       35       10        6                                                                                                                              
+                    15-NOV-04         24       37       58       41       22        9        9                                                                                                                              
+                    22-NOV-04         30       29       20       29       20       10        8                                                                                                                              
+                    29-NOV-04         45       41       50       30       32       12        9                                                                                                                              
+                    06-DEC-04         32       32       31       36       30       10        7                                                                                                                              
+                    13-DEC-04         33       39       35       32       16       14        8                                                                                                                              
+                    20-DEC-04         39        9       37       29        5        3        4                                                                                                                              
+                    27-DEC-04         13       14       33       33       20        6       12                                                                                                                              
+                    03-JAN-05         14       55       45       47       45       25       16                                                                                                                              
+                    10-JAN-05         35       40       38       37       43       20       14                                                                                                                              
+                    17-JAN-05         36       36       27       36       27       23       11                                                                                                                              
+                    24-JAN-05         44       25                                  17       13                                                                                                                              
+                    31-JAN-05         42       41       36       31       32       19       16                                                                                                                              
+                    07-FEB-05         39       33       28       30       20                                                                                                                                                
+                                                                                                                                                                                                                            
+    2005    S       09-AUG-04         82       39       34       25       17       10                                                                                                                                       
+                    16-AUG-04        134       59       32       40       13        7        9                                                                                                                              
+                    23-AUG-04         41       11       13       13       14       10       10                                                                                                                              
+                    30-AUG-04          8       42       64       17       14        9       11                                                                                                                              
+                    06-SEP-04         45       26       17       19       16       10       20                                                                                                                              
+                    13-SEP-04         49       34       22       22       17        9       21                                                                                                                              
+                    20-SEP-04         42       22       14       16       12       11       24                                                                                                                              
+                    27-SEP-04         25       14       14       15       33       11       20                                                                                                                              
+                    04-OCT-04         46       17       13       10       14        5        2                                                                                                                              
+                    11-OCT-04         24       14       14       12       10        9        7                                                                                                                              
+                    18-OCT-04         22       12       12        8        7        9        6                                                                                                                              
+                    25-OCT-04         15       13       14       13       13       13        9                                                                                                                              
+                    01-NOV-04         40       16       19       16       17       11        6                                                                                                                              
+                    08-NOV-04         20       16       17       13       16        9        5                                                                                                                              
+                    15-NOV-04         14       25       99       24       11       10       12                                                                                                                              
+                    22-NOV-04         12       20       14       15       13       10        9                                                                                                                              
+                    29-NOV-04         33       27       38       22       19       10        8                                                                                                                              
+                    06-DEC-04         17       14       18       14       14        7        6                                                                                                                              
+                    13-DEC-04         13       14       17       12        7        8        3                                                                                                                              
+                    20-DEC-04         17       14       11       12        3        2        4                                                                                                                              
+                    27-DEC-04          7        9       19       18       15        6       19                                                                                                                              
+                    03-JAN-05         15       44       33       43       37       30       29                                                                                                                              
+                    10-JAN-05         34       46       39       38       49       32       27                                                                                                                              
+                    17-JAN-05         47       42       32       37       30       40       25                                                                                                                              
+                    24-JAN-05         51       37                                  44       43                                                                                                                              
+                    31-JAN-05         62       51       53       39       49       41       45                                                                                                                              
+                    07-FEB-05         66       46       44       43       34                                                                                                                                                
+                                                                                                                                                                                                                            
+            W       22-NOV-04          6        3        2        4        3        2        2                                                                                                                              
+                    29-NOV-04          3        3        4        3        3        2        2                                                                                                                              
+                    06-DEC-04          3        2        3        3        3        2        2                                                                                                                              
+                    13-DEC-04          3        4        3        5        2        3        2                                                                                                                              
+                    20-DEC-04          4        4        3        3        2        2        2                                                                                                                              
+                    27-DEC-04          2        2        3        3        3        2        3                                                                                                                              
+                    03-JAN-05          3        5        5        4        5        4        4                                                                                                                              
+                    10-JAN-05          5        6        6        6        5        5        4                                                                                                                              
+                    17-JAN-05          6        5        6        5        5        5        4                                                                                                                              
+                    24-JAN-05          7        6                                   5        5                                                                                                                              
+                    31-JAN-05          8        7        7        8        6        6        6                                                                                                                              
+                    07-FEB-05          8        6        8        7        4                                                                                                                                                
+                                                                                                                                                                                                                            
+
+81 rows selected.
+
+SQL> spool off

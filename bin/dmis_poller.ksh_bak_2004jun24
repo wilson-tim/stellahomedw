@@ -1,0 +1,118 @@
+ # Rob_S 26-MAR-2003
+#!/usr/bin/ksh
+set -x
+#This is dmis_poller.ksh. Eventually I'd like to tidy up where code overlaps
+# that of int_k_dmis_ctrl.ksh. For now, All this does is check whether dmis is already
+#running, and if not, whether a new build file exist at Anite. 
+#If so --  existing code kicks in.
+
+#Some initial definitions: But first make sure that directories named here exist.
+#Below defines a useful function called report which takes none - or any number 
+#of parameters
+#__/\__/\__/\__SET UP PARAMETERS, PATHS ETC
+function report
+{
+  echo `date +%Y/%m/%d---%H:%M:%S` $*
+}
+#__/\__/\__
+typeset -l today
+export today_d=`date +%Y%b%d`
+export today=${today_d}
+export x_today=`date +%d-%b-%Y`
+#__/\__/\__
+export load_path="/home/dw/DWLIVE/load/otop/"
+export exist_lst="/home/dw/DWLIVE/load/otop/otop_sl_existing.lst"
+export log_path="/home/dw/DWLIVE/logs/dmis/"
+export control_path="/home/dw/DWLIVE/integration/"
+export data_path="/data/dmis/"
+export fin_path="/home/dw/DWLIVE/fin_calc/"
+#
+#export xmis_passwd="`cat /home/dw/DWLIVE/passwords/anite_test.txt`"
+export xmis_passwd="`cat /home/dw/DWLIVE/passwords/cray.txt`"
+#
+export whouse_passwd="`cat /home/dw/DWLIVE/passwords/whouse.txt`"
+#
+cd  ${data_path}
+#Clean up
+rm determinant.txt x_built.*
+#
+#_/\__/\__CHECK WHETHER DMIS OR NORMAL INTEGRATION ARE RUNNING -  AND IF SO DROP OUT.
+if [[ `ps gw | grep "dw_dmis_control.ksh" | grep -v grep | wc -l` -ne 0 ]] then
+       echo "******************************************************************"
+       echo "***** PROCESS DW_DMIS_CONTROL.KSH ALREADY RUNNING, CANNOT START DMIS*****"
+       echo "******************************************************************"
+       exit 0
+fi 
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+if [[ `ps gw | grep "int_k_ctrl.ksh" | grep -v grep | wc -l` -ne 0 ]] then
+       echo "******************************************************************"
+       echo "***** PROCESS INT_K_CTRL.KSH ALREADY RUNNING, CANNOT START DMIS *****"
+       echo "******************************************************************"
+       exit 0
+fi 
+#
+#__/\__/\__/\__NEITHER DMIS NOR INTEGRATION RUNNING SO RETRIEVE ALL BUILT FILES
+ftp -n -v -i  << Rob_S
+open cray
+#open 10.20.0.29
+user data_w ${xmis_passwd}
+cd otop_pcd:
+mget built.*;0
+quit
+Rob_S
+#
+#Convert filename to lower case and get rid of the semicolon and stuff to its right.
+#Below, y is a member of the files containing ";"
+#x is then this filename, with the longest string like "; - - - - -" removed from the RHS
+#and also converted to lower case
+typeset  -l x
+for y in $(ls -1 BUILT*|grep ";")
+do
+x=${y%%;*}
+mv ${y} x_${x}
+#The x_ above is just to differentiate these built files from those which
+#are retrieved during the actual dmis run. Remember these files are only used
+#as a determinant for the launch of a dmis run.
+done
+#__/\__/\__/\__END OF BUILT FILE RETRIEVAL
+#
+#__/\__/\__/\__START OF A SEASON LOOP FOR CHECKING THE BUILT FILE CONTENT
+#__/\__/\__/\__AGAINST CORRESPONDING (LAST_BUILT) FILES
+cat ${load_path}dmis_season.lst|while read season
+do
+#Immediately below we just create an upper case version of the season called seas
+#and export both versions
+typeset -u seas
+seas=${season}
+export season
+export seas
+#
+#
+#__/\__See if the sequence number of the built file is different from the last one.
+cat ${data_path}last_built.${season}| read last_seq
+cat ${data_path}x_built.${season}|read seq
+export seq
+export last_seq
+if [[ ${seq} = ${last_seq} ]] 
+then
+echo ${season} same>>${data_path}determinant.txt
+else 
+echo ${season} diff>>${data_path}determinant.txt
+fi
+done
+#__/\__/\__/\__END OF SEASON LOOP FOR CHECKING THE BUILT FILE CONTENT
+#
+#We now have a file  /data/dmis/determinant.txt which (if there have been any changes 
+#at Anite since the last dmis run), will contain at least one line with 'diff'
+#
+#__/\__/\__/\__DECIDE WHETHER TO RUN DMIS
+grep -q diff determinant.txt
+diff_status=$?
+echo ${diff_status}
+#If a diff found, then diff_status is zero (true)
+if [[ ${diff_status} -eq 0 ]] then
+#Launch dmis 
+#echo dmis would have been launched>${data_path}chek.lis
+/home/dw/bin/dw_dmis_control.ksh  >> /home/dw/DWLIVE/logs/dmis/dw_dmis_control.log &
+else exit 0
+fi

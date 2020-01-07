@@ -1,0 +1,8 @@
+clear
+echo "+------------------------------------------------------------------------------+"
+echo "|                 Current Business Object Users                                |"
+echo "+------------------------------------------------------------------------------+"
+ps -ef | grep UID | grep PID 
+ps -ef | grep LOCAL=NO | grep oracle | sort -r -n +5
+
+

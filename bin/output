@@ -1,0 +1,203 @@
+[H[J+------------------------------------------------------------------------------+
+|                 Current Business Object Users                                |
++------------------------------------------------------------------------------+
+     UID   PID  PPID   C    STIME    TTY  TIME CMD
++------------------------------------------------------------------------------+
+| Node 07                                                                      |
++------------------------------------------------------------------------------+
+ oracle8 55700     1  10 14:10:31      -  0:00 oracleDWLN7 (LOCAL=NO) 
++------------------------------------------------------------------------------+
+| Node 09                                                                      |
++------------------------------------------------------------------------------+
+ oracle8 65158     1   0 12:10:18      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 63558     1   0 14:09:33      -  0:07 oracleDWLN9 (LOCAL=NO) 
+ oracle8 59538     1   4 13:40:27      -  0:21 oracleDWLN9 (LOCAL=NO) 
+ oracle8 58574     1   0 11:45:00      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 54720     1   0 09:11:49      -  1:11 oracleDWLN9 (LOCAL=NO) 
+ oracle8 52070     1  10 14:10:31      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 22240     1  35 13:49:10      -  8:16 oracleDWLN9 (LOCAL=NO) 
+ oracle8 19480     1   0 14:07:20      -  0:03 oracleDWLN9 (LOCAL=NO) 
+ oracle8 18312     1   0 08:00:12      -  7:15 oracleDWLN9 (LOCAL=NO) 
++------------------------------------------------------------------------------+
+| Node 10                                                                      |
++------------------------------------------------------------------------------+
+ oracle8 63226     1  15 14:10:31      -  0:00 oracleDWLN10 (LOCAL=NO) 
++------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+|                                          Current Data Wharehouse Oracle Users
++---------------------------------------------------------------------------------------------------------------------------+
+      UID   PID  PPID   C    STIME    TTY  TIME CMD
++---------------------------------------------------------------------------------------------------------------------------+
+| Node 07 
++---------------------------------------------------------------------------------------------------------------------------+
+ oracle8 55700     1  10 14:10:31      -  0:00 oracleDWLN7 (LOCAL=NO) 
+  daemon 71576 53396   2 00:00:13      - 16:53 oracleDWLN7 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+      dw 57242 62616  35 13:58:36      -  0:22 oracleDWLN7 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
++---------------------------------------------------------------------------------------------------------------------------+
+| Node 09 
++---------------------------------------------------------------------------------------------------------------------------+
+ oracle8 65158     1   0 12:10:18      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 63558     1   0 14:09:33      -  0:07 oracleDWLN9 (LOCAL=NO) 
+ oracle8 59538     1   2 13:40:27      -  0:21 oracleDWLN9 (LOCAL=NO) 
+ oracle8 58574     1   0 11:45:00      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 54720     1   0 09:11:49      -  1:11 oracleDWLN9 (LOCAL=NO) 
+ oracle8 52070     1   9 14:10:31      -  0:00 oracleDWLN9 (LOCAL=NO) 
+ oracle8 22240     1  58 13:49:10      -  8:16 oracleDWLN9 (LOCAL=NO) 
+ oracle8 19480     1   0 14:07:20      -  0:03 oracleDWLN9 (LOCAL=NO) 
+ oracle8 18312     1   0 08:00:12      -  7:15 oracleDWLN9 (LOCAL=NO) 
+  daemon 14184 51812   0 00:00:12      - 21:40 oracleDWLN9 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+      dw 19186 59888   0 11:33:07      -  0:00 oracleDWLN9 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
++---------------------------------------------------------------------------------------------------------------------------+
+| Node 10 
++---------------------------------------------------------------------------------------------------------------------------+
+ oracle8 44770 70624   0   Jan 13      - 21:35 oracleDWLN10 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
+  daemon  4304 58574   0 00:01:12      - 21:24 oracleDWLN10 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq))) 
++---------------------------------------------------------------------------------------------------------------------------+
+6
+71576 27 14855 BGSUSER daemon
+spsnode07
+
+62762 11 1 SYS oracle8
+spsnode10
+
+22842 21 44941 GSBRAVERY dw
+spsnode09
+
+54338 24 28745 GSBRAVERY dw
+spsnode09
+
+57242 23 45946 DW dw
+spsnode07
+
+55700 29 47339 GSBRAVERY dw
+spsnode09
+
+X
+5
+71576 27 14855 BGSUSER daemon
+spsnode07
+
+62762 11 1 SYS oracle8
+spsnode10
+
+54338 24 28745 GSBRAVERY dw
+spsnode09
+
+57242 23 45946 DW dw
+spsnode07
+
+55700 29 47339 GSBRAVERY dw
+spsnode09
+
+13
+58574 28 64118 ZAWAN OraUser
+
+
+56704 11 1 SYS oracle8
+spsnode10
+
+50056 23 21259 GSBRAVERY dw
+spsnode09
+
+14184 9 39055 BGSUSER daemon
+spsnode09
+
+22240 13 59919 BO_SRYAN SRYAN
+FCG_CRACRA_NTT2
+
+54720 32 13970 LVINCENT lvincent
+FINANCE_CSUITE
+
+18312 15 41987 BO_DWHEATLE DWHEATLE
+8650HVU73267
+
+59538 22 6432 ZAWAN OraUser
+
+
+63558 24 19692 DW Administrator
+FCG_FCHDELIVERY_05
+
+65158 27 2848 IACS Administrator
+FCG_FCHDELIVERY_08
+
+19186 12 19009 DW dw
+spsnode09
+
+19480 20 47078 DW Administrator
+FCG_FCHDELIVERY_05
+
+52070 17 41343 GSBRAVERY dw
+spsnode09
+
+X
+13
+58574 28 64118 ZAWAN OraUser
+
+
+56704 11 1 SYS oracle8
+spsnode10
+
+50056 23 21259 GSBRAVERY dw
+spsnode09
+
+14184 9 39055 BGSUSER daemon
+spsnode09
+
+22240 13 59919 BO_SRYAN SRYAN
+FCG_CRACRA_NTT2
+
+54720 32 13970 LVINCENT lvincent
+FINANCE_CSUITE
+
+18312 15 41987 BO_DWHEATLE DWHEATLE
+8650HVU73267
+
+59538 22 6432 ZAWAN OraUser
+
+
+63558 24 19692 DW Administrator
+FCG_FCHDELIVERY_05
+
+65158 27 2848 IACS Administrator
+FCG_FCHDELIVERY_08
+
+19186 12 19009 DW dw
+spsnode09
+
+19480 20 47078 DW Administrator
+FCG_FCHDELIVERY_05
+
+52070 17 41343 GSBRAVERY dw
+spsnode09
+
+5
+44770 8 1 SYS oracle8
+spsnode10
+
+45130 9 4 SYS oracle8
+spsnode10
+
+16218 29 7726 GSBRAVERY dw
+spsnode09
+
+4304 27 45709 BGSUSER daemon
+spsnode10
+
+63226 18 60537 GSBRAVERY dw
+spsnode09
+
+X
+5
+44770 8 1 SYS oracle8
+spsnode10
+
+45130 9 4 SYS oracle8
+spsnode10
+
+4304 27 45709 BGSUSER daemon
+spsnode10
+
+63226 18 60537 GSBRAVERY dw
+spsnode09
+
+19-Jan-2000 14:10:32 47.83333 5.50000 00:00:00.01 13.00000 00:00:00.01 5.00000 00:00:00.00

@@ -1,0 +1,13 @@
+
+Attached is a CSV file detailing all entries that were created today
+that have one of the following event_levels or event_types.
+
+EVENT_LEVEL   FATAL
+              WARNING
+              ERROR
+
+EVENT_TYPE    ERROR
+              GENERROR
+
+
+ 

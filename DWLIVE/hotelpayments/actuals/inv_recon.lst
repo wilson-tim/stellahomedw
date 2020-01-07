@@ -1,0 +1,95 @@
+SQL_DWL>
+SQL_DWL>select  'Invoice' ||','||INV_SEQ_NO||','||invoice_num||','||PROPERTY_NUM||','||BATCH_NUM||','||INVOICE_DATE||','||INVOICE_AMT
+  2          ||','||CCY_CODE||','||office_code||','||APTOS_EXTRACTED_DATE
+  3          OFFICE_CODE
+  4      from invoice
+  5      where  (invoice_num,property_num) in
+  6      (select invoice_num,property_num from invoice
+  7       MINUS
+  8       select invoice_num,property_num  from test_inv)
+  9  UNION
+ 10   select  'Test_Inv' ||','||INV_SEQ_NO||','||invoice_num||','||PROPERTY_NUM||','||BATCH_NUM||','||INVOICE_DATE||','||INVOICE_AMT||','||
+ 11            CCY_CODE||','||office_code||','||APTOS_EXTRACTED_DATE
+ 12          OFFICE_CODE
+ 13      from test_inv
+ 14      where  (invoice_num,property_num) in
+ 15      (select invoice_num,property_num from test_inv
+ 16       MINUS
+ 17       select invoice_num,property_num  from invoice);
+
+OFFICE_CODE                                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------
+Invoice,10710,1 2000771 ,88000024,6532,16-JAN-00,179200,ESP,PAL,22-FEB-00                                                           
+Invoice,11953,FT 8436 00 ,40000015,7334,24-JAN-00,354277,PTE,PAL,25-FEB-00                                                          
+Invoice,16511,RC 20242 99,1581,11088,14-DEC-99,17000,ESP,PAL,23-MAR-00                                                              
+Invoice,16661,FL 83172 CANX ,1342,11199,09-MAR-00,-31200,ESP,PAL,23-MAR-00                                                          
+Invoice,17360,1653 00 ,1578,11721,24-FEB-00,36896,ESP,PAL,27-MAR-00                                                                 
+Invoice,18633,612 00 ,40000022,12629,28-FEB-00,133700,PTE,PAL,30-MAR-00                                                             
+Invoice,21685,1441 2 ,1959,14952,26-MAR-00,156.8,GBP,PAL,10-APR-00                                                                  
+Invoice,22698,00003166 CX ,42010505,15654,17-FEB-00,0,ESP,PAL,13-APR-00                                                             
+Invoice,22786,735 ,32002106,15664,10-MAR-00,1455244,ESP,PAL,14-APR-00                                                               
+Invoice,22936,00012349 ,52001702,15790,26-FEB-00,25400,ESP,PAL,14-APR-00                                                            
+Invoice,25850,231 ,1116,18227,04-APR-00,11000,ESP,PAL,03-MAY-00                                                                     
+Invoice,27323,2089 2000 2091 ,1680,19364,05-APR-00,476,GBP,PAL,11-MAY-00                                                            
+Invoice,27456,3811 00159688,1613,19485,09-MAR-00,504000,ESP,PAL,11-MAY-00                                                           
+Invoice,29867,00030300 ,52000019,21365,20-APR-00,2100,GBP,PAL,19-MAY-00                                                             
+Invoice,30650,000 271    ,1398,22070,27-APR-00,29850,ESP,PAL,23-MAY-00                                                              
+Invoice,32180,1 184655 ,1582,23452,06-MAY-00,194640,ESP,PAL,30-MAY-00                                                               
+Invoice,33055,MO 0929 ,1434,24182,17-MAY-00,2100,ESP,PAL,02-JUN-00                                                                  
+Invoice,33860,114216,1371,24810,23-MAY-00,156200,ESP,PAL,05-JUN-00                                                                  
+Invoice,34462,00 271 ,88000022,25258,12-MAY-00,855036,ESP,PAL,06-JUN-00                                                             
+Invoice,34913,21385 ,1815,25635,19-MAY-00,196020,ESP,PAL,06-JUN-00                                                                  
+Invoice,36509,REF 19917958 ,3496,27029,06-JAN-00,-169000,ESP,PAL,12-JUN-00                                                          
+Invoice,38110,5700100,32000018,28469,31-MAY-00,144200,ESP,PAL,21-JUN-00                                                             
+Invoice,38276,1 2007688    ,3496,28622,30-MAY-00,302400,ESP,PAL,21-JUN-00                                                           
+Invoice,39446,MO 0938 ,1434,29597,22-MAY-00,117600,ESP,PAL,22-JUN-00                                                                
+Invoice,40161,215 02361 ,1365,30196,31-MAY-00,0,ESP,PAL,26-JUN-00                                                                   
+Invoice,40280,MO 0958 ,1434,30274,08-JUN-00,183750,ESP,PAL,26-JUN-00                                                                
+Invoice,40465,626 ,2441,30449,06-JUN-00,220640,ESP,PAL,26-JUN-00                                                                    
+Invoice,40892,351700087992 CX,1615,30755,25-MAY-00,-159460,ESP,PAL,26-JUN-00                                                        
+Invoice,40980,10120      ,3553,30921,20-MAY-00,269640,ESP,PAL,26-JUN-00                                                             
+Invoice,41229,152336CX,1945,31111,20-MAY-00,-116200,PTE,PAL,26-JUN-00                                                               
+Invoice,41230,00146809,1945,31114,20-MAY-00,116200,PTE,PAL,26-JUN-00                                                                
+Invoice,41387,440      ,68000049,31199,25-MAY-00,63959,ESP,PAL,28-JUN-00                                                            
+Invoice,41813,752 ,68003034,31543,06-JUN-00,184548,ESP,PAL,28-JUN-00                                                                
+Invoice,6229,09904672,1528,3372,28-DEC-99,199800,ESP,PAL,26-JAN-00                                                                  
+Invoice,7077,HC67997 ,86006917,6582,05-MAY-00,1072.26,USD,CRA,26-MAY-00                                                             
+Invoice,839,6131 ,20000065,950,10-NOV-99,1232,GBP,CRA,07-JAN-00                                                                     
+Test_Inv,10710,1 2000771,88000024,6532,16-JAN-00,179200,ESP,PMI,22-FEB-00                                                           
+Test_Inv,11953,FT 8436 00,40000015,7334,24-JAN-00,354277,PTE,PMI,25-FEB-00                                                          
+Test_Inv,16511, RC 20242 99,1581,11088,14-DEC-99,17000,ESP,PMI,23-MAR-00                                                            
+Test_Inv,16661,FL 83172 CANX,1342,11199,09-MAR-00,-31200,ESP,PMI,23-MAR-00                                                          
+Test_Inv,17360,1653 00,1578,11721,24-FEB-00,36896,ESP,PMI,27-MAR-00                                                                 
+Test_Inv,18633,612 00,40000022,12629,28-FEB-00,133700,PTE,PMI,30-MAR-00                                                             
+Test_Inv,21685,1441 2,1959,14952,26-MAR-00,156.8,GBP,PMI,10-APR-00                                                                  
+Test_Inv,22698,00003166 CX,42010505,15654,17-FEB-00,0,ESP,PMI,13-APR-00                                                             
+Test_Inv,22786,735,32002106,15664,10-MAR-00,1455244,ESP,PMI,14-APR-00                                                               
+Test_Inv,22936,00012349,52001702,15790,26-FEB-00,25400,ESP,PMI,14-APR-00                                                            
+Test_Inv,25850,231,1116,18227,04-APR-00,11000,ESP,PMI,03-MAY-00                                                                     
+Test_Inv,27323,2089 2000 2091,1680,19364,05-APR-00,476,GBP,PMI,11-MAY-00                                                            
+Test_Inv,27456, 3811 00159688,1613,19485,09-MAR-00,504000,ESP,PMI,11-MAY-00                                                         
+Test_Inv,29867,00030300,52000019,21365,20-APR-00,2100,GBP,PMI,19-MAY-00                                                             
+Test_Inv,30650,000 271,1398,22070,27-APR-00,29850,ESP,PMI,23-MAY-00                                                                 
+Test_Inv,32180,1 184655,1582,23452,06-MAY-00,194640,ESP,PMI,30-MAY-00                                                               
+Test_Inv,33055,MO 0929,1434,24182,17-MAY-00,2100,ESP,PMI,02-JUN-00                                                                  
+Test_Inv,33860, 114216,1371,24810,23-MAY-00,156200,ESP,PMI,05-JUN-00                                                                
+Test_Inv,34462,00 271,88000022,25258,12-MAY-00,855036,ESP,PMI,06-JUN-00                                                             
+Test_Inv,34913,21385,1815,25635,19-MAY-00,196020,ESP,PMI,06-JUN-00                                                                  
+Test_Inv,36509,REF 19917958,3496,27029,06-JAN-00,-169000,ESP,PMI,12-JUN-00                                                          
+Test_Inv,38110, 5700100,32000018,28469,31-MAY-00,144200,ESP,PMI,21-JUN-00                                                           
+Test_Inv,38276,1 2007688,3496,28622,30-MAY-00,302400,ESP,PMI,21-JUN-00                                                              
+Test_Inv,39446,MO 0938,1434,29597,22-MAY-00,117600,ESP,PMI,22-JUN-00                                                                
+Test_Inv,40161,215 02361,1365,30196,31-MAY-00,0,ESP,PMI,26-JUN-00                                                                   
+Test_Inv,40280,MO 0958,1434,30274,08-JUN-00,183750,ESP,PMI,26-JUN-00                                                                
+Test_Inv,40465,626,2441,30449,06-JUN-00,220640,ESP,PMI,26-JUN-00                                                                    
+Test_Inv,40892, 351700087992 CX,1615,30755,25-MAY-00,-159460,ESP,PMI,26-JUN-00                                                      
+Test_Inv,40980,10120,3553,30921,20-MAY-00,269640,ESP,PMI,26-JUN-00                                                                  
+Test_Inv,41387,440,68000049,31199,25-MAY-00,63959,ESP,PMI,28-JUN-00                                                                 
+Test_Inv,41813,752,68003034,31543,06-JUN-00,184548,ESP,PMI,28-JUN-00                                                                
+Test_Inv,6229, 09904672,1528,3372,28-DEC-99,199800,ESP,PMI,26-JAN-00                                                                
+Test_Inv,7077,HC67997,86006917,6582,05-MAY-00,1072.26,USD,CRA,26-MAY-00                                                             
+Test_Inv,839,6131,20000065,950,10-NOV-99,1232,GBP,CRA,07-JAN-00                                                                     
+
+70 rows selected.
+
+SQL_DWL>spool off

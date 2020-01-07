@@ -1,0 +1,17 @@
+
+SQL*Plus: Release 11.2.0.1.0 Production on Fri Feb 28 09:00:02 2014
+
+Copyright (c) 1982, 2009, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+
+start:14-feb-28 09:00:02
+reas from:TV reas toDN
+Count of fixed:0
+end:14-feb-28 09:00:07
+
+PL/SQL procedure successfully completed.
+
+Disconnected from Oracle Database 11g Release 11.2.0.1.0 - 64bit Production

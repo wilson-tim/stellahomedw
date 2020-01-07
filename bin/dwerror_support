@@ -1,0 +1,69 @@
+#!/usr/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+echo
+echo
+echo
+echo "DATA WAREHOUSE DAILY INTEGRATION CHECK"
+echo "--------------------------------------"
+echo
+source=`hostname`
+#This file is dwerror from the bin directory
+#
+echo
+echo "THIS IS COMING FROM THE ${source} BOX"
+echo
+tail -n4 /home/dw/DWLIVE/logs/dw_control.log
+echo "Scan  of /logs/otop for Errors:  Any errors will appear between the lines below"
+echo "______/\_/\_/\__________________________________________/\_/\__________________"
+echo  /home/dw/DWLIVE/logs/otop/o_*_log*|xargs grep -i -n "Unable"|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "_______/\_/\_/\__________________________________________/\_/\_________________"
+echo  /home/dw/DWLIVE/logs/otop/o_*_log*|xargs grep -i -n "file not found"|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "________/\_/\_/\__________________________________________/\_/\________________"
+echo  /home/dw/DWLIVE/logs/otop/o_*_log*|xargs grep -i -n "No such file"|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "_________/\_/\_/\__________________________________________/\_/\_______________"
+echo  /home/dw/DWLIVE/logs/otop/o_*_log*|xargs grep -i -n "value larger"|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "__________/\_/\_/\__________________________________________/\_/\______________"
+echo  /home/dw/DWLIVE/logs/otop/o_*_log*|xargs grep -n "ORA_"|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "___________/\_/\_/\__________________________________________/\_/\_____________"
+grep -i -n enough /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "____________/\_/\_/\__________________________________________/\_/\____________"
+grep -i -n refuse /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "_____________/\_/\_/\__________________________________________/\_/\___________"
+grep    -n Fail /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "______________/\_/\_/\__________________________________________/\_/\__________"
+grep -i -n abort /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "_______________/\_/\_/\__________________________________________/\_/\_________"
+grep -i -n exceed /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "________________/\_/\_/\__________________________________________/\_/\________"
+grep    -n ORA /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "_________________/\_/\_/\__________________________________________/\_/\_______"
+grep -i -n Failed /home/dw/DWLIVE/logs/otop/ftp_*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512 
+echo "__________________/\_/\_/\__________________________________________/\_/\______"
+grep -i -n "syntax" /home/dw/DWLIVE/logs/*log*|grep -v mem|grep -v ORA-00001|grep -v ORA-06512
+echo "___________________/\_/\_/\__________________________________________/\_/\______"
+grep -i -n "Error" /home/dw/DWLIVE/logs/otop/otop_*|grep -v mem|grep -v "load error file if it exists"|grep -v timeschmod|grep -v ORA-00001|grep -v ORA-06512
+echo "____________________/\_/\_/\__________________________________________/\_/\_____"
+echo
+echo "Between the lines below, are the sqlldr bad files relating to market data. A few bads (say 20) are acceptable"
+echo "__/\__/\__"
+bad_mkt.ksh
+echo "__/\__/\__"
+echo
+sqlplus -s dw/dbp <<\xyz
+set linesize 200
+set pagesize 999
+col dummy format a18 trunc heading ' '
+@/home/dw/warehouse_checking/flag_state
+@/home/dw/warehouse_checking/check_fin_calc
+exit
+xyz
+echo
+echo "Below are the market (booking table) numbers"
+cat /home/dw/warehouse_checking/chek_mkt.lis
+echo
+echo
+empty.ksh
+echo
+echo THIS CAME FROM THE ${source} BOX
+echo
+

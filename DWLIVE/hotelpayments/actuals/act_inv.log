@@ -1,0 +1,70 @@
+
+SQL*Loader: Release 8.0.4.0.0 - Production on Thu Jan 13 15:31:56 2000
+
+(c) Copyright 1997 Oracle Corporation.  All rights reserved.
+
+Control File:   /home/dw/DWLIVE/hotelpayments/actuals/act_inv.ctl
+Data File:      /data/hotelpayments/import/act_inv.a
+  Bad File:     /home/dw/DWLIVE/logs/act_inv.bad
+  Discard File: /home/dw/DWLIVE/logs/act_inv.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 65536 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table IACS.INVOICE, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INV_SEQ_NO                          FIRST     *   ,  O(") CHARACTER            
+INVOICE_NUM                          NEXT     *   ,  O(") CHARACTER            
+PROPERTY_NUM                         NEXT     *   ,  O(") CHARACTER            
+BATCH_NUM                            NEXT     *   ,  O(") CHARACTER            
+INVOICE_DATE                         NEXT     8   ,  O(") DATE RRRRMMDD        
+INVOICE_AMT                          NEXT     *   ,  O(") CHARACTER            
+DATE_FROM                            NEXT     8   ,  O(") DATE RRRRMMDD        
+DATE_TO                              NEXT     8   ,  O(") DATE RRRRMMDD        
+ENTRY_USER                           NEXT     *   ,  O(") CHARACTER            
+ENTRY_DATE                           NEXT    17   ,  O(") DATE RRRRMMDD HH24:MI:SS
+AMENDED_USER                         NEXT     *   ,  O(") CHARACTER            
+AMENDED_DATE_TIME                    NEXT    17   ,  O(") DATE RRRRMMDD HH24:MI:SS
+AMENDED_PROCESS                      NEXT     *   ,  O(") CHARACTER            
+TYPE_OF_CONTRACT                     NEXT     *   ,  O(") CHARACTER            
+CCY_CODE                             NEXT     *   ,  O(") CHARACTER            
+EXTRAS_OVERCHARGE_TEXT               NEXT     *   ,  O(") CHARACTER            
+TOTAL_EXTRAS_AMT                     NEXT     *   ,  O(") CHARACTER            
+TOTAL_EXTRAS_PAYMENT_AMT             NEXT     *   ,  O(") CHARACTER            
+APTOS_N_CODE                         NEXT     *   ,  O(") CHARACTER            
+OTOP_ACCOM_CODE                      NEXT     *   ,  O(") CHARACTER            
+SEASON                               NEXT     *   ,  O(") CHARACTER            
+DEBIT_NOTE_IND                       NEXT     *   ,  O(") CHARACTER            
+APTOS_EXTRACTED_DATE                 NEXT    17   ,  O(") DATE RRRRMMDD HH24:MI:SS
+EXTRAS_ONLY_IND                      NEXT     *   ,  O(") CHARACTER            
+
+
+Table IACS.INVOICE:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  61542 bytes(13 rows)
+Space allocated for memory besides bind array:        0 bytes
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Jan 13 15:31:56 2000
+Run ended on Thu Jan 13 15:31:57 2000
+
+Elapsed time was:     00:00:00.23
+CPU time was:         00:00:00.06    

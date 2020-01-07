@@ -1,0 +1,859 @@
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+lager65
+2014/02/28---06:30:03 : Parameters passed: .\n
+2014/02/28---06:30:03 --------------------------------------------------------------------------
+2014/02/28---06:30:03 >>>>>> Stella AIR Load load_air.ksh
+2014/02/28---06:30:03 --------------------------------------------------------------------------
+2014/02/28---06:30:03 Setting variables
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdk/jre/bin:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+2014/02/28---06:30:03 Checking input params
+start at step  00
+2014/02/28---06:30:03 FTPing files from source server
+2014/02/28---06:30:03 Step 10\n
+not written yet
+2014/02/28---06:30:03 Deleting error files which was created by prior run
+2014/02/28---06:30:03 Step 20\n
+2014/02/28---06:30:03 files are already in airfiles folder , now trying to change ownership/rights on files
+/data/stella/airfiles/60017.AIR /data/stella/airfiles/60018.AIR /data/stella/airfiles/60019.AIR /data/stella/airfiles/60020.AIR /data/stella/airfiles/60021.AIR /data/stella/airfiles/60022.AIR /data/stella/airfiles/60023.AIR /data/stella/airfiles/60024.AIR /data/stella/airfiles/60025.AIR /data/stella/airfiles/60026.AIR /data/stella/airfiles/60027.AIR /data/stella/airfiles/60028.AIR /data/stella/airfiles/60029.AIR /data/stella/airfiles/60030.AIR /data/stella/airfiles/60031.AIR /data/stella/airfiles/60032.AIR /data/stella/airfiles/60033.AIR /data/stella/airfiles/60034.AIR /data/stella/airfiles/60035.AIR /data/stella/airfiles/60036.AIR /data/stella/airfiles/60037.AIR /data/stella/airfiles/60038.AIR /data/stella/airfiles/60039.AIR /data/stella/airfiles/60040.AIR /data/stella/airfiles/60041.AIR /data/stella/airfiles/60042.AIR /data/stella/airfiles/60043.AIR /data/stella/airfiles/60044.AIR /data/stella/airfiles/60045.AIR /data/stella/airfiles/60046.AIR /data/stella/airfiles/60047.AIR /data/stella/airfiles/60048.AIR /data/stella/airfiles/60049.AIR /data/stella/airfiles/60050.AIR /data/stella/airfiles/60051.AIR /data/stella/airfiles/60052.AIR /data/stella/airfiles/60053.AIR /data/stella/airfiles/60054.AIR /data/stella/airfiles/60055.AIR /data/stella/airfiles/60056.AIR /data/stella/airfiles/60057.AIR /data/stella/airfiles/60058.AIR /data/stella/airfiles/60059.AIR /data/stella/airfiles/60060.AIR /data/stella/airfiles/60061.AIR /data/stella/airfiles/60062.AIR /data/stella/airfiles/60063.AIR /data/stella/airfiles/60064.AIR /data/stella/airfiles/60065.AIR /data/stella/airfiles/60066.AIR /data/stella/airfiles/60067.AIR /data/stella/airfiles/60068.AIR /data/stella/airfiles/60069.AIR /data/stella/airfiles/60070.AIR /data/stella/airfiles/60071.AIR /data/stella/airfiles/60072.AIR /data/stella/airfiles/60073.AIR /data/stella/airfiles/60074.AIR /data/stella/airfiles/60075.AIR /data/stella/airfiles/60076.AIR /data/stella/airfiles/60077.AIR /data/stella/airfiles/60078.AIR /data/stella/airfiles/60079.AIR /data/stella/airfiles/60080.AIR /data/stella/airfiles/60081.AIR /data/stella/airfiles/60082.AIR /data/stella/airfiles/60083.AIR /data/stella/airfiles/60084.AIR /data/stella/airfiles/60085.AIR /data/stella/airfiles/60086.AIR /data/stella/airfiles/60087.AIR /data/stella/airfiles/60088.AIR /data/stella/airfiles/60089.AIR /data/stella/airfiles/60090.AIR /data/stella/airfiles/60091.AIR /data/stella/airfiles/60092.AIR /data/stella/airfiles/60093.AIR /data/stella/airfiles/60094.AIR /data/stella/airfiles/60095.AIR /data/stella/airfiles/60096.AIR /data/stella/airfiles/60097.AIR /data/stella/airfiles/60098.AIR /data/stella/airfiles/60099.AIR /data/stella/airfiles/60100.AIR /data/stella/airfiles/60101.AIR /data/stella/airfiles/60102.AIR /data/stella/airfiles/60103.AIR /data/stella/airfiles/60104.AIR /data/stella/airfiles/60105.AIR /data/stella/airfiles/60106.AIR /data/stella/airfiles/60107.AIR /data/stella/airfiles/60108.AIR /data/stella/airfiles/60109.AIR /data/stella/airfiles/60110.AIR /data/stella/airfiles/60111.AIR /data/stella/airfiles/60112.AIR /data/stella/airfiles/60113.AIR /data/stella/airfiles/60114.AIR /data/stella/airfiles/60115.AIR /data/stella/airfiles/60116.AIR /data/stella/airfiles/60117.AIR /data/stella/airfiles/60118.AIR /data/stella/airfiles/60119.AIR /data/stella/airfiles/60120.AIR /data/stella/airfiles/60121.AIR /data/stella/airfiles/60122.AIR /data/stella/airfiles/60123.AIR /data/stella/airfiles/60124.AIR /data/stella/airfiles/60125.AIR /data/stella/airfiles/60126.AIR /data/stella/airfiles/60127.AIR /data/stella/airfiles/60128.AIR /data/stella/airfiles/60129.AIR /data/stella/airfiles/60130.AIR /data/stella/airfiles/60131.AIR /data/stella/airfiles/60132.AIR /data/stella/airfiles/60133.AIR /data/stella/airfiles/60134.AIR /data/stella/airfiles/60135.AIR /data/stella/airfiles/60136.AIR /data/stella/airfiles/60137.AIR /data/stella/airfiles/60138.AIR /data/stella/airfiles/60139.AIR /data/stella/airfiles/60140.AIR /data/stella/airfiles/60141.AIR /data/stella/airfiles/60142.AIR /data/stella/airfiles/60143.AIR /data/stella/airfiles/60144.AIR /data/stella/airfiles/60145.AIR /data/stella/airfiles/60146.AIR /data/stella/airfiles/60147.AIR /data/stella/airfiles/60148.AIR /data/stella/airfiles/60149.AIR /data/stella/airfiles/60150.AIR /data/stella/airfiles/60151.AIR /data/stella/airfiles/60152.AIR /data/stella/airfiles/60153.AIR /data/stella/airfiles/60154.AIR /data/stella/airfiles/60155.AIR /data/stella/airfiles/60156.AIR /data/stella/airfiles/60157.AIR /data/stella/airfiles/60158.AIR /data/stella/airfiles/60159.AIR /data/stella/airfiles/60160.AIR /data/stella/airfiles/60161.AIR /data/stella/airfiles/60162.AIR /data/stella/airfiles/60163.AIR /data/stella/airfiles/60164.AIR /data/stella/airfiles/60165.AIR /data/stella/airfiles/60166.AIR /data/stella/airfiles/60167.AIR /data/stella/airfiles/60168.AIR /data/stella/airfiles/60169.AIR /data/stella/airfiles/60170.AIR /data/stella/airfiles/60171.AIR /data/stella/airfiles/60172.AIR /data/stella/airfiles/60173.AIR /data/stella/airfiles/60174.AIR /data/stella/airfiles/60175.AIR /data/stella/airfiles/60176.AIR /data/stella/airfiles/60177.AIR /data/stella/airfiles/60178.AIR /data/stella/airfiles/60179.AIR /data/stella/airfiles/60180.AIR /data/stella/airfiles/60181.AIR /data/stella/airfiles/60182.AIR /data/stella/airfiles/60183.AIR /data/stella/airfiles/60184.AIR /data/stella/airfiles/60185.AIR /data/stella/airfiles/60186.AIR /data/stella/airfiles/60187.AIR /data/stella/airfiles/60188.AIR /data/stella/airfiles/60189.AIR /data/stella/airfiles/60190.AIR /data/stella/airfiles/60191.AIR /data/stella/airfiles/60192.AIR /data/stella/airfiles/60193.AIR /data/stella/airfiles/60194.AIR /data/stella/airfiles/60195.AIR /data/stella/airfiles/60196.AIR /data/stella/airfiles/60197.AIR /data/stella/airfiles/60198.AIR /data/stella/airfiles/60199.AIR /data/stella/airfiles/60200.AIR /data/stella/airfiles/60201.AIR /data/stella/airfiles/60202.AIR /data/stella/airfiles/60203.AIR /data/stella/airfiles/60204.AIR /data/stella/airfiles/60205.AIR /data/stella/airfiles/60206.AIR /data/stella/airfiles/60207.AIR /data/stella/airfiles/60208.AIR /data/stella/airfiles/60209.AIR /data/stella/airfiles/60210.AIR /data/stella/airfiles/60211.AIR /data/stella/airfiles/60212.AIR /data/stella/airfiles/60213.AIR /data/stella/airfiles/60214.AIR /data/stella/airfiles/60215.AIR /data/stella/airfiles/60216.AIR /data/stella/airfiles/60217.AIR /data/stella/airfiles/60218.AIR /data/stella/airfiles/60219.AIR /data/stella/airfiles/60220.AIR /data/stella/airfiles/60221.AIR /data/stella/airfiles/60222.AIR /data/stella/airfiles/60223.AIR /data/stella/airfiles/60224.AIR /data/stella/airfiles/60225.AIR /data/stella/airfiles/60226.AIR /data/stella/airfiles/60227.AIR /data/stella/airfiles/60228.AIR /data/stella/airfiles/60229.AIR /data/stella/airfiles/60230.AIR /data/stella/airfiles/60231.AIR /data/stella/airfiles/60232.AIR /data/stella/airfiles/60233.AIR /data/stella/airfiles/60234.AIR /data/stella/airfiles/60235.AIR /data/stella/airfiles/60236.AIR /data/stella/airfiles/60237.AIR /data/stella/airfiles/60238.AIR /data/stella/airfiles/60239.AIR /data/stella/airfiles/60240.AIR /data/stella/airfiles/60241.AIR /data/stella/airfiles/60242.AIR /data/stella/airfiles/60243.AIR /data/stella/airfiles/60244.AIR /data/stella/airfiles/60245.AIR /data/stella/airfiles/60246.AIR /data/stella/airfiles/60247.AIR /data/stella/airfiles/60248.AIR /data/stella/airfiles/60249.AIR /data/stella/airfiles/60250.AIR /data/stella/airfiles/60251.AIR /data/stella/airfiles/60252.AIR /data/stella/airfiles/60253.AIR /data/stella/airfiles/60254.AIR /data/stella/airfiles/60255.AIR /data/stella/airfiles/60256.AIR /data/stella/airfiles/60257.AIR /data/stella/airfiles/60258.AIR /data/stella/airfiles/60259.AIR /data/stella/airfiles/60260.AIR /data/stella/airfiles/60261.AIR /data/stella/airfiles/60262.AIR /data/stella/airfiles/60263.AIR /data/stella/airfiles/60264.AIR /data/stella/airfiles/60265.AIR /data/stella/airfiles/60266.AIR /data/stella/airfiles/60267.AIR /data/stella/airfiles/60268.AIR /data/stella/airfiles/60269.AIR /data/stella/airfiles/60270.AIR /data/stella/airfiles/60271.AIR /data/stella/airfiles/60272.AIR /data/stella/airfiles/60273.AIR /data/stella/airfiles/60274.AIR /data/stella/airfiles/60275.AIR /data/stella/airfiles/60276.AIR /data/stella/airfiles/60277.AIR /data/stella/airfiles/60278.AIR /data/stella/airfiles/60279.AIR /data/stella/airfiles/60280.AIR /data/stella/airfiles/60281.AIR /data/stella/airfiles/60282.AIR /data/stella/airfiles/60283.AIR /data/stella/airfiles/60284.AIR /data/stella/airfiles/60285.AIR /data/stella/airfiles/60286.AIR /data/stella/airfiles/60287.AIR /data/stella/airfiles/60288.AIR /data/stella/airfiles/60289.AIR /data/stella/airfiles/60290.AIR /data/stella/airfiles/60291.AIR /data/stella/airfiles/60292.AIR /data/stella/airfiles/60293.AIR /data/stella/airfiles/60294.AIR /data/stella/airfiles/60295.AIR /data/stella/airfiles/60296.AIR /data/stella/airfiles/60297.AIR /data/stella/airfiles/60298.AIR /data/stella/airfiles/60299.AIR /data/stella/airfiles/60300.AIR /data/stella/airfiles/60301.AIR /data/stella/airfiles/60302.AIR /data/stella/airfiles/60303.AIR /data/stella/airfiles/60304.AIR /data/stella/airfiles/60305.AIR /data/stella/airfiles/60306.AIR /data/stella/airfiles/60307.AIR /data/stella/airfiles/60308.AIR /data/stella/airfiles/60309.AIR /data/stella/airfiles/60310.AIR /data/stella/airfiles/60311.AIR /data/stella/airfiles/60312.AIR /data/stella/airfiles/60313.AIR /data/stella/airfiles/60314.AIR /data/stella/airfiles/60315.AIR /data/stella/airfiles/60316.AIR /data/stella/airfiles/60317.AIR /data/stella/airfiles/60318.AIR xargs chmod 777
+2014/02/28---06:30:03 Step 30\n
+2014/02/28---06:30:03 Moving recycle files (/data/stella/airrecycle) into current data directory (/data/stella/airfiles) so they can be processed again
+2014/02/28---06:30:03 Step 35\n
+2014/02/28---06:30:03 Checking for dup files
+Checking file 60017.AIR
+Checking file 60018.AIR
+Checking file 60019.AIR
+Checking file 60020.AIR
+Checking file 60021.AIR
+Checking file 60022.AIR
+Checking file 60023.AIR
+Checking file 60024.AIR
+Checking file 60025.AIR
+Checking file 60026.AIR
+Checking file 60027.AIR
+Checking file 60028.AIR
+Checking file 60029.AIR
+Checking file 60030.AIR
+Checking file 60031.AIR
+Checking file 60032.AIR
+Checking file 60033.AIR
+Checking file 60034.AIR
+Checking file 60035.AIR
+Checking file 60036.AIR
+Checking file 60037.AIR
+Checking file 60038.AIR
+Checking file 60039.AIR
+Checking file 60040.AIR
+Checking file 60041.AIR
+Checking file 60042.AIR
+Checking file 60043.AIR
+Checking file 60044.AIR
+Checking file 60045.AIR
+Checking file 60046.AIR
+Checking file 60047.AIR
+Checking file 60048.AIR
+Checking file 60049.AIR
+Checking file 60050.AIR
+Checking file 60051.AIR
+Checking file 60052.AIR
+Checking file 60053.AIR
+Checking file 60054.AIR
+Checking file 60055.AIR
+Checking file 60056.AIR
+Checking file 60057.AIR
+Checking file 60058.AIR
+Checking file 60059.AIR
+Checking file 60060.AIR
+Checking file 60061.AIR
+Checking file 60062.AIR
+Checking file 60063.AIR
+Checking file 60064.AIR
+Checking file 60065.AIR
+Checking file 60066.AIR
+Checking file 60067.AIR
+Checking file 60068.AIR
+Checking file 60069.AIR
+Checking file 60070.AIR
+Checking file 60071.AIR
+Checking file 60072.AIR
+Checking file 60073.AIR
+Checking file 60074.AIR
+Checking file 60075.AIR
+Checking file 60076.AIR
+Checking file 60077.AIR
+Checking file 60078.AIR
+Checking file 60079.AIR
+Checking file 60080.AIR
+Checking file 60081.AIR
+Checking file 60082.AIR
+Checking file 60083.AIR
+Checking file 60084.AIR
+Checking file 60085.AIR
+Checking file 60086.AIR
+Checking file 60087.AIR
+Checking file 60088.AIR
+Checking file 60089.AIR
+Checking file 60090.AIR
+Checking file 60091.AIR
+Checking file 60092.AIR
+Checking file 60093.AIR
+Checking file 60094.AIR
+Checking file 60095.AIR
+Checking file 60096.AIR
+Checking file 60097.AIR
+Checking file 60098.AIR
+Checking file 60099.AIR
+Checking file 60100.AIR
+Checking file 60101.AIR
+Checking file 60102.AIR
+Checking file 60103.AIR
+Checking file 60104.AIR
+Checking file 60105.AIR
+Checking file 60106.AIR
+Checking file 60107.AIR
+Checking file 60108.AIR
+Checking file 60109.AIR
+Checking file 60110.AIR
+Checking file 60111.AIR
+Checking file 60112.AIR
+Checking file 60113.AIR
+Checking file 60114.AIR
+Checking file 60115.AIR
+Checking file 60116.AIR
+Checking file 60117.AIR
+Checking file 60118.AIR
+Checking file 60119.AIR
+Checking file 60120.AIR
+Checking file 60121.AIR
+Checking file 60122.AIR
+Checking file 60123.AIR
+Checking file 60124.AIR
+Checking file 60125.AIR
+Checking file 60126.AIR
+Checking file 60127.AIR
+Checking file 60128.AIR
+Checking file 60129.AIR
+Checking file 60130.AIR
+Checking file 60131.AIR
+Checking file 60132.AIR
+Checking file 60133.AIR
+Checking file 60134.AIR
+Checking file 60135.AIR
+Checking file 60136.AIR
+Checking file 60137.AIR
+Checking file 60138.AIR
+Checking file 60139.AIR
+Checking file 60140.AIR
+Checking file 60141.AIR
+Checking file 60142.AIR
+Checking file 60143.AIR
+Checking file 60144.AIR
+Checking file 60145.AIR
+Checking file 60146.AIR
+Checking file 60147.AIR
+Checking file 60148.AIR
+Checking file 60149.AIR
+Checking file 60150.AIR
+Checking file 60151.AIR
+Checking file 60152.AIR
+Checking file 60153.AIR
+Checking file 60154.AIR
+Checking file 60155.AIR
+Checking file 60156.AIR
+Checking file 60157.AIR
+Checking file 60158.AIR
+Checking file 60159.AIR
+Checking file 60160.AIR
+Checking file 60161.AIR
+Checking file 60162.AIR
+Checking file 60163.AIR
+Checking file 60164.AIR
+Checking file 60165.AIR
+Checking file 60166.AIR
+Checking file 60167.AIR
+Checking file 60168.AIR
+Checking file 60169.AIR
+Checking file 60170.AIR
+Checking file 60171.AIR
+Checking file 60172.AIR
+Checking file 60173.AIR
+Checking file 60174.AIR
+Checking file 60175.AIR
+Checking file 60176.AIR
+Checking file 60177.AIR
+Checking file 60178.AIR
+Checking file 60179.AIR
+Checking file 60180.AIR
+Checking file 60181.AIR
+Checking file 60182.AIR
+Checking file 60183.AIR
+Checking file 60184.AIR
+Checking file 60185.AIR
+Checking file 60186.AIR
+Checking file 60187.AIR
+Checking file 60188.AIR
+Checking file 60189.AIR
+Checking file 60190.AIR
+Checking file 60191.AIR
+Checking file 60192.AIR
+Checking file 60193.AIR
+Checking file 60194.AIR
+Checking file 60195.AIR
+Checking file 60196.AIR
+Checking file 60197.AIR
+Checking file 60198.AIR
+Checking file 60199.AIR
+Checking file 60200.AIR
+Checking file 60201.AIR
+Checking file 60202.AIR
+Checking file 60203.AIR
+Checking file 60204.AIR
+Checking file 60205.AIR
+Checking file 60206.AIR
+Checking file 60207.AIR
+Checking file 60208.AIR
+Checking file 60209.AIR
+Checking file 60210.AIR
+Checking file 60211.AIR
+Checking file 60212.AIR
+Checking file 60213.AIR
+Checking file 60214.AIR
+Checking file 60215.AIR
+Checking file 60216.AIR
+Checking file 60217.AIR
+Checking file 60218.AIR
+Checking file 60219.AIR
+Checking file 60220.AIR
+Checking file 60221.AIR
+Checking file 60222.AIR
+Checking file 60223.AIR
+Checking file 60224.AIR
+Checking file 60225.AIR
+Checking file 60226.AIR
+Checking file 60227.AIR
+Checking file 60228.AIR
+Checking file 60229.AIR
+Checking file 60230.AIR
+Checking file 60231.AIR
+Checking file 60232.AIR
+Checking file 60233.AIR
+Checking file 60234.AIR
+Checking file 60235.AIR
+Checking file 60236.AIR
+Checking file 60237.AIR
+Checking file 60238.AIR
+Checking file 60239.AIR
+Checking file 60240.AIR
+Checking file 60241.AIR
+Checking file 60242.AIR
+Checking file 60243.AIR
+Checking file 60244.AIR
+Checking file 60245.AIR
+Checking file 60246.AIR
+Checking file 60247.AIR
+Checking file 60248.AIR
+Checking file 60249.AIR
+Checking file 60250.AIR
+Checking file 60251.AIR
+Checking file 60252.AIR
+Checking file 60253.AIR
+Checking file 60254.AIR
+Checking file 60255.AIR
+Checking file 60256.AIR
+Checking file 60257.AIR
+Checking file 60258.AIR
+Checking file 60259.AIR
+Checking file 60260.AIR
+Checking file 60261.AIR
+Checking file 60262.AIR
+Checking file 60263.AIR
+Checking file 60264.AIR
+Checking file 60265.AIR
+Checking file 60266.AIR
+Checking file 60267.AIR
+Checking file 60268.AIR
+Checking file 60269.AIR
+Checking file 60270.AIR
+Checking file 60271.AIR
+Checking file 60272.AIR
+Checking file 60273.AIR
+Checking file 60274.AIR
+Checking file 60275.AIR
+Checking file 60276.AIR
+Checking file 60277.AIR
+Checking file 60278.AIR
+Checking file 60279.AIR
+Checking file 60280.AIR
+Checking file 60281.AIR
+Checking file 60282.AIR
+Checking file 60283.AIR
+Checking file 60284.AIR
+Checking file 60285.AIR
+Checking file 60286.AIR
+Checking file 60287.AIR
+Checking file 60288.AIR
+Checking file 60289.AIR
+Checking file 60290.AIR
+Checking file 60291.AIR
+Checking file 60292.AIR
+Checking file 60293.AIR
+Checking file 60294.AIR
+Checking file 60295.AIR
+Checking file 60296.AIR
+Checking file 60297.AIR
+Checking file 60298.AIR
+Checking file 60299.AIR
+Checking file 60300.AIR
+Checking file 60301.AIR
+Checking file 60302.AIR
+Checking file 60303.AIR
+Checking file 60304.AIR
+Checking file 60305.AIR
+Checking file 60306.AIR
+Checking file 60307.AIR
+Checking file 60308.AIR
+Checking file 60309.AIR
+Checking file 60310.AIR
+Checking file 60311.AIR
+Checking file 60312.AIR
+Checking file 60313.AIR
+Checking file 60314.AIR
+Checking file 60315.AIR
+Checking file 60316.AIR
+Checking file 60317.AIR
+Checking file 60318.AIR
+2014/02/28---06:30:04 No files already exist - continuing with process
+2014/02/28---06:30:04 Step 40\n
+2014/02/28---06:30:04 List of contents of data file directory before actual processing starts
+60017.AIR
+60018.AIR
+60019.AIR
+60020.AIR
+60021.AIR
+60022.AIR
+60023.AIR
+60024.AIR
+60025.AIR
+60026.AIR
+60027.AIR
+60028.AIR
+60029.AIR
+60030.AIR
+60031.AIR
+60032.AIR
+60033.AIR
+60034.AIR
+60035.AIR
+60036.AIR
+60037.AIR
+60038.AIR
+60039.AIR
+60040.AIR
+60041.AIR
+60042.AIR
+60043.AIR
+60044.AIR
+60045.AIR
+60046.AIR
+60047.AIR
+60048.AIR
+60049.AIR
+60050.AIR
+60051.AIR
+60052.AIR
+60053.AIR
+60054.AIR
+60055.AIR
+60056.AIR
+60057.AIR
+60058.AIR
+60059.AIR
+60060.AIR
+60061.AIR
+60062.AIR
+60063.AIR
+60064.AIR
+60065.AIR
+60066.AIR
+60067.AIR
+60068.AIR
+60069.AIR
+60070.AIR
+60071.AIR
+60072.AIR
+60073.AIR
+60074.AIR
+60075.AIR
+60076.AIR
+60077.AIR
+60078.AIR
+60079.AIR
+60080.AIR
+60081.AIR
+60082.AIR
+60083.AIR
+60084.AIR
+60085.AIR
+60086.AIR
+60087.AIR
+60088.AIR
+60089.AIR
+60090.AIR
+60091.AIR
+60092.AIR
+60093.AIR
+60094.AIR
+60095.AIR
+60096.AIR
+60097.AIR
+60098.AIR
+60099.AIR
+60100.AIR
+60101.AIR
+60102.AIR
+60103.AIR
+60104.AIR
+60105.AIR
+60106.AIR
+60107.AIR
+60108.AIR
+60109.AIR
+60110.AIR
+60111.AIR
+60112.AIR
+60113.AIR
+60114.AIR
+60115.AIR
+60116.AIR
+60117.AIR
+60118.AIR
+60119.AIR
+60120.AIR
+60121.AIR
+60122.AIR
+60123.AIR
+60124.AIR
+60125.AIR
+60126.AIR
+60127.AIR
+60128.AIR
+60129.AIR
+60130.AIR
+60131.AIR
+60132.AIR
+60133.AIR
+60134.AIR
+60135.AIR
+60136.AIR
+60137.AIR
+60138.AIR
+60139.AIR
+60140.AIR
+60141.AIR
+60142.AIR
+60143.AIR
+60144.AIR
+60145.AIR
+60146.AIR
+60147.AIR
+60148.AIR
+60149.AIR
+60150.AIR
+60151.AIR
+60152.AIR
+60153.AIR
+60154.AIR
+60155.AIR
+60156.AIR
+60157.AIR
+60158.AIR
+60159.AIR
+60160.AIR
+60161.AIR
+60162.AIR
+60163.AIR
+60164.AIR
+60165.AIR
+60166.AIR
+60167.AIR
+60168.AIR
+60169.AIR
+60170.AIR
+60171.AIR
+60172.AIR
+60173.AIR
+60174.AIR
+60175.AIR
+60176.AIR
+60177.AIR
+60178.AIR
+60179.AIR
+60180.AIR
+60181.AIR
+60182.AIR
+60183.AIR
+60184.AIR
+60185.AIR
+60186.AIR
+60187.AIR
+60188.AIR
+60189.AIR
+60190.AIR
+60191.AIR
+60192.AIR
+60193.AIR
+60194.AIR
+60195.AIR
+60196.AIR
+60197.AIR
+60198.AIR
+60199.AIR
+60200.AIR
+60201.AIR
+60202.AIR
+60203.AIR
+60204.AIR
+60205.AIR
+60206.AIR
+60207.AIR
+60208.AIR
+60209.AIR
+60210.AIR
+60211.AIR
+60212.AIR
+60213.AIR
+60214.AIR
+60215.AIR
+60216.AIR
+60217.AIR
+60218.AIR
+60219.AIR
+60220.AIR
+60221.AIR
+60222.AIR
+60223.AIR
+60224.AIR
+60225.AIR
+60226.AIR
+60227.AIR
+60228.AIR
+60229.AIR
+60230.AIR
+60231.AIR
+60232.AIR
+60233.AIR
+60234.AIR
+60235.AIR
+60236.AIR
+60237.AIR
+60238.AIR
+60239.AIR
+60240.AIR
+60241.AIR
+60242.AIR
+60243.AIR
+60244.AIR
+60245.AIR
+60246.AIR
+60247.AIR
+60248.AIR
+60249.AIR
+60250.AIR
+60251.AIR
+60252.AIR
+60253.AIR
+60254.AIR
+60255.AIR
+60256.AIR
+60257.AIR
+60258.AIR
+60259.AIR
+60260.AIR
+60261.AIR
+60262.AIR
+60263.AIR
+60264.AIR
+60265.AIR
+60266.AIR
+60267.AIR
+60268.AIR
+60269.AIR
+60270.AIR
+60271.AIR
+60272.AIR
+60273.AIR
+60274.AIR
+60275.AIR
+60276.AIR
+60277.AIR
+60278.AIR
+60279.AIR
+60280.AIR
+60281.AIR
+60282.AIR
+60283.AIR
+60284.AIR
+60285.AIR
+60286.AIR
+60287.AIR
+60288.AIR
+60289.AIR
+60290.AIR
+60291.AIR
+60292.AIR
+60293.AIR
+60294.AIR
+60295.AIR
+60296.AIR
+60297.AIR
+60298.AIR
+60299.AIR
+60300.AIR
+60301.AIR
+60302.AIR
+60303.AIR
+60304.AIR
+60305.AIR
+60306.AIR
+60307.AIR
+60308.AIR
+60309.AIR
+60310.AIR
+60311.AIR
+60312.AIR
+60313.AIR
+60314.AIR
+60315.AIR
+60316.AIR
+60317.AIR
+60318.AIR
+2014/02/28---06:30:04 Run the stored proc that runs the java program to load the AIR files into database
+2014/02/28---06:30:10 Show output from java program:
+declare
+*
+ERROR at line 1:
+ORA-29541: class STELLA.uk/co/firstchoice/stella/StellaAIRLoad could not be resolved
+ORA-06512: at "STELLA.P_STELLA_GET_DATA", line 37
+ORA-06512: at line 10
+
+
+2014/02/28---06:30:10 Completed load of data
+2014/02/28---06:30:10 Logfile used for run was
+
+2014/02/28---06:30:10 Step 50\n
+2014/02/28---06:30:10 Step 60\n
+bsp@tuispecialist.com
+bsp@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:30:10 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=113
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<bsp@tuispecialist.com>
+>>> DATA
+250 2.1.5 <bsp@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6UApg030043 Message accepted for delivery
+bsp@tuispecialist.com... Sent (s1S6UApg030043 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+sam.walsh@tuispecialist.com
+sam.walsh@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:30:31 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=119
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<sam.walsh@tuispecialist.com>
+>>> DATA
+250 2.1.5 <sam.walsh@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6UV1j030055 Message accepted for delivery
+sam.walsh@tuispecialist.com... Sent (s1S6UV1j030055 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+emma.long@tuispecialist.com
+emma.long@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:30:51 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=119
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<emma.long@tuispecialist.com>
+>>> DATA
+250 2.1.5 <emma.long@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6Up56030069 Message accepted for delivery
+emma.long@tuispecialist.com... Sent (s1S6Up56030069 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+laura.walpole@tuispecialist.com
+laura.walpole@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:31:11 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=123
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<laura.walpole@tuispecialist.com>
+>>> DATA
+250 2.1.5 <laura.walpole@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6VBVb030081 Message accepted for delivery
+laura.walpole@tuispecialist.com... Sent (s1S6VBVb030081 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+Denise.Underdown@tuispecialist.com
+Denise.Underdown@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:31:31 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<Denise.Underdown@tuispecialist.com>
+>>> DATA
+250 2.1.5 <Denise.Underdown@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6VVms030093 Message accepted for delivery
+Denise.Underdown@tuispecialist.com... Sent (s1S6VVms030093 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+wug-infra-alerts@tuispecialist.com
+wug-infra-alerts@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:31:51 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<wug-infra-alerts@tuispecialist.com>
+>>> DATA
+250 2.1.5 <wug-infra-alerts@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6VpvM030112 Message accepted for delivery
+wug-infra-alerts@tuispecialist.com... Sent (s1S6VpvM030112 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+jyoti.renganathan@tuispecialist.com
+jyoti.renganathan@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:32:11 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=127
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<jyoti.renganathan@tuispecialist.com>
+>>> DATA
+250 2.1.5 <jyoti.renganathan@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6WBbM030124 Message accepted for delivery
+jyoti.renganathan@tuispecialist.com... Sent (s1S6WBbM030124 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+wug-infra-alerts@tuispecialist.com
+wug-infra-alerts@tuispecialist.com... Connecting to [127.0.0.1] via relay...
+220 P-GS2-ORA-01.nexus.specialistholidays.com ESMTP Sendmail 8.13.8/8.13.8; Fri, 28 Feb 2014 06:32:31 GMT
+>>> EHLO P-GS2-ORA-01.nexus.specialistholidays.com
+250-P-GS2-ORA-01.nexus.specialistholidays.com Hello localhost.localdomain [127.0.0.1], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-8BITMIME
+250-SIZE
+250-DSN
+250-ETRN
+250-DELIVERBY
+250 HELP
+>>> MAIL From:<dw@P-GS2-ORA-01.nexus.specialistholidays.com> SIZE=126
+250 2.1.0 <dw@P-GS2-ORA-01.nexus.specialistholidays.com>... Sender ok
+>>> RCPT To:<wug-infra-alerts@tuispecialist.com>
+>>> DATA
+250 2.1.5 <wug-infra-alerts@tuispecialist.com>... Recipient ok
+354 Enter mail, end with "." on a line by itself
+>>> .
+250 2.0.0 s1S6WVoW030140 Message accepted for delivery
+wug-infra-alerts@tuispecialist.com... Sent (s1S6WVoW030140 Message accepted for delivery)
+Closing connection to [127.0.0.1]
+>>> QUIT
+221 2.0.0 P-GS2-ORA-01.nexus.specialistholidays.com closing connection
+2014/02/28---06:32:51 Step 70\n
+about to delete old files
+2014/02/28---06:32:51 Step 80\n
+about to remove files from /data/stella/backup more than 7 days old
+
+about to archive todays air files
+gonna tar/compress old air files from archive area
+about to tar up individual files
+about to compress the file /data/stella_archive/201402/air_2014Feb28.tar
+about to remove individual files
+step finished tar/compress
+2014/02/28---06:32:51 END OF PROGRAM

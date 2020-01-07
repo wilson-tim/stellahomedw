@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<session>
+  <history>
+    <bookmark name="usr" icon="gnome-fs-directory" uri="file:///usr"/>
+    <bookmark name="/" icon="gnome-fs-directory" uri="file:///"/>
+    <bookmark name="dw" icon="user-home" uri="file:///home/dw"/>
+    <bookmark name="Windows Network: travelink on travelink" icon="gnome-fs-directory" uri="smb://travelink"/>
+    <bookmark name="Windows Network: firstchoice on firstchoice" icon="gnome-fs-directory" uri="smb://firstchoice"/>
+    <bookmark name="Windows Network" icon="gnome-fs-network" uri="smb:///"/>
+    <bookmark name="Network" icon="gnome-fs-network" uri="network:///"/>
+    <bookmark name="dmps" icon="gnome-fs-directory" uri="file:///archive/DWL/dmps"/>
+    <bookmark name="DWL" icon="gnome-fs-directory" uri="file:///archive/DWL"/>
+    <bookmark name="archive" icon="gnome-fs-directory" uri="file:///archive"/>
+    <bookmark name="etc" icon="gnome-fs-directory" uri="file:///usr/etc"/>
+    <bookmark name="etc" icon="gnome-fs-directory" uri="file:///etc"/>
+    <bookmark name="Computer" icon="gnome-fs-client" uri="computer:"/>
+  </history>
+</session>

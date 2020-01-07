@@ -1,0 +1,54 @@
+
+SQL*Loader: Release 8.0.4.0.0 - Production on Thu Jan 13 15:31:57 2000
+
+(c) Copyright 1997 Oracle Corporation.  All rights reserved.
+
+Control File:   /home/dw/DWLIVE/hotelpayments/actuals/act_invextra.ctl
+Data File:      /data/hotelpayments/import/act_invextra.a
+  Bad File:     /home/dw/DWLIVE/logs/act_invextra.bad
+  Discard File: /home/dw/DWLIVE/logs/act_invextra.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 65536 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table IACS.INVOICE_EXTRAS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+INVOICE_NUM                         FIRST     *   ,  O(") CHARACTER            
+PROPERTY_NUM                         NEXT     *   ,  O(") CHARACTER            
+INVOICE_DATE                         NEXT     8   ,  O(") DATE RRRRMMDD        
+TYPE                                 NEXT     *   ,  O(") CHARACTER            
+EXPENSE_CODE                         NEXT     *   ,  O(") CHARACTER            
+EXTRA_AMT                            NEXT     *   ,  O(") CHARACTER            
+EXTRA_PAYMENT_AMT                    NEXT     *   ,  O(") CHARACTER            
+TEXT                                 NEXT     *   ,  O(") CHARACTER            
+
+
+Table IACS.INVOICE_EXTRAS:
+  0 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  65376 bytes(36 rows)
+Space allocated for memory besides bind array:        0 bytes
+
+Total logical records skipped:          0
+Total logical records read:             0
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu Jan 13 15:31:57 2000
+Run ended on Thu Jan 13 15:31:58 2000
+
+Elapsed time was:     00:00:00.23
+CPU time was:         00:00:00.07    

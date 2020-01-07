@@ -1,0 +1,14 @@
+PATH: /usr/java14/jre/bin:/usr/java14/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:.:/oracle/product/10.2.0/bin
+CLASSPATH: /usr/java14/jre/lib:/oracle/product/10.2.0/jlib:/oracle/product/10.2.0/lib/xsu12.jar:/oracle/product/10.2.0/lib/xmlparserv2.jar:/oracle/product/10.2.0/lib/xmlcomp.jar:/oracle/product/10.2.0/jdbc/lib/classes12.jar:/oracle/product/10.2.0/jdbc/lib/nls_charset12.jar:/oracle/product/10.2.0/lib/oraclexsql.jar:/oracle/product/10.2.0/lib/xsqlserializers.jar:/oracle/product/10.2.0/rdbms/jlib/xdb.jar:/apps/DWLIVE/java/bin/fchmail.jar:/apps/DWLIVE/java/bin/mail.jar:/apps/DWLIVE/java/bin/activation.jar:/apps/DWLIVE/java:/apps/DWLIVE/java/bin:/apps/DWLIVE/java/classes:/apps/DWLIVE/java/bin/ftpservice.jar:/apps/DWLIVE/java/bin/jox116.jar
+2007/08/06---11:04:39 Exit Status of 0 returned...
+
+2007/08/06---11:04:39 Mail sent successfully.
+
+Value for argument 0: smtp
+Value for argument 1: ,
+Value for argument 2: Niel.Alobaidi@firstchoice.co.uk,Tim.Lloyd@firstchoice.co.uk,John.Durnford@firstchoice.co.uk
+Value for argument 3: slo-dwlive.dw@slo-dwlive
+Value for argument 4: TEST EMAIL please respond to Tim Lloyd - DWL
+Value for argument 5: /data/tlink20070806110439.mail
+Value for argument 6: /home/dw/DWLIVE/logs/tlink/tlink20070806040000.log,/home/dw/DWLIVE/logs/tlink/tlink20070806040000.err
+Value for argument 7: false

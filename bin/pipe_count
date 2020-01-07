@@ -1,0 +1,2 @@
+#!/bin/ksh
+echo "Number of pipe separated fields in file "$1" is:- "`head -n1 $1|tr -cd \||wc -c`

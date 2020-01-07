@@ -1,0 +1,131 @@
+#!/usr/bin/ksh
+#set -x
+
+# **********************************************************************
+# *                        XMIS STATUS CHECKER                         *
+# **********************************************************************
+
+. /home/dw/bin/set_oracle_variables.ksh
+
+# *******************************************************************
+# *                    DECLARE VARIABLES                            *
+# *******************************************************************
+
+stat_path=/home/dw/DWLIVE/jutil/status_check
+log_dir=/home/dw/DWLIVE/logs/status_check/xmis
+data_dir=/data/tourops
+
+jutil_pass=`cat /home/dw/DWLIVE/passwords/jutil.txt`
+
+today=`date +%Y%b%d`
+xmis_output=${log_dir}/xmis_${today}.log
+seasons_file=/home/dw/DWLIVE/load/otop/otop_ls_season.lst
+mkt_list=/home/dw/DWLIVE/load/otop/otop_l_mkt.lst
+dummy_file=${log_dir}/res_lines.txt
+
+hold_for=30
+tolerance=20
+files_final_status=GREEN
+files_message='All OK'
+load_final_status=GREEN
+load_message='All OK'
+
+# *******************************************************************
+# *                      PROGRAM START                              *
+# *******************************************************************
+
+echo "Starting XMIS Checks at `date +%H:%M:%S`" > ${xmis_output}
+
+# Get Date from Oracle to use as part of filename checks
+sqlplus -s jutil/${jutil_pass}<<End_Of_File1|read a
+set pagesize 0
+set echo off
+set heading off
+set feedback off
+set verify off
+select 
+to_char(sysdate,'yyyymondd')
+from dual;
+exit
+End_Of_File1
+datestamp=${a}
+
+echo "Datestamp set to ${datestamp}" >> ${xmis_output}
+#Loop on seasons file
+cat ${seasons_file}|while read hold_season
+do
+  echo "Doing season ${hold_season}" >> ${xmis_output}
+  
+  # for each season we need to read through the mkt list of abbreviations and check that they also exist
+  cat ${mkt_list}|while read mkt_abbrev
+  do
+    echo "Checking abbrev ${mkt_abbrev}" >> ${xmis_output}
+    
+    # Work out the filename for the current abbreviation
+    file_name=${data_dir}/o_${mkt_abbrev}${datestamp}.${hold_season}
+    
+    # we now have the datestamp, season and abbreviation so we can check for the instance of the file
+    if [[ ! -a ${file_name} ]] then
+      echo "file does not exist" >> ${xmis_output}
+      
+      files_final_status=RED
+      files_message='Missing Mkt Files'
+    fi
+    
+    # now check that the number of lines in the o_res file matches the number loaded
+    if [[ ${mkt_abbrev} = res ]] then
+      # get number of lines in res file
+      res_lines=`cat ${file_name} | wc -l`
+      
+      echo "Lines in ${file_name} = ${res_lines}" >> ${xmis_output}
+
+      # get number of bookings loaded for season
+      sqlplus -s jutil/${jutil_pass}<<End_Of_File2|read b
+      set pagesize 0
+      set echo off
+      set heading off
+      set feedback off
+      set verify off
+      select count(*)
+      from booking b
+      where b.season_type = UPPER(substr('${hold_season}',1,1))
+      and b.season_year = to_char(to_date(substr('${hold_season}',2,2),'rr'),'yyyy')
+      and b.amended_date = trunc(sysdate);
+      exit
+End_Of_File2
+      bookings_loaded=${b}
+      
+      echo "Bookings Loaded = ${bookings_loaded}" >> ${xmis_output}
+      
+      # If lines in file don't match bookings loaded + tolerance level then flag accordingly
+      if [[ ${res_lines} -gt "${bookings_loaded} + ${tolerance}" ]] then
+        echo "Bookings loaded less than expected amount" >> ${xmis_output}
+        load_final_status=RED
+        load_message='Not All Data Loaded'
+      fi
+    fi
+    
+  done
+
+done
+
+echo "Final Status of Files Check is ${files_final_status}" >> ${xmis_output}
+echo "Final Status of Load Check is ${load_final_status}" >> ${xmis_output}
+
+# Now update the application_status table using the API in p_Application_Status_Check
+echo "execute p_Application_Status_Check.Insert_App_Status_Unix('RES_LINE','${load_final_status}','${load_message}')"|sqlplus -s jutil/${jutil_pass}
+echo "execute p_Application_Status_Check.Insert_App_Status_Unix('MKT_FILE','${files_final_status}','${files_message}')"|sqlplus -s jutil/${jutil_pass}
+
+# Delete any old logs file
+echo "about to remove files from ${log_dir} more than ${hold_for} days old" >> ${xmis_output}
+cd ${log_dir}
+for delfiles in `find ${log_dir} -name "*" -mtime +${hold_for}`
+do
+  echo "deleting ${delfiles} from log area (more than ${hold_for} days old)" >> ${xmis_output}
+  rm ${delfiles}
+done
+
+echo "Finished XMIS Checks at `date +%H:%M:%S`" >> ${xmis_output}
+
+
+

@@ -1,0 +1,57 @@
+#!/usr/bin/ksh
+
+function FileTS {
+
+        INFILE=$1
+        FORMAT=$2
+
+        # The joy of awk...
+        DAY=$(ls -l $INFILE | awk '{printf "%s", $7}')
+        AMONTH=$(ls -l $INFILE | awk '{printf "%s", $6}')
+        YEAR=$(ls -l $INFILE | awk '{printf "%s", $8}')
+
+        # Lets convert alpha month to number
+        set -- Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+        MONTH=1
+        while [[ $# -ge 1 ]]
+        do
+                # Equate place holder $1 to var $AMONTH
+                [[ $AMONTH = $1 ]] && break
+                (( MONTH = MONTH + 1 ))
+                # Move up thru place holders
+                shift
+        done
+
+        # Ensure MONTH is 2 chars long
+        [[ 1 -eq ${#MONTH} ]] && MONTH="0"$MONTH
+
+        # Check that YEAR is a YEARas ls returns TIME for todays files
+        if echo "$YEAR" | grep ":" 1>/dev/null 2>&1
+        then
+                YEAR=$(date +"%Y")
+        fi 
+
+        case $FORMAT in 
+                UK )
+                        echo "$DAY-$MONTH-$YEAR\c" ;;
+                US )
+                        echo "$MONTH-$DAY-$YEAR\c" ;;
+                SCAN )
+                        echo "$YEAR-$MONTH-$DAY\c" ;;
+                COMP )
+                        echo "$YEAR$MONTH$DAY\c" ;;
+                * )
+                        # Default
+                        echo "$YEAR-$MONTH-$DAY\c" ;;
+        esac
+
+        return
+}
+
+for file in $(ls -1trF|grep -v /)
+do
+        TS=$(FileTS $file COMP)
+        [[ $TS -ge $1 && $TS -le $2 ]] && echo "[$TS]   $file"
+done
+
+

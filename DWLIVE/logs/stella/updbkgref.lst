@@ -1,0 +1,41 @@
+yeast
+2014/02/27---19:30:01 --------------------------------------------------------------------------
+2014/02/27---19:30:01 >>>>>> Stella Coreect stella bookings refs from data warehouse data
+2014/02/27---19:30:01 --------------------------------------------------------------------------
+2014/02/27---19:30:01 Setting variables
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+2014/02/27---19:30:01 Run the stored proc that runs the report
+2014/02/27---19:30:02 display logfile contents:
+
+SQL*Plus: Release 11.2.0.1.0 Production on Thu Feb 27 19:30:01 2014
+
+Copyright (c) 1982, 2009, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+
+ stella.sp_update_stella_booking_ref(
+        *
+ERROR at line 8:
+ORA-06550: line 8, column 9:
+PLS-00905: object STELLA.SP_UPDATE_STELLA_BOOKING_REF is invalid
+ORA-06550: line 8, column 2:
+PL/SQL: Statement ignored
+
+
+Disconnected from Oracle Database 11g Release 11.2.0.1.0 - 64bit Production
+2014/02/27---19:30:02 Test for errors
+Logfile: /home/dw/DWLIVE/stella/update_stella_booking_ref.lst
+/home/dw/DWLIVE/stella/update_stella_booking_ref.ksh[58]: grep-i: not found [No such file or directory]
+/home/dw/DWLIVE/stella/update_stella_booking_ref.ksh[59]: grep-i: not found [No such file or directory]
+/home/dw/DWLIVE/stella/update_stella_booking_ref.ksh[60]: grep-i: not found [No such file or directory]
+/home/dw/DWLIVE/stella/update_stella_booking_ref.ksh[61]: grep-i: not found [No such file or directory]
+/home/dw/DWLIVE/stella/update_stella_booking_ref.ksh[62]: grep-i: not found [No such file or directory]
+2014/02/27---19:30:02 Need error email?
+2014/02/27---19:30:02 output summary
+Logfile: /home/dw/DWLIVE/stella/update_stella_booking_ref.lst
+2014/02/27---19:30:02 Need summ email?
+2014/02/27---19:30:02 END OF PROGRAM

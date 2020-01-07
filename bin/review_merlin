@@ -1,0 +1,29 @@
+#!/usr/bin/ksh
+
+log_path='/home/dw/DWLIVE/logs/merlin/'   # Path for SQL*Load Log and Bad files
+
+blank="################################################################"
+line="MERLIN UPDATE PROCESS LOG"
+
+echo $blank
+echo $line 
+echo $blank
+    
+for abbrev in 'acn' 'atp' 'atg' 'bba' 'clo' 'cnt' 'cur' 'bed' 'ocy' \
+              'occ' 'ofr' 'oft' 'psc' 'ptp' 'pss' 'pal' 'rat' 'roo' \
+              'ral' 'rrd' 'rtp' 'rto' 'tur' 'vtp' 'rtg' 'sup' 'stp' \
+              'con' 'cex' 'rgn' 'lcn' 'res' 'rsg' 'cyg'             
+  do
+    table_log=$log_path"m_"$abbrev".log"
+    table_bad=$log_path"m_"$abbrev".bad"
+    if [[ -a $table_log ]] then
+      echo SQL LOADER errors and statistics for table m_$abbrev
+      grep "SQL\*Loader-" $table_log
+      grep " Row" $table_log
+      if [[ -a $table_bad ]] then
+        cat $table_bad
+      fi
+    else
+      echo FAILED: $table_log log file does not exist
+    fi
+  done

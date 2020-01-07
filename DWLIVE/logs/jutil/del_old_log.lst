@@ -1,0 +1,23 @@
+The Oracle base for ORACLE_HOME=/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1 is /Oracle/SHG/app/oracleshg
+PATH set to: /jdk/jre/bin:/jdk/bin:/usr/local/bin:/usr/bin:/etc:/usr/sbin:/usr/ucb:/home/dw/bin:/usr/bin/X11:/sbin:/bin:.:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/bin
+CLASSPATH set to: /jdk/jre/lib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jlib:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsu12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlparserv2.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xmlcomp.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/classes12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/jdbc/lib/nls_charset12.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/oraclexsql.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/lib/xsqlserializers.jar:/Oracle/SHG/app/oracleshg/product/11.2.0/dbhome_1/rdbms/jlib/xdb.jar
+Deletion of old log files started  27/02/2014-1900
+
+
+PL/SQL procedure successfully completed.
+
+grep: /home/dw/DWLIVE/jutil/temperrs.txt: No such file or directory
+No Errors encountered during run
+
+rm: cannot remove `/home/dw/DWLIVE/jutil/temperrs.txt': No such file or directory
+Delete_Old_School_Logs('1000','3','/home/dw/SQL_Output','delete_school_applog.txt')|sqlplus -s jutil/procs
+ 
+#sqlplus -s jutil/procs |&
+#print -p spool /home/dw/DWLIVE/jutil/temperrs.txt
+#print -p set serveroutput on size 1000000
+grep: /home/dw/SQL_Output/delete_school_applog.txt: No such file or directory
+grep: /home/dw/DWLIVE/jutil/temperrs.txt: No such file or directory
+No Errors encountered during run
+
+/home/dw/DWLIVE/jutil/delete_old_logs.ksh[155]: /home/dw/SQL_Output/delete_school_applog.txt: cannot open [No such file or directory]
+rm: cannot remove `/home/dw/DWLIVE/jutil/temperrs.txt': No such file or directory

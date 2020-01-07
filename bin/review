@@ -1,0 +1,9 @@
+# 
+# Script to call Data Warehouse checking scripts 
+#  
+review_all | more 
+echo
+review_delete | more
+echo
+review_err | more
+#

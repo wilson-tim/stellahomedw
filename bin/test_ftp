@@ -1,0 +1,10 @@
+#test_ftp
+#!/usr/bin/ksh
+echo
+echo If this fails it may freeze. In which case login again, and kill the ftp process.
+echo
+ftp -n -v -i <<\marker_1
+open cray
+user data_w valerian6
+quit
+marker_1

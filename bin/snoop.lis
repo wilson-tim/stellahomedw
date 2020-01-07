@@ -1,0 +1,135 @@
+Seasons being integrated should include w00, s01, w01, s02, w02, s03, w03
+.  .  .  and tonight the seasons are:-
+w00
+s01
+w01
+s02
+w02
+w03
+s03
+s04
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+
+For current seasons (s02, w02, s03, w03) groups to be integrated should include:-
+mer,spk, cor, mkt, gen, acc, trs, shr, gsh, int:  with one of them including shd
+For older seasons we just integrate spk, cor, gen
+------------------------------------
+.  .  .  and today being Fri tomorrow is a weekend so the groups per season are:-
+
+__/\__/\__/\__w00__/\__/\__/\__
+spk
+cor
+mkt
+gen
+
+__/\__/\__/\__s01__/\__/\__/\__
+spk
+cor
+mkt
+gen
+
+__/\__/\__/\__w01__/\__/\__/\__
+spk
+cor
+mkt
+gen
+
+__/\__/\__/\__s02__/\__/\__/\__
+mer
+spk
+cor
+mkt
+gen
+acc
+trs
+shr
+gsh
+int
+
+__/\__/\__/\__w02__/\__/\__/\__
+mer
+spk
+cor
+mkt
+gen
+acc
+trs
+shr
+gsh
+int
+shd
+
+__/\__/\__/\__w03__/\__/\__/\__
+mer
+spk
+cor
+mkt
+gen
+acc
+trs
+shr
+gsh
+int
+
+__/\__/\__/\__s03__/\__/\__/\__
+mer
+spk
+cor
+mkt
+gen
+acc
+trs
+shr
+gsh
+int
+
+__/\__/\__/\__s04__/\__/\__/\__
+mer
+spk
+cor
+mkt
+gen
+acc
+trs
+shr
+gsh
+int
+
+Normally scheduled for ten past midnight. Appearing as  10  00  *  *  * - 
+ -  the relevant line(s) from crontab are:-
+10 00 * * *     /home/dw/bin/dw_control.ksh                       >> /home/dw/DWLIVE/logs/dw_control.log
+
+
+There should be nothing between the following zigzag lines.
+If there is - integration is currently running and will need investigation and stopping.
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+      dw 107338  32004   0 02:40:00      -  0:00 ksh /home/dw/bin/dw_control.ksh 
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+
+
+Below (uncommented lines) - shows where we are integrating from: Gemini Live (cray) or Gemini Test (10.20.0.29)
+        echo open '"cray"'                  > $4
+open cray
+
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+Below we just check that we can reach the otop_pcd directory of Anite's Alpha1
+-where our requesters are lodged and where the datafiles are written to.
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+Connected to anite.
+220 alpha1.firstchoice.co.uk FTP Server (Version 5.3) Ready.
+331 Username data_w requires a Password
+230 User logged in.
+250-CWD command successful.
+250 New default directory is $1$DGA218:[OTOP_PCD_LIVE]
+221 Goodbye.
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+
+Below we just check that we can reach merlinlive
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+Connected to merlinlive.
+220 merlinlive FTP server (Digital UNIX Version 5.60) ready.
+331 Password required for dw.
+230 User dw logged in.
+221 Goodbye.
+__/\__/\__/\__/\__/\__/\__/\__/\__/\__/\__
+.

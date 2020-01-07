@@ -1,0 +1,12 @@
+#!/bin/ksh
+while true 
+do
+  clear
+  echo " "
+  echo "TOP TEN CPU Users"
+  echo "================="
+  echo " "
+  echo "   PID    TTY STAT  TIME PGIN  SIZE   RSS   LIM  TSIZ   TRS %CPU %MEM COMMAND"
+  ps avgw | sort -r -n +10 | head
+  sleep 5
+done

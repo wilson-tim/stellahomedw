@@ -1,0 +1,4 @@
+#!/bin/ksh
+. /home/dw/bin/set_oracle_variables.ksh
+echo "@/home/dw/bin/whereami.sql"|sqlplus -s dw/dbp
+
